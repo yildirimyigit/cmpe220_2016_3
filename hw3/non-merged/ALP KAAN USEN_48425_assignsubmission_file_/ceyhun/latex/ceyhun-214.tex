@@ -1,0 +1,73 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{214}
+% ++++++++++++++++++++++++++++++++++++++
+
+sonuca göre, 8 inci ayrıt 1, 2 ve 3 üncü\\
+düğümlere çakışıktır : Böylesine bir durum\\
+olamayacağından, $B_{t1}$ matrisi bir t-kesitleme\\
+matrisi olarak düşünülemez dolayısı ile de\\
+$K_{1}$ çizgesinin çifteşi yoktur.\\
+Şekil 4.3.4b de gösterilen $K_{2}$ çizgesine ilişkin\\
+t-çevre matrisi\\
+
+$ 
+B_{t2} =
+\begin{array}{ccccccccc}
+& \begin{array}{ccccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 
+\end{array} \\
+\begin{array}{c}
+1 \\ 2 \\ 3 \\ 4
+\end{array} &
+\left[ \begin{array}{ccccccccc}
+1 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1\\
+0 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 1\\
+0 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1
+
+\end{array} \right]
+\end{array}$
+
+olarak yazılacaktır. $K_{2}$ ye çifteş olan çizgenin\\
+t-kesitleme matrisi de\\
+
+\begin{center}
+
+    \hspace{-12cm} $Q_{t2}=B_{t2}$
+
+\end{center}
+
+olacaktır. Öyleyse, $B_{t2}$ matrisini t-kesitleme\\
+matrisi olarak gerçekleştirelim. $B_{t1}$ in\\
+gerçekleştirimi için uyguladığımız yöntemi bu\\
+kez $B_{t2}$ matrisi için uygularsak,
+
+$ 
+B_{t2} =
+\begin{array}{ccccc}
+& \begin{array}{ccccc}
+2 & 3 & 4 & 6 & 8
+\end{array} \\
+\begin{array}{c}
+2 \\ 3 \\ 4
+\end{array} &
+\left[ \begin{array}{ccccc}
+1 & 0 & 0 & 1 & 0\\
+0 & 1 & 0 & 1 & 1\\
+0 & 0 & 1 & 0 & 1
+
+\end{array} \right]
+\end{array}$
+
+\end{document}

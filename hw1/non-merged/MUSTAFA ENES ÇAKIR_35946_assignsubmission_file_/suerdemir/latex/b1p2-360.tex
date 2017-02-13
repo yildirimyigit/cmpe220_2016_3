@@ -1,0 +1,105 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/360}
+% ++++++++++++++++++++++++++++++++++++++
+
+\subsection{EVALUATION OF SOME LIMITS BY DEFINITE INTEGRALS}
+Evaluation of the limit of a sum 
+
+\[
+    a_{1}(n) +\cdots + a_{n}(n)
+\]
+
+\noindent which is in the form or which can be put in the form of a RIEMANN sum of a function in an interval can be done by the use of a definite integral applying the following corollary:
+
+\begin{cor}
+If $f(x) \varepsilon C(a,\ b)$, and $(b-a)/n = h$, then 
+\[ 
+    \lim _{ n\rightarrow \infty}
+        \frac{b-a}{n} 
+        \Big( f(a+h) + f(a+2h) + \cdots + f(a+nh) \Big) 
+        = \int ^{b}_{a} f(x) \ dx
+\ .\]
+\end{cor}
+
+\begin{exmp}
+    Evaluate
+    \[ 
+        S =  \lim _{ n \rightarrow \infty }
+            \frac {
+                \sin \frac{\pi}{n} + 
+                \sin\frac{2\pi}{n} +
+                \cdots +
+                \sin\frac{n\pi}{n}
+            }{n} 
+    \]
+    \begin{hSolution}
+        The given expression is the RIEMANN sum for $ \sin x $ in $ (0, \pi) $ Then
+            \begin{align*}
+                S & = \frac{1}{\pi}
+                    \lim _{n \rightarrow \infty}
+                        \frac{\pi}{n} 
+                            \Big( 
+                                \sin \frac{\pi}{n} + 
+                                \cdots + 
+                                \sin \frac{n\pi}{n}
+                            \Big) 
+                = (where \ \ \frac{\pi}{n} = \frac{b-a}{n}) \\
+                & = \frac{1}{\pi} 
+                    \int ^{\pi}_{0}
+                        \sin x \ dx 
+                = \frac{1}{\pi} 
+                        \Big(
+                            -\cos x 
+                        \Big) ^{\pi}_{0} 
+                = \frac{2}{\pi} 
+            \end{align*}
+       \par Solution can also be obtained by taking $ f(x) = \sin \pi x $ instead of $ \sin x $, and the interval $ (0, 1) $:
+            \[ 
+                S =  \lim _{n \rightarrow \infty}
+                        \frac{ 
+                            \sin \frac{\pi}{n} + 
+                            \sin\frac{2\pi}{n} + 
+                            \cdots + 
+                            \sin\frac{n\pi}{n}
+                        }{n} 
+                = \int ^{1}_{0} \sin \pi x \ dx 
+                = \frac{2}{\pi} 
+            \]
+    \end{hSolution}
+\end{exmp}
+
+\begin{exmp}
+    Evaluate
+    \[ 
+        S = \lim _{n \rightarrow \infty} 
+                \frac{
+                   \sqrt{1} + 
+                   \sqrt{2} + 
+                   \cdots + 
+                   \sqrt{n}
+                }{ n^{3/2} } 
+    \]
+    \begin{hSolution}
+        Writing the denominator as $n\sqrt{n}$, and combining $\sqrt{n}$ with numerator, we have
+            \[ 
+                S = \lim _{n\rightarrow \infty} 
+                        \frac{1}{n} 
+                        \Big( 
+                            \sqrt{ \frac{1}{n} } + 
+                            \sqrt{\frac{2}{n}} + 
+                            \cdots + 
+                            \sqrt{\frac{n}{n}}
+                        \Big) 
+            \]
+        so that $f(x) = x$ and the interval is $(0,1)$:
+    \end{hSolution}
+\end{exmp}
+
+% =======================================================
+\end{document}  

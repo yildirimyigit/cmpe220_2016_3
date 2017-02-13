@@ -1,0 +1,43 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{060}
+% ++++++++++++++++++++++++++++++++++++++
+    altmatrisine ilişkin çakışım matrisi $ \bar P_{j-l} $ olsun.
+
+    Önümüze, inceleyeceğimiz iki durum ortaya çıkar; $ f_{j} $ nin bütün terimleri sıfırdır ya da $ f_{j} $ de sıfır olmayan terimler vardır.
+    
+    \emph{Durum 1}
+    % !! NOT: Durum 1 ve 2 için özel bir environment bulamadım. O yüzden manuel yaptım. !!%
+    
+    $ f_{j} $ nin bütün terimleri sıfır ise: \\
+    Böyle bir durumda $ A_{j} $ herzaman gerçekleşebilir ve ilişkin çakışım matrisi
+        \[
+            \bar P_{j} = 
+                \begin{bmatrix}
+                    \bar P_{j-l} &  &  & \vdots & 0 \\
+                                    \hdotsfor{5} \\
+                                 &  &  & \vdots & 1 \\
+                               0 &  &  & \vdots & 1 \\
+                \end{bmatrix}
+        \]
+    olacaktır.
+    
+    \emph{Durum 2}
+    % !! NOT: Durum 1 ve 2 için özel bir environment bulamadım. O yüzden manuel yaptım. !!%
+
+    $ f_{i} $ de sıfır olmayan terimler varsa: \\
+    $ f_{j} $ sıfır olmayan terimlere karşı düşen ayrıtların $ \bar P_{j-l} $ deki dikeçlerinden oluşan $ F_{j} $ matrisini düşünelim.
+    \begin{hEnumerateAlpha}
+        \item $ F_{j} $ nin $ m $ gibi bir dizeği hep birlerden oluşmuşsa ve $ A_{j-l} $ in $ m $ ninci dizeğinde bunlardan başka sıfır olmayan terim yoksa,
+    \end{hEnumerateAlpha}
+\end{document}

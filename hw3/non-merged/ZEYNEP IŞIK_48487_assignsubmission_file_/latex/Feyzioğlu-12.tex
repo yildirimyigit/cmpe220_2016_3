@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{HBMath}
+\usepackage{Feyzioglu}
+
+\begin{document}
+   
+   \hspace{10mm}
+   $A = \bigcup_{\substack{ a \in A}}
+   \hPairingBraket{a}$ 
+   and if 
+   $\hPairingBraket{a} \neq \hPairingBraket{b}$, 
+   then 
+   $\hPairingBraket{a} \hIntersection \hPairingBraket{b} = \emptyset$. \\
+   
+   Conversely, let \\
+   
+  
+   \hspace{10mm} $A = \bigcup_{
+   \substack{ a \in A}
+   } 
+   P_{i}$,
+   $P_{i} \hIntersection P_{j} = \emptyset$ 
+   if
+   $i\neq j$ \\
+   
+   be a union of nonempty, mutually disjoint sets $P_{i}$, indexed by $I$. Then there is an equivalence relation on $A$ such that the
+   $P_{i}$'s are the equivalence classes under this relation.
+   
+   \begin{proof}
+   
+    First we prove 
+    $A = \bigcup_{
+    \substack{ a \in A}
+    } \hPairingBraket{a}$. 
+    For any 
+    $a \in A$,
+    we have 
+    $\hPairingBraket{a} \subseteq A$,
+    hence 
+    $\bigcup_{
+    \substack{ a \in A}
+    } 
+    \hPairingBraket{a} \subseteq A$. 
+    Also, if 
+    $a \in A$, 
+    then
+    $a \in \hPairingBraket{a}$ by reflexivity, so 
+    $a \in \bigcup_{
+    \substack{ a \in A}
+    } 
+    \hPairingBraket{a} $ 
+    and
+    $A \subseteq \bigcup_{
+    \substack{ a \in A}
+    } 
+    \hPairingBraket{a}$. 
+    So
+    $A = \bigcup_{
+    \substack{ a \in A}
+    } 
+    \hPairingBraket{a}$.
+   
+   \end{proof}
+   
+   Now we must prove that distinct equivalence classes are disjoint. We prove its contrapositive, which is logically the same: if two equivalence classes are not disjoint, then they are identical. Suppose that the equivalence classes $\hPairingBraket{a}$ and $\hPairingBraket{b}$ are not disjoint. This means there is a $c$ in $A$ such that $c \in \hPairingBraket{a}$ and $c \in \hPairingBraket{b}$. Hence\\
+   
+   \hspace{10mm}
+   $c\sim a$ and $c\sim b $ 
+   
+   \hspace{10mm} 
+   $a\sim c$ and $c\sim b$  \hspace{11mm}(by symmetry)
+   
+   (1)\hspace{6mm}  
+   $a\sim b$ \hspace{25mm} (by transitivity)
+   
+   (2)\hspace{6mm}  
+   $b\sim a$  \hspace{25mm} (by symmetry).\\
+   
+   We want to prove 
+   $\hPairingBraket{a} = \hPairingBraket{b}$.
+   To this end, we have to prove
+   $\hPairingBraket{a} \subseteq \hPairingBraket{b}$ 
+   and also 
+   $\hPairingBraket{b} \subseteq \hPairingBraket{a}$. 
+   Let us prove 
+   $\hPairingBraket{a} \subseteq \hPairingBraket{b}$. 
+   If 
+   $x \in \hPairingBraket{a}$, 
+   then 
+   $x \sim a$ and $a \sim b$ 
+   by (1), then 
+   $x \sim b$
+   by transitivity, then 
+   $x \in \hPairingBraket{b}$,
+   so 
+   $\hPairingBraket{a} \subseteq \hPairingBraket{b}$. 
+   Similarly, if 
+   $y \in \hPairingBraket{b}$, then $y \sim b$, 
+   then
+   $y \sim b$ 
+   and
+   $b \sim a$ 
+   by (2), then 
+   $y \sim a$ 
+   by transitivity, then 
+   $y \in \hPairingBraket{a}$, 
+   so 
+   $\hPairingBraket{b} \subseteq \hPairingBraket{a}$. 
+   Hence $\hPairingBraket{a} = \hPairingBraket{b}$ 
+   if 
+   $\hPairingBraket{a}$ 
+   and 
+   $\hPairingBraket{b}$ 
+   are not disjoint. This completes the proof of the first assertion.\\
+   \\
+   Now the converse. Let  
+   $A = \bigcup_{
+   \substack{ a \in A}
+   } P_{i}$, 
+   where any two distinct $P_{i}$'s are disjoint. We want to define an equivalence relation on $A$ and want the $P_{i}$'s to be the equivalence classes. How do we accomplish this? Well, if the $P_{i}$ are to be the equivalence classes, we had better call two elements equivalent if they belong to  one and the same $P_{i_{0}}$.\\
+   \\
+   Let 
+   $a \in A$. 
+   Since 
+   $A = \bigcup_{
+   \substack{ a \in A}
+   }
+   P_{i}$, 
+   we see that 
+   $a \in P_{i_{0}}$,
+   for some 
+   $i_{0} \in I$.
+   This index $i_{0}$ is uniquely determined by $a$. That is to say, $a$ cannot belong to
+   
+   
+
+\end{document}

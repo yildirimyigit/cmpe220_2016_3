@@ -1,0 +1,52 @@
+\documentclass[11pt]{amsbook}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+\hPage{b2p1/230}
+
+
+When $x(t), y(t), z(t) \in D(\alpha, \beta)$, one has
+\begin{equation}
+(\frac{ds}{dt})^2 = (\frac{dx}{dt})^2 + (\frac{dy}{dt})^2 + (\frac{dz}{dt})^2
+\end{equation}
+\begin{equation}
+ds^2 = dx^2 + dy^2 + dz^2
+\end{equation}
+\begin{equation}
+s = \int_{\alpha}^{\beta} \sqrt{x^2 + y^2 + z^2} dt
+\end{equation}
+\textbf{\underline{Physical interperation of $r(t)$}} \\
+If one considers the parameter t as time, then the curve
+\begin{equation}
+r(t) =( x(t) +y(t) + z(t))
+\end{equation}
+becomes the \textbf{\underline{path}} (\textbf{\underline{trajectory}}) of a moving particle. \par The tangent vector $r(t)$ is the \textbf{\underline{velocity vector}} $v(t)$ of the moving particle, since $x(t), y(t), z(t)$ are velocity components in the directions of coordinate axes:
+\begin{equation}
+v(t) = ( x(t) +y(t) + z(t))
+\end{equation}
+or
+\begin{equation}
+v(t) = ( v_x, v_y, v_z)
+\end{equation}
+The magnitude of the velocity vector is the \textbf{\underline{speed}} of the particle:
+\begin{equation}
+v = \lvert v(t) \rvert 
+\end{equation}
+\begin{exmp}{Find the arc length of the circular helix }
+
+\begin{equation}
+r(\theta) = a\cos{\theta} i + a\sin{\theta} j + b \theta k
+\end{equation}
+
+
+$a>0, b>0$ between the points $A(\theta = 0), P(\theta)$.
+\end{exmp}
+\begin{hSolution}
+\begin{align*}
+x = a \cos{\theta} , y = a \sin{\theta}, z = b\theta\\
+x = -a \sin{\theta} , y = a \cos{\theta}, z = b\\
+x^2 + y^2 + z^2 = a^2 + b^2\\
+s = \int_{0}^{\theta} \sqrt{a^2 + b^2} d\theta = \sqrt{a^2 + b^2} \theta\\
+\end{align*}
+\end{hSolution}
+\end{document}

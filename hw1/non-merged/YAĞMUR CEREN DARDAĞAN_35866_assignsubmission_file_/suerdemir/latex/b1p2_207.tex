@@ -1,0 +1,74 @@
+\documentclass[reqno]{amsbook}
+\usepackage{../HBSuerDemir}
+
+\usepackage{siunitx}
+
+
+\title{project1}
+\author{yagmur.dardagan }
+\date{October 2016}
+
+\begin{document}
+\hPage{b1p2/207}
+
+\begin{equation}\label{eq:test}
+    \lambda(Ax + By + C) + \lambda'(A'x + B'y + C') = 0 \tag{1}
+\end{equation}
+  
+
+
+\noindent \\represents linear family of the lines (passing through the point of \\
+intersection of the original lines when they are intersecting, 
+since \\the coefficients of $\lambda$ and $\lambda$' vanish for the coordinates \\
+of the common point).\\
+\indent If the lines are parallel the same equation  represents a 
+family \\of lines parallel to the. Why? \\
+\indent For what values of $\lambda$, $\lambda$' the equation \ref{eq:test} represents the first or second line?
+
+\bigskip Division by one of the parameters, say $\lambda$, gives
+
+    $$(Ax + By + C) +\si{\micro} (A'x + B'y + C') = 0$$
+
+
+\noindent \\involving a single parameter \si{\micro} , representing the same family \\ except $A'x + B'y + C' = 0$
+
+\bigskip \underline{Distance of a point from a line:} d($P_0$, l)  
+
+\bigskip Let $P_0(x_0, y_0)$ be a point and $ \textit{l}: Ax + By + C = 0$ be a \\
+line.Then the distance of the point $P_0$ from \textit{l} is 
+
+    $$d(P_0, \textit{l}) = \frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}$$
+
+
+
+\bigskip In the case of normal form: 
+
+    $$d(P_0, \textit{l}) = | x_0\cos{w} + y_0\sin{w} - p|$$
+and
+\begin{displaymath}
+    x_0\cos{w} + y_0\sin{w} - p \quad
+    \left\{ \begin{array}{ll}
+        < 0  & \textrm{when $P_0$ and origin are on the same side of \textit{l} }\\
+         > 0  & \textrm{otherwise}
+    \end{array} \right.
+\end{displaymath}
+
+\indent The distance between two lines is given by
+
+
+\newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+\begin{displaymath}
+ d(\textit{l}, \textit{l'})=
+\left\{ \begin{array}{ll}
+  0  & \textrm{when \textit{l}, \textit{l'} intersects,}\\
+  d(\textit{l}, \textit{l'})  & \textrm{when $P \in\ $\textit{l} and \textit{l} $ \parallelsum$ \textit{l}'}
+\end{array} \right.
+\end{displaymath}
+    
+
+
+
+\end{document}
+
+
+

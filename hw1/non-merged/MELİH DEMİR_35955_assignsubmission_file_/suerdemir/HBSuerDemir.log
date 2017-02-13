@@ -1,0 +1,146 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdftex 2016.10.11)  12 OCT 2016 02:45
+entering extended mode
+**C:/Users/Lenovo/Downloads/BookTemplate/BookTemplate/HBSuerDemir.sty
+(C:/Users/Lenovo/Downloads/BookTemplate/BookTemplate/HBSuerDemir.sty
+! Undefined control sequence.
+l.7 \usepackage
+               {etex}
+? 
+! Undefined control sequence.
+l.9 \usepackage
+               [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.14 \usepackage
+                {amssymb}
+? 
+! Undefined control sequence.
+l.15 \usepackage
+                {amsmath}
+? 
+! Undefined control sequence.
+l.16 \numberwithin
+                  {equation}{section}
+? 
+! Undefined control sequence.
+l.17 \numberwithin
+                  {figure}{section}
+? 
+! Undefined control sequence.
+l.18 \usepackage
+                {amsfonts}
+? 
+! Undefined control sequence.
+l.19 \usepackage
+                {amsthm}
+? 
+! Undefined control sequence.
+l.22 \usepackage
+                [makeroom]{cancel}
+? 
+! Undefined control sequence.
+l.29 \usepackage
+                {color}
+? 
+! Undefined control sequence.
+l.30 	\definecolor
+                  {darkred}{rgb}{0.8,0.1,0.1}
+? 
+! Undefined control sequence.
+l.31 	\definecolor
+                  {darkgreen}{rgb}{0,0.5,0}
+? 
+! Undefined control sequence.
+l.32 	\definecolor
+                  {darkblue}{rgb}{0,0,0.5}
+? 
+! Undefined control sequence.
+l.34 \usepackage
+                {hyperref} % hyperlink and toc for PDF
+? 
+! Undefined control sequence.
+l.46 \usepackage
+                {lastpage} % last page % use \pageref{LastPage}
+? 
+! Undefined control sequence.
+l.58 \usepackage
+                {graphicx}
+? 
+! Undefined control sequence.
+l.59 \usepackage
+                {epstopdf}
+? 
+! Undefined control sequence.
+l.61 \usepackage
+                [usenames,dvipsnames]{pstricks}
+? 
+! Undefined control sequence.
+l.62 \usepackage
+                {epsfig}
+? 
+! Undefined control sequence.
+l.63 \usepackage
+                {subfigure}
+? 
+! Undefined control sequence.
+l.64 \usepackage
+                [all]{xy}
+? 
+! Undefined control sequence.
+l.65 	\CompileMatrices
+                       % xy
+? 
+! Undefined control sequence.
+l.66 \usepackage
+                {tikz}
+? 
+! Undefined control sequence.
+l.67 	\usetikzlibrary
+                     {shapes,snakes}
+? 
+! Undefined control sequence.
+l.68 \usepackage
+                {pst-plot}
+? 
+! Undefined control sequence.
+l.69 \usepackage
+                {pst-node}
+? 
+! Undefined control sequence.
+l.72 \usepackage
+                {array}
+? 
+! Undefined control sequence.
+l.77 \usepackage
+                {multicol}
+? 
+! Undefined control sequence.
+l.95 \usepackage
+                {enumitem}
+? 
+! Undefined control sequence.
+l.97 \newenvironment
+                    {hItemize}[1]
+? 
+! Undefined control sequence.
+l.98 {\begin
+            {enumerate}[label=#1.,leftmargin=*,topsep=-10pt,partopsep=0pt,pa...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.98 {\begin{enumerate}[label=#
+                               1.,leftmargin=*,topsep=-10pt,partopsep=0pt,pa...
+
+? 
+[1{C:/Users/Lenovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 99 ({)
+### bottom level<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb>
+Output written on HBSuerDemir.pdf (1 page, 18421 bytes).
+PDF statistics:
+ 10 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

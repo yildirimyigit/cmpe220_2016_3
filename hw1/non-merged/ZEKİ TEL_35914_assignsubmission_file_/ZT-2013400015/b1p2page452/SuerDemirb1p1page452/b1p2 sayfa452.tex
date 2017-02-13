@@ -1,0 +1,49 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{../HBSuerDemir}
+\begin{document}
+	\hPage{b1p2/452}
+\newtheorem{example}{Example}
+\textbf{\underline{Example.}} Evaluate 
+\begin{align*}
+	A &=\int Sh^{2}t\, dt, & B = \int  \frac{e^{t} - e^{-t}}{e^{t} + e^{t}} \, dt
+\end{align*}	
+
+\textbf{\underline{Solution.}}\\
+\begin{align*}
+A &= \int (e^{t}-e^{-t})^{2} \, dt=\frac{1}{4}\int(e^{2t}-2+e^{-2t}) \, dt\\ 
+&= \frac{1}{4} [\frac{1}{2} e^{2t}-2t-\frac{1}{2}e^{-2t} ] + c =\frac{1}{4} Sh \, 2t-\frac{1}{2}t+c\\ 
+B&=\int\frac{Sh \, t}{Ch \, t} \, dt = \ln Ch \, t+c\\ 	
+\end{align*}
+
+\underline{\textbf{Integral evaluated by recurrence formulas}}	
+\begin{align*}
+1. \, c_{n} &=\int \cos ^{n}\theta \, d\theta &  1'. \, C_{n} &= \int Ch^{n}\theta \, d\theta \\ 
+c_{n}&=\int \sin^{n}\theta \, d\theta&  S_{n} &= \int Sh^{n}\theta \, d\theta  
+\end{align*}
+
+We establish the formula for 
+$c_{n};
+$
+the others we obtained similarly: \\ 
+\begin{align*}
+c_{n}&=\int \cos^{n}\theta \, d\theta=\int \cos^{n-1}\theta \cdot \cos\theta \, d\theta \hspace{1,5cm} (n\ge2)\\ 
+&= \cos^{n-1}\theta \, \sin\theta - \int\sin\theta (n-1) \, \cos^{n-2}\theta \, (-\sin\theta) \, d\theta\\ 
+&= \cos^{n-1}\theta \, \sin\theta +(n-1) \, \cos^{n-2}\theta \, (1-\cos^{2}\theta) \, d\theta\\ 
+&= \cos^{n-1}\theta \, \sin\theta + (n-1) c_{n-2}-(n-1)c_{n}\\  
+n \, C_{n}&=(n-1)c_{n-2}+\cos^{n-1}\theta  \, \sin\theta \\
+c_{n}&=\frac{n-1}{n}c_{n-2}+\frac{1}{n}\cos^{n-1}\theta  \, \cdot \sin\theta\\ 
+s_{n}&=-\frac{n-1}{n}s_{n-2}+\frac{1}{n}\sin^{n-1}\theta \, \cdot \cos\theta \\ 
+C_{n}&=\frac{n-1}{n}C_{n-2}+\frac{1}{n}\cosh^{n-1}\theta  \, \cdot Sh  \,\theta\\ 
+S_{n}&=-\frac{n-1}{n}S_{n-2}+\frac{1}{n}\sinh^{n-1}\theta \, \cdot Ch \, \theta \\
+\end{align*}
+
+\begin{align*}
+2. \, t_{n}	&=\int\tan^{n}\theta \,  d\theta  &  2'. \, T_{n} &= \int \tanh^{n}\theta \, d\theta \\ \\
+t_{n}	&=\int\cot^{n}\theta \, d\theta   & T_{n} &= \int \coth^{n}\theta \, d\theta \\
+\end{align*}
+
+
+
+
+\end{document}

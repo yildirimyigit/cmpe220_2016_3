@@ -1,0 +1,45 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu/095}
+% ++++++++++++++++++++++++++++++++++++++
+
+\quad (i) \(\alpha, \beta \in T \Rightarrow 0\alpha = 0\)  and \(0\beta = 0 \Rightarrow 0(\alpha\beta) = (0\alpha)\beta = 0\beta = 0 \Rightarrow \alpha\beta \in\) T,
+
+
+\quad(ii) \(\alpha \in T \Rightarrow 0\alpha = 0 \Rightarrow 0\alpha\alpha^{-1} = 0\alpha^{-1} \Rightarrow 0ı = 0\alpha^{-1} \Rightarrow 0 = 0\alpha^{-1} \Rightarrow \alpha^{-1} \in T\)
+
+% =======================================
+
+
+(h) Let \(\mathit{U}\) = \(\lbrace \bar{1}, \bar{3}, \bar{5}, \bar{7} \rbrace \) \subseteq \(\mathbb{Z}_8\) and consider the multiplication in \(\mathbb{Z}_8\). We see
+    \[ \bar{1} \ \bar{1} = \bar{1} \quad \bar{1} \ \bar{3} = \bar{3} \quad \bar{1} \ \bar{5} = \bar{5} \quad \bar{1} \ \bar{7} = \bar{7} \]
+    \[ \bar{3} \ \bar{1} = \bar{3} \quad \bar{3} \ \bar{3} = \bar{1} \quad \bar{3} \ \bar{5} = \bar{7} \quad \bar{3} \ \bar{7} = \bar{5} \]
+    \[ \bar{5} \ \bar{1} = \bar{5} \quad \bar{5} \ \bar{3} = \bar{7} \quad \bar{5} \ \bar{5} = \bar{1} \quad \bar{5} \ \bar{7} = \bar{3} \]
+    \[ \bar{7} \ \bar{1} = \bar{7} \quad \bar{7} \ \bar{3} = \bar{5} \quad \bar{7} \ \bar{5} = \bar{3} \quad \bar{7} \ \bar{7} = \bar{1} \]
+   so \(\mathit{U}\) is closed under multiplication. Since \(\mathbb{Z}_8\) is a finite set, \(\mathit{U}\) is a subgroup of \(\mathbb{Z}_8\) by Lemma 9.3. Right? No, this is wrong. This would be correct if \(\mathbb{Z}_8\) were a group under multiplication, which it is not (for instance \(\bar{0}\) has no inverse by Lemma 6.4(12)). \(\mathbb{Z}_8\) is a group under addition, but this is something else. When we want to use Lemma 9.2 or Lemma 9.3 we must make sure that the larger set is a group. 
+
+% =======================================
+Nevertheless, \(\mathit{U}\) is a group under multiplication:
+
+\quad (i) \mathit{U} is closed under multiplication by the calculations above.
+
+\quad(ii) Multiplication on \(\mathit{U}\) associative since it is in fact associative on \(\mathbb{Z}_8\) (Lemma 6.4(7))
+
+\quad(iii) \(\bar{1} \in  \mathit{U}\) and \( \bar{a} \ \bar{1} = \bar{a} \) for all \( \bar{a} \ \in \ \mathit{U}\). This follows from our calculations or from Lemma 6.4(8). So \(\bar{1}\) is an identity element of \(\mathit{U}\).
+
+\quad(iv) Each element of \(\mathit{U}\) has an inverse in \(\mathit{U}\). This follows from the equations \( \bar{1} \ \bar{1} = \bar{1} \), \( \bar{3} \ \bar{3} = \bar{1} \), \( \bar{5} \ \bar{5} = \bar{1} \), \( \bar{7} \ \bar{7} = \bar{1} \) and from \( \bar{1} \ \bar{3} \ \bar{5} \ \bar{7} \ \in \ \mathit{U}\).
+% =======================================
+
+So \(\mathit{U}\) is a group. Let us find its subgroups. Now we can use Lemma 9.3. This lemma shows that \( \lbrace \bar{1}, \bar{3}\rbrace,\lbrace \bar{1}, \bar{5}\rbrace, \lbrace \bar{1}, \bar{7}\rbrace\) are subgroups of \(\mathit{U}\) since they are closed under multiplication. The reader will easily see that these are the only nontrivial proper subgroups of \mathit{U}. Hence the subgroups of \mathit{U} have orders 1, 2, 4 which are all divisors of the order \( \left| \mathit{U} \right| \) = 4 of \(\mathit{U}\). 
+
+% =======================================
+
+(i) E:= \lbrace1, -1, i, -i\rbrace \subseteq  \(\mathbb{C}\setminus \lbrace0\rbrace\) is a subgroup of the group \(\mathbb{C}\setminus \lbrace0\rbrace\) of nonzero complex numbers under multiplication by Lemma 9.3 as it is closed under multiplication. The same lemma shows that \( \lbrace1, -1\rbrace \) is a subgroup of
+
+% =======================================================
+\end{document}  

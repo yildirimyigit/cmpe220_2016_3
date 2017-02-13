@@ -1,0 +1,77 @@
+% Mustafa Alparslan
+%X: book 2
+%Y: part 2
+%ZZZ: page 453.
+
+ 
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\usepackage{wrapfig}
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p2/453}
+% ++++++++++++++++++++++++++++++++++++++
+
+\begin{enumerate}
+\item[2]    
+\begin{enumerate}
+\item y, x, ODE, 1, 1 \item y, x, ODE, 3, 4 \item x, t, ODE, 2, 1
+\end{enumerate}		
+\item[3]    
+\begin{enumerate}
+\item 1, 1,  \item 1; 3
+\end{enumerate}		
+\item[4]    
+\begin{enumerate}
+\item 3, 4,  \item 1, 3
+\end{enumerate}	
+\item[7]    
+\begin{enumerate}
+\item $y - y'' = x$,  \item  $y = xy' \ln x$
+\end{enumerate}
+\item[8]    
+\begin{enumerate}
+\item $\frac{d^4y}{dx^4} = 0 $,   \item $ y' = \frac{1}{x}(\arcsin y) \frac{1}{\sqrt{1-y^2}}$
+\end{enumerate}		
+\end{enumerate}
+\section{FIRST ORDER DIFFERENTIAL EQUATIONS}
+\label{sec:FirstODE}
+The general form of such an equation is 
+\begin{equation}\label{page_355_eq:1}
+F(x, \: y, \: \frac{dy}{dx}) \: = \: 0
+\end{equation}
+which is solved for $dy/dx$ given
+\begin{equation}\label{page_355_eq:2}
+\frac{dy}{dx} \: = \: f(x,y)
+\end{equation}
+which becomes 
+\[
+f(x,y)dx - dy = 0
+\]
+and more generally 
+\begin{equation}\label{page_355_eq:3}
+P(x,y)dx + Q(x,y)dy = 0
+\end{equation}
+
+We classify \ref{page_355_eq:3} into four main types as separable, homogenous, exact, and linear equations. A \textit{DE} may belong more than one type. 
+\subsection{SEPARABLE DIFFERENTIAL EQUATIONS (SDE)}
+
+A first order \textit{DE} which can be written or having the form 
+\begin{equation}\label{page_355_eq:4}
+P(x)dx + 0(y)dy = 0
+\end{equation}
+is called a \textit{separable differential equation} (SDE). 
+
+Its \textit{GS} is obtained by direct integration of its terms:
+\begin{align*}
+ \int P(x)\,dx &+  \int Q(y)\,dy = c \\
+f(x) &+ g(y) = c
+\end{align*}
+
+
+% =======================================================
+\end{document}  

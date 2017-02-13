@@ -1,0 +1,92 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{../HBSuerDemir}	
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./images}
+\epstopdfsetup{update} 
+\setcounter{tocdepth}{3}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyfoot[L]{\footnotesize 
+Freshman Calculus by Suer \& Demir  \textbf{DRAFT} \\
+\LaTeX  by Haluk Bingol 
+\href{http://www.cmpe.boun.edu.tr/~bingol}
+{http://www.cmpe.boun.edu.tr/~bingol} 
+\today}
+\fancyfoot[R]{{\thepage} of \pageref{LastPage}}
+	\usepackage[iso]{datetime}
+	\newcommand{\hbTimeStamp}{{\color{red}--Draft-- v\today}} 
+	\newcommand{\refcite}[1]{Ref~\cite{#1}}
+	\newcommand{\hbQuote}[1]{{\small \textsf{``#1''}}}
+	\newcommand{\reflst}[1]{List.~\ref{#1}}  
+	\newcommand{\refthmA}[2]{\refthm{#1}(\ref{#2}}
+	\newcommand{\refexmp}[1]{Example~\ref{#1}}
+\usepackage{listings}             % Include the listings-package
+\definecolor{hbGreen}{rgb}{0,0.6,0}
+\definecolor{hbGray}{rgb}{0.5,0.5,0.5}
+\definecolor{hbMauve}{rgb}{0.58,0,0.82}
+\definecolor{hbbgColor}{rgb}{0.98,0.98,0.98}
+%
+\lstset{ %
+	backgroundcolor=\color{hbbgColor},  
+	basicstyle=\tiny\ttfamily, 
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{hbGreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,                    % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Sh,                     % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{hbGray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{hbMauve},     % string literal style
+	tabsize=1,                       % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+	literate={├}{|}1 {─}{--}1 {└}{+}1
+}
+\lstset{basicstyle=\ttfamily}
+	\newcommand{\hCode}[1]{{\small \texttt{#1}\,}}		
+\title{
+	Manual for\\
+	\LaTeX\ Homeworks of cmpe220\\
+	{\footnotesize \hbTimeStamp}
+}
+\author{Haluk O. Bingol}
+\date{}                                           % Activate to display a given date or no date
+
+
+\begin{document}
+\hPage{feyzioglu-99}
+
+(5) $Ha=Hb$ if and only if $a = hb$ for some $h \in H$, and there is a unique $h$ with $a=hb$, namely $h=ab^{-1}$ (Lemma 7.5(2)); thus $a=hb$ for some $h \in H$ if and only if $ab^{-1} \in H$. \par
+
+(6)  $Ha=Hb$ if and only if $ab^{-1} \in H$ by (5), and $ab^{-1} \in H$ if and only if $Hab^{-1} = H$ by (2).\par
+
+\textbf{10.3 Lemma}: \textit{Let} $H \leqslant G$. \textit{Then} $G$ \textit{is the union of the right cosets of} $H$. \textit{The right cosets of} $H$ \textit{are mutually disjoint. Analogous statements hold for left cosets.}\par
+\textbf{Proof}: As $Ha\subseteq G$ for any $a \in G$, we get $\bigcup_{a \in G} Ha\subseteq G$. Also, for any $g \in G$, we have $g \in Hg$, so $g \in \bigcup_{a \in G} Ha$, thus $G \subseteq \bigcup_{a \in G} Ha$. This proves $G = \bigcup_{a \in G} Ha$. \par
+Now we prove that the right cosets of $H$ are mutually disjoint. Assume $Ha \cap  Hb \neq \emptyset$. We are to show $Ha=Hb$. Well, we take $c \in Ha \cap  Hb $ if $Ha \cap  Hb \neq \emptyset$. Then $c \in Ha$ and $c \in Hb$. So $Ha=Hc$ and $Hc=Hb$ by Lemma 10.2(4). We obtain $Ha=Hb$. \par
+The left cosets are treated similarly. \par
+In the terminology of Theorem 2,5, right cosets of $H$ form a partition of $G$. Theorem 2.5 tells us that the right cosets are the equivalence classes of a certain equivalence relation on $G$. By the proof of Theorem 2.5, we see that this equivalence relation $\sim$ is given by 
+\[ \text{for all } a,b \in G: a \sim b \text{ if and only if } Ha = Hb,\]
+which we can read as
+\[ \text{for all } a,b \in G: a \sim b \text{ if and only if } ab^{-1} \in Hb,\]
+It may be worth while to obtain Lemma 10.3 from this relation $\sim$ instead of obtaining the relation $\sim$ from Lemma 10.3.\par
+\textbf{10.4 Definition}: Let $H \leqslant G$ and $a,b \in G$. We write $a \equiv_r b \pmod{H}$ and say \textit{a is right congruent to b modulo H if} $ab^{-1} \in H$. Similarly, we write $a \equiv_l b \pmod{H}$ and say \textit{a is left congruent to b modulo H} if $a^{-1}b \in H$.
+
+\end{document}  

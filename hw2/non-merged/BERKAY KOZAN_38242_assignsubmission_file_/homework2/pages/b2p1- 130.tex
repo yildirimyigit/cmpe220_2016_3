@@ -1,0 +1,54 @@
+\documentclass[11pt]{amsbook}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+    \hPage{b2p1/130}
+    \begin{equation*}
+        \cos\theta- \frac {A.B} {\hAbs{A}\hAbs{B}}= \frac{-12}{\sqrt{29}\sqrt{62}} \Longrightarrow \theta = \arccos{\frac{-12}{\sqrt{29}\sqrt{62}}}
+    \end{equation*}
+        
+    \begin{exmp}
+        Given vectors
+        \begin{align*}
+            A = \hPairingParan{2a, -4, a+1},\ B = \hPairingParan{3, a-1, 2}
+        \end{align*}
+        determine $a\in \hSoR$ such that \\
+        \begin{hEnumerateAlpha}
+                \item $A\perp B$
+                \item $A\parallel B$\\
+        \end{hEnumerateAlpha}
+        
+        \underline {Solution}        
+            \begin{align*}                        
+\               a)A \perp B &\Longrightarrow A.B= 0\\
+                &\Longrightarrow 6a-4a-(-4)+2a+2                \Longrightarrow     a=-3/2\\
+                b) A\parallel B &\Longrightarrow \frac{2a}{3}= \frac{-4}{a-1}= \frac{a+1}{2} \quad (no\ solution) 
+            \end{align*}
+       
+    \end{exmp}
+    
+    \begin{exmp}
+        Given vectors
+        \begin{align*}
+            A=\hPairingParan{1,6,4},\ B=\hPairingParan{1,9,7},\ C=\hPairingParan{9,1,7}
+        \end{align*}
+        
+        write, if possible, C as a linear combination of A and B.\\
+        
+       \underline {Solution} \\
+        \begin{align*}
+            C &= tA+sB \Longrightarrow \hPairingParan{9,1,7}=t\hPairingParan{1,6,4}+s\hPairingParan{1,9,7}\\
+            &\Longrightarrow t+s=9,\ 6t+9s=1,\ 4t+7s=7.\\ 
+        \end{align*}
+        
+        of which, the first two give t= 80/3, s = -53/3. But these do not satisfy the third one. Hence C cannot be expressed as a linear combination of A and B. 
+
+    \end{exmp}
+        \subsection {\underline{Vector product of two vectors}:}
+        The \underline{vector product} of two vectors A and B, in this order,
+        is the vector
+        $$ A\times B = \vec{n}\ \hAbs{A}\ \hAbs{B}\ \sin\theta$$
+        where $\theta$ is the angle between them \hPairingParan{0\leq\theta\leq\pi}, and $\vec{n}$ is the unit vector such that A, B, $\vec{n}$ form a positive system \hPairingParan{\vec{n}\perp A,B}.
+    
+    \footnote{There was unseen writings on PDF at that page. I tried to fill the blanks accurately. Also, In solution of example 0.1, I had to choose aligning arrows over enumerating them automatically. I aligned them and enumerated manuelly. (only a and b)}
+\end{document}

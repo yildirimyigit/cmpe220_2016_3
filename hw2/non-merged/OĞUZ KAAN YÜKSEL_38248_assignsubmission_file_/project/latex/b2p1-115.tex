@@ -1,0 +1,119 @@
+\documentclass[11pt]{amsbook}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+\hPage{b2p1/115}
+
+\begin{hEnumerateArabic}
+
+\item Find all 2x2 matrices which commute
+  \begin{multicols}{2}
+    \begin{hEnumerateAlpha}
+      \item with
+        $
+        \begin{aligned}[t]
+          \begin{bmatrix}
+            1 & 1 \\
+            0 & 1
+          \end{bmatrix}
+        \end{aligned}
+        $,
+
+      \item with every 2x2 square matrix
+    \end{hEnumerateAlpha}
+  \end{multicols}
+
+\item For which values of $t$, will the system
+  \[
+  \begin{aligned}
+    4x + y - 4z = 0 \\
+    2x + ty + z = 0 \\
+    (t-1)x - y + 2z = 0
+  \end{aligned}
+  \]
+be consistent?
+\\
+
+\item Solve the systems:
+  \begin{hEnumerateAlpha}
+    \item
+      \begin{multicols}{3}
+        \begin{enumerate}[label={}]
+          \item $2x - 3y = 0$,
+          \item $x + 3z = 0$,
+          \item $y + 2z = 0$
+        \end{enumerate}
+      \end{multicols}
+
+    \item
+      \begin{multicols}{3}
+        \begin{enumerate}[label={}]
+          \item $x + y - z = 0$,
+          \item $x - y + z = 0$,
+          \item $x + 3y + 2z = 0$
+        \end{enumerate}
+      \end{multicols}
+  \end{hEnumerateAlpha}
+
+\item Show that the solution of
+  \[
+  \begin{aligned}
+    a_1x + a_2y + a_3z = 0 \\
+    b_1x + b_2y + b_3z = 0 \\
+  \end{aligned}
+  \]
+
+  $
+  is \quad
+  \lbrack
+  \begin{array}{c}
+    \begin{vmatrix}
+      a_2 & a_3 \\
+      b_2 & b_3
+    \end{vmatrix}t,
+
+    \begin{vmatrix}
+      a_3 & a_1 \\
+      b_3 & b_1
+    \end{vmatrix}t,
+
+    \begin{vmatrix}
+      a_1 & a_2 \\
+      b_1 & b_2
+    \end{vmatrix}t
+  \end{array}
+  \rbrack
+  $
+\\
+
+\item Solve:
+  \[
+  \begin{bmatrix}
+    1 & 2 & -3 & 5 \\
+    1 & 3 & -3 & 5 \\
+    1 & 3 & -1 & 5 \\
+    3 & 8 & -7 & 15
+  \end{bmatrix}
+  \begin{bmatrix}
+    x \\ y \\ z \\ w
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    1 & 1 & 5 & 7
+  \end{bmatrix}
+  \]
+\\
+
+\item Show that the following system is inconsistent:
+  \[
+  \begin{aligned}
+    x_1 + 2x_2 - 3x_3 + 4x_5 = 2 \\
+    x_1 + 2x_2 - x_3 + x_4 + 7x_5 = 3 \\
+    2x_1 + 4x_2 - 4x_3 - 5x_4 + 8x_5 = 8 \\
+    3x_1 + 6x_2 - 5x_3 + 6x_4 + 15x_5 = 11
+  \end{aligned}
+  \]
+
+\end{hEnumerateArabic}
+
+\end{document}

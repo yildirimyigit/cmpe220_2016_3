@@ -1,0 +1,146 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdftex 2016.10.11)  7 NOV 2016 04:18
+entering extended mode
+**C:/Users/Lenovo/Downloads/CeyhunTemplateAndSamplePage/Ceyhun.sty
+(C:/Users/Lenovo/Downloads/CeyhunTemplateAndSamplePage/Ceyhun.sty
+! Undefined control sequence.
+l.6 \usepackage
+               {etex}  % prevent counter errors
+? 
+! Undefined control sequence.
+l.8 \usepackage
+               [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.13 \usepackage
+                {amssymb}
+? 
+! Undefined control sequence.
+l.14 \usepackage
+                {amsmath}
+? 
+! Undefined control sequence.
+l.15 \numberwithin
+                  {equation}{section}
+? 
+! Undefined control sequence.
+l.16 \numberwithin
+                  {figure}{section}
+? 
+! Undefined control sequence.
+l.17 \usepackage
+                {amsfonts}
+? 
+! Undefined control sequence.
+l.18 \usepackage
+                {amsthm}
+? 
+! Undefined control sequence.
+l.21 \usepackage
+                [makeroom]{cancel}
+? 
+! Undefined control sequence.
+l.23 \usepackage
+                {color}
+? 
+! Undefined control sequence.
+l.24 	\definecolor
+                  {darkred}{rgb}{0.8,0.1,0.1}
+? 
+! Undefined control sequence.
+l.25 	\definecolor
+                  {darkgreen}{rgb}{0,0.5,0}
+? 
+! Undefined control sequence.
+l.26 	\definecolor
+                  {darkblue}{rgb}{0,0,0.5}
+? 
+! Undefined control sequence.
+l.28 \usepackage
+                {hyperref} % hyperlink and toc for PDF
+? 
+! Undefined control sequence.
+l.30 \usepackage
+                {lastpage} % last page % use \pageref{LastPage}
+? 
+! Undefined control sequence.
+l.34 \usepackage
+                {graphicx}
+? 
+! Undefined control sequence.
+l.35 \usepackage
+                {epstopdf}
+? 
+! Undefined control sequence.
+l.37 \usepackage
+                [usenames,dvipsnames]{pstricks}
+? 
+! Undefined control sequence.
+l.38 \usepackage
+                {epsfig}
+? 
+! Undefined control sequence.
+l.39 \usepackage
+                {subfigure}
+? 
+! Undefined control sequence.
+l.40 \usepackage
+                [all]{xy}
+? 
+! Undefined control sequence.
+l.41 	\CompileMatrices
+                       % xy
+? 
+! Undefined control sequence.
+l.42 \usepackage
+                {tikz}
+? 
+! Undefined control sequence.
+l.43 	\usetikzlibrary
+                     {shapes,snakes}
+? 
+! Undefined control sequence.
+l.44 \usepackage
+                {pst-plot}
+? 
+! Undefined control sequence.
+l.45 \usepackage
+                {pst-node}
+? 
+! Undefined control sequence.
+l.48 \usepackage
+                {array}
+? 
+! Undefined control sequence.
+l.53 \usepackage
+                {multicol}
+? 
+! Undefined control sequence.
+l.62 \usepackage
+                {enumitem}
+? 
+! Undefined control sequence.
+l.64 \newenvironment
+                    {hItemize}[1]
+? 
+! Undefined control sequence.
+l.65 {\begin
+            {enumerate}[label=#1.,leftmargin=*,topsep=-10pt,partopsep=0pt,pa...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.65 {\begin{enumerate}[label=#
+                               1.,leftmargin=*,topsep=-10pt,partopsep=0pt,pa...
+
+? 
+[1{C:/Users/Lenovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 66 ({)
+### bottom level<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb>
+Output written on Ceyhun.pdf (1 page, 18423 bytes).
+PDF statistics:
+ 10 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

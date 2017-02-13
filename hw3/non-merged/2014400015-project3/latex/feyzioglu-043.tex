@@ -1,0 +1,47 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu-043}
+% ++++++++++++++++++++++++++++++++++++++
+
+
+	
+\begin{lem}
+Let $a, b$ be integers, not both zero. Then $a$ and $b$ are relatively prime if and only if there are integers $x_{0},y_{0}$ such that $ax_{0} - by_{0} = 1$.
+	
+	\begin{proof}
+		If $(a,b) = 1$, then there are integers $x_{0}, y_{0}$ such that $ax_{0}-by_{0} = 1$ by Theorem 5.6 or also by Theorem 5.7. Conversely, if there are integers
+$x_{0}, y_{0}$ with $ax_{0}-by_{0} = 1$, then $1$ is certainly the smallest positive integer in the set $\{ax - by \in \mathbb{Z}: x,y \in \mathbb{Z}\}$, hence $(a,b) = 1$ by Theorem 5.6.
+	\end{proof}
+\end{lem}
+
+\begin{lem}
+Let $a, b$ be integers, not both zero, and let $d = (a,b)$. Then $a/d$ and $b/d$ are relatively prime.
+	
+	\begin{proof}
+		$a/d$, $b/d$ are integers, not both of them zero. We have $ax - by = d$ for suitable integers $x,y \in \mathbb{Z}$ by Theorem 5.7. Dividing both sides of this
+equation by $d > 0$, we get
+		\begin{align*}
+			(a/d)x - (b/d)y = 1,
+		\end{align*}
+		and so $(a/d, b/d) = 1$ by Lemma 5.10
+	\end{proof}
+\end{lem}
+
+Using Lemma 5.10, we prove an important result that will be crucial in the proof of the fundamental theorem of arithmetic.
+
+\begin{thm}
+Let $a, b,c$ be integers $a\vert bc$ and $(a,b) = 1$, then $a\vert e$.
+	
+	\begin{proof}
+		Since $(a,b) = 1$, we have $ax - by = 1$ with some $x,y \in \mathbb{Z}$. Multiplying both sides of this equation by $c$, we obtain $acx - bcy = c$. Now $a\vert acx$ and, since $a\vert bc$ by hypothesis, $a\vert bcx$; hence $a\vert acx - bcy$ by Lemma 5.2. So $a\vert c$.
+	\end{proof}
+\end{thm}
+
+We separate $\mathbb{Z} \backslash \{0\}$ into three subsets: (1) units, (2) prime numbers, (3) composite numbers. The numbers 1 and -1 will be called \textit{units}. The units
+divide every integer by Lemma 5.2(10). Any other integer. a has at least four divisors: $\pm 1, \pm a$. These are called the \textit{trivial divisors of $a$}. A divisor of $a$, which is not one of the four trivial divisors of $a$, is called a \textit{proper divisor} of $a$. If a nonzero integer a is not a unit and has no proper divisors, then a is called a \textit{prime} number. Thus $2, -3, 5, 7, -11$ are prime numbers. A nonzero integer, which is neither a unit nor a prime number,
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[11pt]{amsbook}
+\usepackage[turkish]{babel}
+\usepackage{../Ceyhun}
+\usepackage{../amsTurkish}
+\usepackage{blkarray}
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{142}
+% ++++++++++++++++++++++++++++++++++++++
+    $$ \bar {Q} =
+    \begin{blockarray}{ccccccc}
+        & a_1 & a_2 & a_3 & a_4 & a_5 & a_6 \\
+        \begin{block}{c[cccccc]}
+            K_1 & 1  & 1  & 1  & 0  & 0  & 0  \\
+            K_2 & 0  & 0  & 1  & 0  & 1  & 1  \\
+            K_3 & 1  & 0  & 0  & 1  & 0  & 1  \\
+            K_4 & 1  & 0  & 1  & 1  & 1  & 0  \\
+            K_5 & 0  & 1  & 1  & 1  & 0  & 1  \\
+            K_6 & 0  & 1  & 0  & 1  & 1  & 0  \\
+            K_7 & 1  & 1  & 0  & 0  & 1  & 1  \\
+        \end{block}
+    \end{blockarray}
+    $$
+    
+    t-çevre matrisinde olduğu gibi, bir ağaca göre tanımlanacak \emph{t-kesitleme matrisini} her zaman, 
+    
+    \[
+        Q_t = 
+        \left[
+            \begin{array}{cc} 
+                I &Q_1  \\
+            \end{array} 
+        \right]
+    \]
+    
+    biçiminde yazabiliriz. Burada I ve $Q_{ı}$ in dikeyleri sırasıyla, dallara ve kirişlere karşı düşmektedir. Örneğin, Şekil 3.3.1 de kalın cizgelerle belirtilen ağaca ilişkin t-kesitleme matrisi,
+
+    $$ {Q}_{t} = 
+    \begin{blockarray}{ccccccc}
+            & a_2 & a_4 & a_6 & a_1 & a_3 & a_5 \\
+        \begin{block}{c[ccc|ccc]}
+            K_1 &1  &0  &0  &1  &1  &0  \\
+            K_4 &0  &1  &0  &1  &1  &1  \\
+            K_2 &0  &0  &1  &0  &1  &1  \\
+        \end{block}
+    \end{blockarray}
+    $$
+
+    Bu gözlemin bir genellemesi olarak aşağıdaki teoremi verebiliriz. 
+    
+    \begin{theorem}
+        {p parçadan oluşan $Ç(d,a)$ çizgesi ne ilişkin kesitleme matrisinin asaması}
+    \end{theorem}
+\end{document}

@@ -1,0 +1,62 @@
+\documentclass[25pt,a4paper]{memoir}
+\usepackage{amssymb}
+\usepackage{mhchem}
+\usepackage{graphicx}
+\usepackage{multienum}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage[turkish]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=1in,right=1in,top=1in,bottom=0in,%
+            footskip=.25in]{geometry}
+\clearpage
+\thispagestyle{empty}
+\titleformat*{\section}{\normalfont\large\underline}
+\titleformat*{\subsection}{\normalfont\itshape}
+\renewcommand\thesubsection{\alph{subsection}}
+\usepackage{blkarray}
+\graphicspath{ {images/} }
+\begin{document}
+
+
+    \underline{\huge 1.6 Ramsey Sayıları}\\\\
+
+    $m^{ı} + n^{ı} < t $ \\
+    
+    \noindent
+    ve \\
+    
+    $ t>4 $ \\
+    
+    \noindent
+    koşulu altında $m^{ı}$ ve $n^{ı}$ gibi iki değer için de \\
+    doğru olduğunu varsayalım. Demek ki, \\
+    
+    $ R(m^{ı},n^{ı}) \leq \binom{{m^{ı}+n^{ı}-2}}{m^{ı}-1}$ \\
+    
+    \noindent
+    Ayrıca bu $t$ değeri için, \\
+    
+    $ m+n=t $ \\
+    
+    \noindent0
+    olsun ve genellemeden bir şey yitirmeksizin, \\
+    
+    $m \geq 3$  ve $ n \geq 3$ \\
+    
+    \noindent
+    diyelim.  Öyleyse tümevarımı $(m-1)+n$ ve $m+(n-1)$ \\
+    için uygularsak\\
+    
+    $R(m-1,n) \leq \binom{m+n-3}{m-2} $ \\
+    
+    \noindent
+    ve \\
+    
+    $R(m,n-1) \leq \binom{m+n-3}{m-1} $ \\
+    
+    \noindent
+    yazabiliriz. Ancak,\\
+
+\end{document}

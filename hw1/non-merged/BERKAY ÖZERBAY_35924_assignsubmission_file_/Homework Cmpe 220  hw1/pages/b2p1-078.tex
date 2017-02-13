@@ -1,0 +1,82 @@
+
+\documentclass[11pt]{amsbook}
+\usepackage{../HBSuerDemir}
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+\hPage{b2p1-078}
+\begin{align*}
+&&  2A & = 
+	\begin{bmatrix}
+		0  &&   2    &&  2\\
+		2  &&   0    &&   2\\
+		2  &&   2    &&  0\\
+	\end{bmatrix} 
+&&\\
+ \\ 
+&&  -3I_3 & =
+	\begin{bmatrix}
+		-3  &   0    &   0\\
+		0  &   -3    &   0\\
+		0  &   0    &   -3\\
+	\end{bmatrix} 
+&&
+\\
+\\
+&\implies   &  A^2-2A-3I_3 & = \begin{bmatrix}
+-1  &   3    &   3\\
+3  &   -1    &   3\\
+3 &   3    &   -1\\
+\end{bmatrix} 
+ \end{align*}
+ 
+
+\setlength{\parindent}{7ex}
+\underline{Remark}. Note that multiplication of a matrix by a scalar 
+and that of a determinant by a scalar are defined differently: a
+matrix is multiplied by a scalar by multiplying every element by 
+multiplying only one row(column) by that scalar.\par 
+Thus
+\begin{align*}
+\qquad \qquad \qquad c  \quad       
+	\begin{bmatrix}
+		8  &&   1    &&  6\\
+		3  &&   5    &&   7\\
+		4  &&   9    &&  2\\
+	\end{bmatrix} 
+&= 
+	\begin{bmatrix}
+		8c  &&   c    &&  6c\\
+		3c  &&   5c    &&   7c\\
+		4c  &&   9c    &&  2c\\
+	\end{bmatrix} ,
+\\
+\qquad \qquad \qquad c  \quad       
+	\begin{bmatrix}
+		8  &&   1    &&  6\\
+		3  &&   5    &&   7\\
+		4  &&   9    &&  2\\
+	\end{bmatrix} 
+&= 
+	\begin{bmatrix}
+		8c  &&   c    &&  6c\\
+		3  &&   5    &&   7\\
+		4  &&   9    &&  2\\
+	\end{bmatrix}
+= 
+	\begin{bmatrix}
+		8  &&   c    &&  6\\
+		3  &&   5c    &&   7\\
+		4  &&   9c    &&  2\\
+	\end{bmatrix}
+\end{align*}\\
+As a result we have for a matrix A of order n,
+   
+  
+\begin{align*}
+ 	det \ c[a_ij] = det \ [ca_ij] = c^n \ det[a_ij]
+\end{align*}      
+
+
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{../HBSuerDemir}
+\newcounter{defcounter}
+\setcounter{defcounter}{0}
+
+\renewcommand\thesubsubsection{A.}
+
+\begin{document}
+    \hPage{b2p1/17}
+    \renewcommand{\headrulewidth}{0pt}
+
+    \subsection{SERIES OF NUMBERS}
+        \begin{itemize}\hspace{-0.5cm}
+            \subsubsection{DEFINITIONS\\}
+        \end{itemize}
+        \hspace{0.5cm}A sum
+    
+        \newenvironment{myequation}{%
+        \addtocounter{equation}{-1}
+        \refstepcounter{defcounter}
+        \renewcommand\theequation{\thedefcounter}
+        \begin{equation}}
+        {\end{equation}}
+        \begin{myequation} \label{eq:firstequation}
+            a_1 + a_2 + \dots + a_n + \dots  =  \sum_{n=1}^{\infty}  a_n 
+        \end{myequation}
+        of infinitely many numbers in the given order is called an \underline{infinite series} or simply a \underline{series}, where $ a_n \in \mathbb{R} $ is the \underline{general term} of the series. \\  
+
+        In the sum (\ref{eq:firstequation})  the numbers are to be added in succession, that is, $ a_2 $  is to be added to $ a_1 $, next $ a_3 $ is to be added to $ a_1 + a_2 $, then $ a_4 $  is to be added to $ a_1 + a_2 + a_3 $, and so on. \\ 
+
+        This definition of (\ref{eq:firstequation}) is equivalent to
+        \[ lim_{n \to \infty} S_n \] 
+        where\\
+        \[ S_n = a_1 + \dots + a_n \] 
+        is called the \underline{general partial sum} of the series. \\
+
+        If this limit exists which is equal to $ \sum_{i} a_n$, we call (\ref{eq:firstequation}) \underline{convergent}, otherwise \underline{divergent}.\\
+
+        For instance the series
+        \[ \sum_{n=1}^{\infty} (-1)^{n+1} = 1 - 1 + 1 - 1 + \dots + (-1)^{n+1} + \dots \]
+        is divergent, since
+
+        \[
+        S_n = 1 - 1 + \dots + (-1)^{n+1} =
+        \begin{cases}
+             0, & \text{if n  is even} \\
+            1, & \text{if n is odd}
+        \end{cases}
+        \]
+        has no limit.\\
+
+        Writing
+        \[ \sum_{n=1}^{\infty} a_n = S_n + R_{n+1} \]
+        
+\end{document}

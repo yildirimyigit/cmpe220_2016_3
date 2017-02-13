@@ -1,0 +1,63 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+
+\hPage{b2p1/479}
+
+\begin{exmp}
+A piece of metal of temperature of $80\,^{\circ}\mathrm{C}$ is placed at time t = 0 in a medium of constant temperature of $20\,^{\circ}\mathrm{C}$. At the end of 5 min the metal has cooled down to $70\,^{\circ}\mathrm{C}$. What will the temperature be at the end of 10 min?
+
+\begin{hSolution}
+From the SDE
+
+\begin{align*}
+	\frac{dx}{dt} = -k \cdot (x-20)
+\end{align*}
+
+\noindent we have
+
+\begin{align*}
+	\frac{dx}{x-20} &= -kdt\\
+	\Longrightarrow \ln(x-20) &= -kt + \ln c
+\end{align*}
+
+\par 
+The constants c and k are determined from x(0) = 80 and x(5) = 70:
+
+\begin{align*}
+	\ln(80-20) &= \ln c \quad  \Longrightarrow \quad c = 60\\
+	\ln(70-20) &= -5k + \ln 60 \quad  \Longrightarrow \quad -5k = \ln \frac{5}{6}
+\end{align*}
+
+\par
+Then
+
+\begin{align*}
+	\ln(x-20) &= \frac{1}{5} \cdot (\ln \frac{5}{6})t + \ln 60\\
+	\ln(x-20) &=  \ln ({\frac{5}{6}})^{\frac{t}{5}} + \ln 60\\
+	x &= 20 + 60 \cdot ({\frac{5}{6}})^{\frac{t}{5}}\\
+	\Longrightarrow x(10) &= 20 + 60 \cdot \frac{25}{36} \cong 61.5\,^{\circ}\mathrm{}\\
+\end{align*}
+
+\end{hSolution}
+
+\end{exmp}
+
+\begin{center}
+	{\Large C.}STREAM LINES (VECTOR LINES) \footnote{I used nothing for this title. Please, check other page before this.}
+\end{center}
+
+\par
+Let
+
+\begin{align*}
+	F = P(x, y)i + Q(x, y)j
+\end{align*}
+
+\noindent be a vector field in $\hSoR^2$. We define a \hDefined{vector line} (stream line) of F a curve at every point of which the corresponding vector
+
+
+\end{document}

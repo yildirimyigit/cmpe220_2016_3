@@ -1,0 +1,82 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p2/489}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{exmp}
+	Find the GS of
+	\[
+	y^{\prime\prime\prime}-2y^{\prime\prime}+y^{\prime}=(x+2)+e^x
+	\]
+
+\begin{hSolution}
+\begin{enumerate}
+	\item[1.]
+	$\lambda^3-2\lambda^2+2\lambda = 0  \Rightarrow \lambda(\lambda-1)^2=0 \Rightarrow  \lambda_1=0, \lambda_2=1, \lambda_3=1\\
+	\Rightarrow y_c = c_1 + c_2 e^x+c_3 x e^x, \qquad \{1, e^x,xe^x\}$
+	\item[2.]
+	\underline{$f_1(x)=x+1$}. $S_1=\{x+2,\quad1\}$\\
+	where 1 is contained in $y_c$. Then
+	\[
+	{S_1}^\prime = \{x^2+2x,x\}
+	\]
+	\underline{$f_2(x)=e^x$}: $S_2=\{e^x\}$\\
+	$e^x$ is contained in $y_c$. Then
+	\[
+	{S_2}^\prime = \{x^2 e^x\}
+	\]
+	So
+	\[
+	y_p=A(x^2+2x)+Bx+Cx^2 e^x
+	\]
+	\item[3.] 
+		$y_p=Ax^2+(A+B)x+Cx^2e^x$\\
+		\begin{tabular}{r|l l}
+		1 & ${y_p}^{\prime}$ &$= 2Ax +(A+B)+2Cxe^x+Cx^2e^x$\\
+		-2 & $ {y_p}^{\prime\prime}$ &$= 2A + Ce^x + 4Cxe^x + Cx^2e^x$\\
+		1 & ${y_p}^{\prime\prime\prime}$ &$= 6C e^x + 6Cxe^x + Cx^2e^x$
+
+		\end{tabular}\\
+		\begin{tabular}{lll}
+		$(x+2)+e^x $ & = & $2Ax+(A+B) + 2Cxe^x + Cx^2e^x$\\
+		&&$-4A - 4C e^x - 8Cxe^x - 2Cx^2e^x$\\
+		&&$+6Ce^x+6Cxe^x+Cx^2e^x$\\
+		$x+2+e^x$ & = & $2Ax + (B-3A) + 2Ce^x$\\
+		\end{tabular}\\
+$\Rightarrow$\quad $2A=1$, \quad $B-3A=2$, \quad $2C=1$
+\end{enumerate}
+\end{hSolution}
+\end{exmp}
+\end{document}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

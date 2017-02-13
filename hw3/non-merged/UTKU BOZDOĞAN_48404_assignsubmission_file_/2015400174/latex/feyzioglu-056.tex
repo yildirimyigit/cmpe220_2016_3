@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+
+\usepackage{../HBSuerDemir}
+\usepackage{dsfont}
+
+
+\begin{document}
+
+	\hPage{feyzioglu-056}
+\noindent \textit{The} result? The question is whether we have only \textit{one} result to justify the article "the". We summarize telegrammaticaly. To find $ X  \bigoplus  Y $ ,
+	\begin{align*}
+		&1) \text{choose a} \in \mathds{Z}  \text{ from } X, \\
+		&2) \text{choose b} \in \mathds{Z}  \text{ from } Y, \\
+		&3) \text{find } a + b \text{ in }  \mathds{Z} , \\
+		&4) \text{take the residue class of } a + b.
+	\end{align*}
+\noindent This sounds a perfectly good recipe for finding $X \bigoplus Y$ but notice that we use some auxiliary objects, namely $a$ and $b$, to find $X \bigoplus Y$, which must be determined by $X$ and $Y$ alone. Indeed, the result $ \overline{a + b} $ depends explicitly on the auxiliary objects $a$ and $b$. We can use our recipe with different auxiliary objects. Let us do it. 1) I choose $a$ from $X \subseteq \mathds{Z} $ and you choose $a_{1}$ from $X$. 2) I choose $b$ from $Y  \subseteq \mathds{Z} $ and you choose $b_{1}$ from $Y$. 3) I compute $a + b$ and you compute $ a_{1} + b_{1} $. In general, $a + b \neq a_{1} + b_{1} $. Hence our recipe gives, generally speaking, distinct elements $ a + b $ and $ a_{1} + b_{1} $. So far, both of us followed the same recipe. I cannot claim that my computation is correct and yours is false. Nor can you claim the contrary. Now we carry out the fourth step. I find the residue class of $ a + b $ as  $ X \bigoplus  Y $, and you find the residue class of $ a_{1} + b_{1} $ as  $ X \bigoplus  Y $. Since $a + b \neq a_{1} + b_{1} $ in $\mathds{Z} $, it can very well happen that $ \overline{a + b} \neq  \overline{a_{1} + b_{1}} $ in $ \mathds{Z}_{n} $. On the other hand, if $ \bigoplus $ is to be a binary operation on  $ \mathds{Z}_{n} $, we must have $ \overline{a + b} = \overline{a_{1} + b_{1}} $ whenever $ \overline{a} =  \overline{a}_{1} ,  \overline{b}_{1} =  \overline{b} $ , even if $ a + b \neq a_{1} + b_{1} $. If there is such a mechanism, we say $ \bigoplus $ is a well defined operation on $ \mathds{Z}_{n} $. This means $ \bigoplus $ is really a genuine operation on $ \mathds{Z}_{n} : X \bigoplus  Y $ is uniquely determined by $X$ and $Y$ alone. Any dependance of $X \bigoplus  Y $  on auxiliary integers $ a \in X $ and $ b a \in Y $ is only apparent. We will prove that $\bigoplus$ and $\bigotimes$ are well defined operation on $ \mathds{Z}_{n} $, but before that, we discuss more generally well definition of functions.
+
+\noindent A function $f: A \rightarrow B$ is essentialy a rule by which each element $a$ of $A$ is associated with a unique element of $f(a) = b$ of $B$. The important point is that the rule produces an element $f(a)$ that depends only on $a$. Sometimes we consider rules having the following form. To find $f(a)$,
+	\begin{align*}
+		&1) \text{do this and that} \\
+		&2) \text{take an x related a in such and such manner} \\
+		&3) \text{do this and that to } x \\
+		&4) \text{the result is } f(a).
+	\end{align*}
+
+\end{document}

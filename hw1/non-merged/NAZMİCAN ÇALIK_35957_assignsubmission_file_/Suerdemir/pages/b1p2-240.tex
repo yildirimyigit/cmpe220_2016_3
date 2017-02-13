@@ -1,0 +1,95 @@
+%Correct the file name.
+%X: book number
+%Y: part number
+%ZZZ: page number in three digits. So page 3 would be 003.
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/240}
+% ++++++++++++++++++++++++++++++++++++++
+	\begin{cor}
+		If two rows (columns) of a determinant are identical, the determinant is zero
+
+
+		\begin{center}
+			$D = -D \Rightarrow D = 0 ,$
+		\end{center}
+
+		from interchanging two identical rows(columns).
+	
+	\end{cor}
+
+	\begin{thm}
+ 	
+ 		If every element in any row (column) of a determinant is multiplied by the same factor, the whole determinant  is multiplied by that factor. \\
+
+	\par If the given determinant is
+
+	\begin{align}
+ 		D &=
+		\begin{vmatrix}
+			&...& a_{1j} &...&\\ 
+ 			&  & & \\ 
+			& &  &  \\ 
+			&... & a_{nj} &...&\notag
+		\end{vmatrix}
+		, then \hspace{16pt}D'=
+		\begin{vmatrix}
+		&...& ca_{1j} &...&\\ 
+		&  & & \\ 
+		& &  &  \\ 
+		&... & ca_{nj} &...&\
+		\end{vmatrix}
+		=cD
+	\end{align}
+
+	\par The expansions of $D'$ and $D$ with respect to the $j$th column prove the assertion.
+
+	\begin{cor}
+
+		To multiply a determinant by a factor, one may multiply every element in any row (column) by that factor.
+	
+	\end{cor}
+
+	\begin{cor}
+	
+	If every element in any row (column) of a determinant is zero, the determinant is zero. 
+	
+	\end{cor}
+
+	\begin{cor}
+	
+	If the corresponding elements in two rows (columns) of a determinant are proportional, the determinant is zero.
+	
+	\end{cor}
+	
+	\begin{align}
+		\begin{vmatrix}
+			\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.						\hspace{4pt}\hspace{4pt}\\ 
+ 			a_{k1}\hspace{6pt} .\hspace{4pt}.\hspace{4pt}.\hspace{6pt} a_{kn} \\ 
+			\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.						\hspace{4pt}\hspace{4pt}\\ 
+			ca_{k1}\hspace{6pt} .\hspace{4pt}.\hspace{4pt}.\hspace{6pt} ca_{kn}\\
+			\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.						\hspace{4pt}\hspace{4pt}
+			 \notag
+		\end{vmatrix}
+			\hspace{6pt}= c \hspace{8pt}
+		\begin{vmatrix}
+			\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.						\hspace{4pt}\hspace{4pt}\\ 
+ 			a_{k1}\hspace{6pt} .\hspace{4pt}.\hspace{4pt}.\hspace{6pt} a_{kn} \\ 
+			\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.						\hspace{4pt}\hspace{4pt}\\ 
+			a_{k1}\hspace{6pt} .\hspace{4pt}.\hspace{4pt}.\hspace{6pt} a_{kn}\\
+			\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.\hspace{4pt}.						\hspace{4pt}\hspace{4pt}
+			 \notag
+		\end{vmatrix}
+		\hspace{6pt}= 0
+		\end{align}
+	\end{thm}
+
+\end{document}  
+
+

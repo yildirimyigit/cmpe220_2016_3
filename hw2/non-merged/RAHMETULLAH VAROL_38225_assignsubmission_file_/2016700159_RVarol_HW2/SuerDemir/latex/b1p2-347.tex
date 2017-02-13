@@ -1,0 +1,67 @@
+\documentclass[11pt]{amsbook}
+\usepackage[turkish]{babel}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\usepackage{lipsum}
+
+\setlist[enumerate,1]{%
+  label=\arabic*.,
+}
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+  label=(\roman*),
+}
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/347}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{align*}
+	I &= cos^3 x sinx + 3 \int cos^2 x sin^2 x dx \\
+	&= cos^3 x sin + 3 \int cos^2 x dx - 3 \int cos^4 x dx \\
+	&= cos^3 x sinx + 3 \int cos^2 x dx - 3 \int cos^4 x dx \\
+	4I &= cos^3 x sinx + \dfrac{3}{2} \int (1+cos 2x) dx \\
+	&= cos^3 x sinx + \dfrac{3}{2} (x+\dfrac{sin 2x}{2})+c_1 \\
+	I &= \dfrac{1}{4} cos^3 x sinx + \dfrac{1}{16} sin 2x + \dfrac{3}{8} x + c
+\end{align*}
+
+\underline{Properties:} (Indefinite integrals of even, odd functions] \\
+Let $e_i(x)$ be even, odd functions respectively. Then recalling properties $De_1(x)=\omega_1(x)$, $D\omega_2(x)=e_2(x)$ (\S 2.1, Exercise 20) we may have the converse. Indeed the following properties hold:
+
+\begin{equation*}
+	1. \int e_1dx = \omega_1(x)+c, \qquad 2. \int \omega_2(x) dx = e_2(x)+c
+\end{equation*}
+
+\underline{Proof:}
+\begin{enumerate}
+	\item[1.] Let $F(x)=\int e_1 (x) dx$ without constant of integration. Then
+	\begin{equation*}
+		F(-x) = \int e_1(x)d(-x) = -\int e_1(-x)dx = -\int e_1 dx = -F(x),
+	\end{equation*}
+	Showing that $F(x)$ is an odd function, namely $\omega_1(x)$
+	
+	\item[2.] Proved similarly. \unskip\nobreak\quad\qedsymbol
+\end{enumerate}
+Discuss periodicity of the integral of a periodic function.
+
+\section*{EXERCISES (5.1)}
+\begin{enumerate}
+	\item[1.] Simplify the following \\
+	\begin{inlinelist}
+	\item[a)] $\int d f(x) \qquad$
+	\item[b)] $d\int f(x) dx \qquad$
+	\item[c)] $\dfrac{d}{dx} \int arccos x dx$
+	\end{inlinelist} \\
+	\begin{inlinelist}
+	\item[d)] $\int \dfrac{d}{df}arccos x dx \qquad$
+	\item[e)] $\int d(x^7+x+7)^7 \qquad$
+	\item[f)] $\dfrac{d}{dx}\int \dfrac{d}{dx} arcsec x$
+	\end{inlinelist}
+
+	\item[2.] If $F_1(x)$, $F_2(x)$ are two primitives of $f(x)$, then show that $c_1 F_1(x)+c_2 F_2(x)$ is a primitive of $f(x)$ when $c_1$, $c_2$
+\end{enumerate}
+
+
+\end{document}

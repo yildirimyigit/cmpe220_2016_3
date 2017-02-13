@@ -1,0 +1,24 @@
+\documentclass[11pt]{amsbook}
+
+
+\usepackage{../Ceyhun}
+\usepackage{../amsTurkish}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+
+\begin{document}
+
+\hPage{070}
+
+\section{2.3 Çizgeler arasında işlemler}
+
+
+\begin{figure}
+  
+  \includegraphics[scale=0.8]{images/ceyhun-070-fig01.png}
+  \caption{$Ç_1$, $Ç_2$  ve ilişkin oluşuk çizgeler.}
+
+\end{figure}
+
+
+\end{document}

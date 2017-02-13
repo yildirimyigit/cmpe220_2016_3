@@ -1,0 +1,307 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\begin{document}
+\begin{tikzpicture}
+\Large   
+%%%%%%%%%%%%%%%%%%%%%%%%% LEFT TOP GRAPH %%%%%%%%%%%%%%%%%%%%%	
+	\draw (-14,+12) 
+		node (A1) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt,label=left:A]{}  
+		-- ++ (0:4.0cm) 
+			node (A2) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {};
+			\draw (A1) to [out=-35,in=215] (A2);
+			\draw (A1) to [out=+35,in=-215] (A2);
+			\draw (-14.45,+12) 
+				node (LA1) [draw,circle,minimum size=16pt]{};
+			\draw (-12.1,+12.7) 
+				node (L1)[label=above:12]{};
+			\draw (-12.1,+11.9) 
+				node (L2) [label=above:10]{};
+			\draw (-12.1,+10.5) 
+				node (L3) [label=above:2]{};
+%%%%%%%%%%%%%%%%%%%%%%%%% RIGHT TOP GRAPH %%%%%%%%%%%%%%%%%%%%%%%
+	\draw (-4,+12) 
+		node (G1) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt,label=left:] {}  
+		-- ++ (0:4.0cm) 
+			node (G2) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt, label=right:G] {};
+			\draw (G1) to [out=-35,in=215] (G2);
+			\draw (G1) to [out=+35,in=-215] (G2);
+			\draw (0.38,+12) 
+				node (GG1) [draw,circle,minimum size=16pt]{};
+			\draw (-1.9,+12.7) 
+				node (L4) [label=above:12]{} ;
+			\draw (-1.9,+11.9) 
+				node (L5) [label=above:6]{} ;
+			\draw (-1.9,+10.5) 
+				node (L6) [label=above:7]{} ;
+%%%%%%%%%%%%%%%%%%%%%%%%% MIDDLE GRAPH %%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+
+     \draw (-9.5,11) node (H1) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(0:5.0cm) node (H2) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(300:5.0cm) node (H3) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(240:5.0cm) node (H4) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(180:5.0cm) node (H5) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(120:5.0cm) node (H6) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- (H1) % shape is closed, we now connect it to an outer vertex:
+        -- ++(300:5.0cm) node (H7) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {};
+		\draw (H2) -- (H7);
+		\draw (H3) -- (H7);
+		\draw (H4) -- (H7);
+		\draw (H5) -- (H7);
+		\draw (H6) -- (H7);
+		\draw (-9.6,+11.0) node (HL01) [label=above:2]{};
+		\draw (-9.6,+11.5) node (HG1) [draw,circle,minimum size=16pt]{};
+		\draw (-4.3,+11.0) node (HL02) [label=above:6]{};  
+		\draw (-4.3,+11.5) node (HG2) [draw,circle,minimum size=16pt]{};
+		\draw (-12.3,+6.3) node (HL03) [label=above:C]{};  
+		\draw (-12.3,+6.8) node (HG3) [draw,circle,minimum size=16pt]{};
+		\draw (-1.7,+6.3) node (HL04) [label=above:D]{};  
+		\draw (-1.7,+6.8) node (HG4) [draw,circle,minimum size=16pt]{};
+		\draw (-6.4,+6.65) node (HL05) [label=above:F]{};  
+		\draw (-6.4,+7.15) node (HG5) [draw,circle,minimum size=16pt]{};
+		\draw (-9.6,+1.5) node (HL06) [label=above:B]{};
+		\draw (-9.6,+2.0) node (HG6) [draw,circle,minimum size=16pt]{};
+		\draw (-4.3,+1.5) node (HL07) [label=above:E]{};  
+		\draw (-4.3,+2.0) node (HG7) [draw,circle,minimum size=16pt]{};
+		\draw (-6.9,+11.0) node (HL1) [label=above:12]{};
+		\draw (-11.0,+8.7) node (HL2) [label=above:2]{};
+		\draw (-8.0,+8.7) node (HL3) [label=above:10]{}; 
+		\draw (-6.0,+8.7) node (HL4) [label=above:6]{};
+		\draw (-3.0,+8.7) node (HL5) [label=above:7]{};
+		\draw (-9.5,+6.5) node (HL6) [label=above:8]{};
+		\draw (-4.5,+6.5) node (HL7) [label=above:9]{};
+		\draw (-11.0,+4.0) node (HL8) [label=above:4]{};
+		\draw (-8.0,+4.0) node (HL9) [label=above:11]{}; 
+		\draw (-6.0,+4.0) node (HL10) [label=above:5]{};
+		\draw (-3.0,+4.0) node (HL11) [label=above:3]{};
+		\draw (-6.9,+1.5) node (HL12) [label=above:1]{}; 
+		\draw (-6.9,0.0) node (HL99) [label=above:(d)]{}; 
+%%%%%%%%%%%%%%%%%%%%%%%%% BOTTOM GRAPH %%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+		
+     \draw (-9.5,-1.0) node (H21) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(0:5.0cm) node (H22) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(300:5.0cm) node (H23) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(240:5.0cm) node (H24) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(180:5.0cm) node (H25) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(120:5.0cm) node (H26) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- (H21) % shape is closed, we now connect it to an outer vertex:
+        -- ++(300:5.0cm) node (H27) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {};
+
+		\draw (H22)[line width=1mm] -- (H27);
+		\draw (H21)[line width=1mm] -- (H26);
+		\draw (H23) -- (H27);
+		\draw (H24)[line width=1mm] -- (H27);
+		\draw (H25) -- (H27);
+		\draw (H26) -- (H27);
+		\draw (H25)[line width=1mm] -- (H26);
+		\draw (H24)[line width=1mm] -- (H25);
+		\draw (H23)[line width=1mm] -- (H24);
+		\draw (-9.6,-10.5) node (HL201) [label=above:B]{};
+		\draw (-9.6,-10.0) node (HG21) [draw,circle,minimum size=16pt]{};
+		\draw (-4.3,-10.5) node (HL202) [label=above:E]{};  
+		\draw (-4.3,-10.0) node (HG22) [draw,circle,minimum size=16pt]{};
+		\draw (-12.3,-5.6) node (HL203) [label=above:C]{};  
+		\draw (-12.3,-5.05) node (HG23) [draw,circle,minimum size=16pt]{};
+		\draw (-1.7,-5.6) node (HL204) [label=above:D]{};  
+		\draw (-1.7,-5.05) node (HG24) [draw,circle,minimum size=16pt]{};
+		\draw (-6.4,-5.45) node (HL05) [label=above:F]{};  
+		\draw (-6.4,-5.0) node (HG5) [draw,circle,minimum size=16pt]{};
+		\draw (-9.6,-1.1) node (HL206) [label=above:A]{};
+		\draw (-9.6,-0.6) node (HG26) [draw,circle,minimum size=16pt]{};
+		\draw (-4.3,-1.1) node (HL207) [label=above:G]{};  
+		\draw (-4.3,-0.6) node (HG27) [draw,circle,minimum size=16pt]{};
+		\draw (-6.9,-1.1) node (HL21) [label=above:12]{};
+		\draw (-11.0,-3.5) node (HL22) [label=above:2]{};
+		\draw (-8.0,-3.5) node (HL23) [label=above:10]{};
+		\draw (-6.0,-3.5) node (HL24) [label=above:6]{};
+		\draw (-3.0,-3.5) node (HL25) [label=above:7]{};
+		\draw (-9.5,-5.5) node (HL26) [label=above:8]{};
+		\draw (-4.5,-5.5) node (HL27) [label=above:9]{};
+		\draw (-11.3,-7.9) node (HL28) [label=above:4]{};
+		\draw (-7.7,-7.9) node (HL29) [label=above:11]{};
+		\draw (-6.3,-7.9) node (HL210) [label=above:5]{};
+		\draw (-2.7,-7.9) node (HL211) [label=above:3]{};
+		\draw (-6.9,-9.7) node (HL212) [label=above:1]{};
+		\draw (-6.9,-11.0) node (HL213) [label=above:(e)]{};
+\end{tikzpicture}
+\end{document}
+
+
+
+
+
+
+\begin{tikzpicture}
+    %\tikzstyle{every node}=[draw,circle,fill=white,minimum size=4pt,
+    %                        inner sep=0pt]
+
+    % First, draw the inner hexagon with a ``pin'' -- namely, (3214)
+    
+
+    \draw (-12,+10) node (A1) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt,label=left:A] 
+    {}  -- ++
+        (0:5.0cm) node (A2) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+    ;
+    \draw (A1) to [out=-35,in=215] (A2);
+    \draw (A1) to [out=+35,in=-215] (A2);
+    
+    \draw (-12.35,+10) node (LA1) [draw,circle,minimum size=16pt]{} 
+    ;
+%    fill=red,draw=none,text=white
+    
+    \draw (-9.6,+10.7) node (L1)[label=above:12]{} 
+    ;
+    \draw (-9.6,+9.9) node (L2) [label=above:10]{} 
+    ;
+    \draw (-9.6,+8.6) node (L3) [label=above:2]{} 
+    ;
+    
+     \draw (-2,+10) node (G1) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt,label=left:] 
+    {}  -- ++
+        (0:5.0cm) node (G2) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt, label=right:G] {}
+    ;
+    \draw (G1) to [out=-35,in=215] (G2);
+    \draw (G1) to [out=+35,in=-215] (G2);
+    
+    
+    \draw (3.35,+10) node (GG1) [draw,circle,minimum size=16pt]{} 
+    ;
+    
+    \draw (0.4,+10.7) node (L4) [label=above:12]{} 
+    ;
+    \draw (0.4,+9.9) node (L5) [label=above:6]{} 
+    ;
+    \draw (0.4,+8.6) node (L6) [label=above:7]{} 
+    ;
+    
+
+    
+    \draw (-6,9) node (H1) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(0:3.0cm) node (H2) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(300:3.0cm) node (H3) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(240:3.0cm) node (H4) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(180:3.0cm) node (H5) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(120:3.0cm) node (H6) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- (H1) % shape is closed, we now connect it to an outer vertex:
+        -- ++(300:3.0cm) node (H7) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] 
+        {};
+
+  \draw (H2) -- (H7);
+  \draw (H3) -- (H7);
+  \draw (H4) -- (H7);
+  \draw (H5) -- (H7);
+  \draw (H6) -- (H7);
+  
+\draw (-6.3,+9.0) node (HL01) [label=above:2]{};
+\draw (-6.3,+9.35) node (HG1) [draw,circle,minimum size=16pt]{};
+\draw (-2.7,+9.0) node (HL02) [label=above:6]{};  
+\draw (-2.7,+9.35) node (HG2) [draw,circle,minimum size=16pt]{};
+\draw (-7.9,+6.1) node (HL03) [label=above:C]{};  
+\draw (-7.9,+6.45) node (HG3) [draw,circle,minimum size=16pt]{};
+\draw (-1.1,+6.1) node (HL04) [label=above:D]{};  
+\draw (-1.1,+6.45) node (HG4) [draw,circle,minimum size=16pt]{};
+\draw (-4.0,+6.3) node (HL05) [label=above:F]{};  
+\draw (-4.0,+6.65) node (HG5) [draw,circle,minimum size=16pt]{};
+\draw (-6.3,+3.1) node (HL06) [label=above:B]{};
+\draw (-6.3,+3.45) node (HG6) [draw,circle,minimum size=16pt]{};
+\draw (-2.7,+3.1) node (HL07) [label=above:E]{};  
+\draw (-2.7,+3.45) node (HG7) [draw,circle,minimum size=16pt]{};
+
+  \draw (-4.5,+9.0) node (HL1) [label=above:12]{};
+  \draw (-7.0,+7.5) node (HL2) [label=above:2]{};
+  \draw (-5.0,+7.5) node (HL3) [label=above:10]{}; 
+  \draw (-4.0,+7.5) node (HL4) [label=above:6]{};
+  \draw (-2.0,+7.5) node (HL5) [label=above:7]{};
+  \draw (-6.0,+6.5) node (HL6) [label=above:8]{};
+  \draw (-3.0,+6.5) node (HL7) [label=above:9]{};
+  \draw (-7.0,+4.5) node (HL8) [label=above:4]{};
+  \draw (-5.0,+4.5) node (HL9) [label=above:11]{}; 
+  \draw (-4.0,+4.5) node (HL10) [label=above:5]{};
+  \draw (-2.0,+4.5) node (HL11) [label=above:3]{};
+  \draw (-4.5,+3.0) node (HL12) [label=above:1]{};  
+
+
+
+    \draw (-6,0.0) node (H21) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(0:3.0cm) node (H22) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(300:3.0cm) node (H23) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(240:3.0cm) node (H24) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(180:3.0cm) node (H25) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- ++(120:3.0cm) node (H26) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] {}
+        -- (H21) % shape is closed, we now connect it to an outer vertex:
+        -- ++(300:3.0cm) node (H27) [draw,circle,fill=white,minimum size=4pt,inner sep=0pt] 
+        {};
+
+  \draw (H22)[line width=1mm] -- (H27);
+  \draw (H21)[line width=1mm] -- (H26);
+  \draw (H23) -- (H27);
+  \draw (H24)[line width=1mm] -- (H27);
+  \draw (H25) -- (H27);
+  \draw (H26) -- (H27);
+  \draw (H25)[line width=1mm] -- (H26);
+  \draw (H24)[line width=1mm] -- (H25);
+  \draw (H23)[line width=1mm] -- (H24);
+  
+\draw (-6.3,-6.0) node (HL201) [label=above:B]{};
+\draw (-6.3,-5.65) node (HG21) [draw,circle,minimum size=16pt]{};
+\draw (-2.7,-6.0) node (HL202) [label=above:E]{};  
+\draw (-2.7,-5.65) node (HG22) [draw,circle,minimum size=16pt]{};
+\draw (-7.9,-3.0) node (HL203) [label=above:C]{};  
+\draw (-7.9,-2.65) node (HG23) [draw,circle,minimum size=16pt]{};
+\draw (-1.1,-3.0) node (HL204) [label=above:D]{};  
+\draw (-1.1,-2.65) node (HG24) [draw,circle,minimum size=16pt]{};
+\draw (-4.0,-2.7) node (HL05) [label=above:F]{};  
+\draw (-4.0,-2.35) node (HG5) [draw,circle,minimum size=16pt]{};
+\draw (-6.3,0.1) node (HL206) [label=above:A]{};
+\draw (-6.3,0.45) node (HG26) [draw,circle,minimum size=16pt]{};
+\draw (-2.7,0.1) node (HL207) [label=above:G]{};  
+\draw (-2.7,0.45) node (HG27) [draw,circle,minimum size=16pt]{};
+
+  \draw (-4.5,-6.0) node (HL21) [label=above:12]{};
+  \draw (-7.0,-1.5) node (HL22) [label=above:2]{};
+  \draw (-5.0,-1.5) node (HL23) [label=above:10]{};
+  \draw (-4.0,-1.5) node (HL24) [label=above:6]{};
+  \draw (-2.0,-1.5) node (HL25) [label=above:7]{};
+  \draw (-6.0,-2.5) node (HL26) [label=above:8]{};
+  \draw (-3.0,-2.5) node (HL27) [label=above:9]{};
+  \draw (-7.0,-4.5) node (HL28) [label=above:4]{};
+  \draw (-5.0,-4.5) node (HL29) [label=above:11]{};
+  \draw (-4.0,-4.5) node (HL210) [label=above:5]{};
+  \draw (-2.0,-4.5) node (HL211) [label=above:3]{};
+  \draw (-4.5,0.0) node (HL212) [label=above:1]{};
+
+\end{tikzpicture}
+
+
+
+
+
+
+   % Second, draw the ``outer backbone''
+    \draw (3214)
+        -- ++(60:2.0cm) node (2314) [label=left:$\LD 2\ 3\ 1\ 4\RD$] {}
+        -- ++(0:2.0cm) node (1324) [label=right:$\LD 1\ 3\ 2\ 4\RD$] {}
+        -- ++(300:2.0cm) node (3124) [label=60:$\LD 3\ 1\ 2\ 4\RD$] {}
+        -- ++(0:2.0cm) node (4123) [label=right:$\LD 4\ 1\ 2\ 3\RD$] {}
+        -- ++(300:2.0cm) node (2143) [label=right:$\LD 2\ 1\ 4\ 3\RD$] {}
+        -- ++(240:2.0cm) node (3142) [label=right:$\LD 3\ 1\ 4\ 2\RD$] {}
+        -- ++(300:2.0cm) node (1342) [label=right:$\LD 1\ 3\ 4\ 2\RD$] {}
+        -- ++(240:2.0cm) node (4312) [label=right:$\LD 4\ 3\ 1\ 2\RD$] {}
+        -- ++(180:2.0cm) node (3412) [label=-60:$\LD 3\ 4\ 1\ 2\RD$] {}
+        -- ++(240:2.0cm) node (2413) [label=right:$\LD 2\ 4\ 1\ 3\RD$] {}
+        -- ++(180:2.0cm) node (1423) [label=left:$\LD 1\ 4\ 2\ 3\RD$] {}
+        -- ++(120:2.0cm) node (3421) [label=-120:$\LD 3\ 4\ 2\ 1\RD$] {}
+        -- ++(180:2.0cm) node (4321) [label=left:$\LD 4\ 3\ 2\ 1\RD$] {}
+        -- ++(120:2.0cm) node (2341) [label=left:$\LD 2\ 3\ 4\ 1\RD$] {}
+        -- ++(60:2.0cm) node (3241) [label=left:$\LD 3\ 2\ 4\ 1\RD$] {}
+        -- ++(120:2.0cm) node (1243) [label=left:$\LD 1\ 2\ 4\ 3\RD$] {}
+        -- ++(60:2.0cm) node (4213) [label=left:$\LD 4\ 2\ 1\ 3\RD$] {}
+        -- (3214);
+
+    % Add missing ``straight'' edges
+    \draw (3241) -- (4231);
+    \draw (3421) -- (2431);
+    \draw (1432) -- (3412);
+    \draw (4132) -- (3142);
+    \draw (2134) -- (3124);

@@ -1,0 +1,65 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{041}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{align*}
+\begin{pmatrix} 
+m+n-3 \\
+m-2 \\
+\end{pmatrix}
++
+\begin{pmatrix} 
+m+n-3 \\
+m-1 \\
+\end{pmatrix}
+=
+\begin{pmatrix} 
+m+n-2 \\
+m-1 \\
+\end{pmatrix}
+\end{align*}
+olduğundan,
+
+\begin{align*}
+R(m,n)  \leq  R(m-1, n) + R(m, n-1)
+\end{align*}
+eşitsizliğinin doğruluğunu göstermemiz yeterlidir.
+
+
+
+Ç, \begin{align*}
+\begin{pmatrix} 
+m+n-2 \\
+m-1 \\
+\end{pmatrix}
+\end{align*}
+
+sayıda düğümü olan bir çizgeyi göstersin. $m>2$ olduğu için,
+\begin{align*}
+\begin{pmatrix} 
+m+n-2 \\
+m-1 \\
+\end{pmatrix} >n 
+\end{align*}
+
+dir. Eğer Ç ayrıtısız bir çizge ise, çizgede n sayıda bağımsız düğüm var demektir. Öyleyse, çizgede ayrıtların da bulunduğunu varsayabiliriz.
+
+$d_{i}$, kertesi sıfırdan büyük bir düğümü göstersin ($k_{i}>$0). $\Omega_{i}$, $d_{i}$ düğümünün kapalı yöresini ve $\Delta $, çizgedeki düğüm kümesini, W ise,
+\begin{align*}
+ W= \Delta  - \tilde{\Omega_{i}}
+\end{align*}
+olarak tanımlanan düğümleri göstersin. Öyleyse önümüzde incelenmesi gereken iki durum vardır.
+
+
+
+\end{document}

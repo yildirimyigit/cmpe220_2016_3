@@ -1,0 +1,23 @@
+\documentclass[11pts]{amsbook}
+\usepackage{../HBSuerDemir}
+\begin{document}
+\hPage{feyzioglu-016}
+expects that we write f(a)=b in place of (a,b) $\in$ f. This is the symbolism that the reader is accustomed to, and remids us of a mapping rule that assigns b to a. However, we will rarely write f(a)=b. We prefer to write
+(a)f=b or af=b, with the function symbol f on the right side of the element a. This might seem odd, and the reader might wonder about this strange order of elements and functions. It takes some time to get accustomed to this way of writing functions on the right, but the advantages of this notation will far outweigh the little trouble it causes at first. This will be amply clear in the sequel. We remark that not every algebraist conforms to this usage, and an isolated notation will have different meanings according as whether the functions are written on the right or on the left. We will point out these differences as occasions arise.
+
+Suppose f is a mapping from A into B and a$\in$A and b$\in$B are such that af=b (in this case, we sometimes write a$\to$b or a$\xrightarrow[]{f}$b and say that f maps a to b). Then b is called the image of a under f. We also say a is a preimage or an inverse image of b under f. Please mark the articles: b is \underline{the} image of a, since a has one and only one image, but a is \underline{a} preimage of b, for b may have many preimages.
+\begin{exmp}
+\textbf{(a)} Let A be a nonempty set and let ı=$\hPairingCurly{(a,a): a\in A}$ $\subseteq$ AxA. Then ı is a function from A into A. In our second notation this reads aı=a. This function is called the \textit{identity mapping} on A. When we want to point out the set A, write $ı_A$ instead of ı. 
+
+Nox let A$\subseteq$B and put $\mu ={(a,a)\in AxB: a\in A}\subseteq AxB.$ Then $\mu$ is a function from A into B. In our second notation, this reads a$\mu$=a. This function is called the \textit{inclusion mapping} from A into B. Writing a$\mu$ for a is a formal way of recalling $A\subseteq$B and A$\in$B.
+
+\textbf{(b)} Let A=\hPairingCurly{1,2,3,4,5} and B=\hPairingCurly{a,b,c,d}. Consider
+\begin{center}
+f=hPairingCurly{(1,b), (2,a), (4,d), (5,d)}.
+\end{center}
+Then f is not a function from A into B since 3$\in$A is not the first component of any ordered pair in f$\subseteq$AxB. Consider
+\begin{center}
+g=\hPairingCurly{(1,b), (2,a), (3,a), (3,b), (4,c), (5,d)}.
+\end{center}
+\end{exmp}
+\end{document}

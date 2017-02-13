@@ -1,0 +1,55 @@
+\documentclass{book}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/14}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{proof}
+\item
+\begin{hEnumerateAlpha}
+\item
+\begin{align*}
+G_{n} & = \sqrt[n]{\left(\frac{2}{1}\right)^{1} \left(\frac{3}{2}\right)^{2} \cdots \left(\frac{n}{n-1}\right)^{n-1} \left(\frac{n+1}{n}\right)^{n}}\\ & =  \sqrt[n]{\frac{1}{1} \cdot \frac{1}{2} \cdots \frac{1}{n-1} \frac{(n+1)^{n}}{n}} = \frac{n+1}{\sqrt[n]{n!}} \rightarrow e.
+\end{align*}
+$$
+\frac{n}{\sqrt[n]{n!} }= \frac{n+1}{\sqrt[n]{n!}} \frac{n}{n+1} \rightarrow e\cdot1 = e
+$$
+\item
+We use the lemma:
+\begin{lem}
+${{a_{n}} \to 0} \implies {{a_{n}^{n}} \to 0}$.
+\end{lem}
+Indeed, since ${a_{n}} \to 0$ given $\varepsilon>0$ there is $N>0$ such that$\hAbs{a_n} = \hAbs{a_n - 0}<\varepsilon$ for all $n>N$. Taking $\varepsilon<1$,
+$$
+\hAbs{a_{n}^{n}}<\varepsilon^n<\varepsilon \implies a_{n}^{n}  \to 0.
+$$
+Now,
+$$
+\frac{e}{\sqrt[n]{n!}}=\frac{e/n}{\sqrt[n]{n!}/n} \rightarrow \frac{0}{1/e} - 0 \implies \frac{e^n}{n!}\rightarrow0.
+$$
+
+
+\end{hEnumerateAlpha}
+\end{proof}
+
+\subsection{Exercises}
+\begin{exercise}
+Which ones of the following are subsequences of $(1-(-1)^n)_1$?
+\begin{center}
+	\begin{tabular}{llll}
+		a) $(1)$ \quad  \quad
+		&b) $(-1)$ \quad  \quad 
+		&c) $(0)$ \quad  \quad
+		&d) $(2)$ \quad  \quad
+	\end{tabular}\\
+	\end{center}
+\end{exercise}
+
+\begin{exercise}
+\label{ex:01:01:002}
+Write two subsequences of
+\end{exercise}
+
+
+\end{document}

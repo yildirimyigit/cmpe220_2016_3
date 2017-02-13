@@ -1,0 +1,49 @@
+The figure is drawn using "Sketch". It is a digital design app for Mac.
+You can find the detailed information about the app from its website: https://www.sketchapp.com/
+
+Every part of the figure is drawn separately.
+Therefore one can easily change anything, or construct any other shape using its parts.
+
+Once you open the figure in Sketch, you will see a structure like this:
+(Dashes represent a group of elements)
+
+- Figure
+  Angle 2
+  - Down Arrow 2
+      Head Down
+      Line Down
+  - Up Arrow 2
+      Head Up
+      Line Up
+  Angle 1
+  - Down Arrow
+      Head Down
+      Line Down
+  - Up Arrow
+      Head Up
+      Line Up
+  - r_0
+      0
+      r
+  - r_λ
+      λ
+      r
+  λ on middle
+  λ on axis
+  Dashed Horizontal Line
+  Dashed Vertical Line
+  Origin
+  - Y Axis
+      y
+      Line
+  - X Axis
+      x
+      Line
+
+To export the figure after you make a change;
+
+1. Select "Figure".
+2. You should see that there is an "Export" section on the lower right part of the app.
+   If it is not there, there should be "Make Exportable", click that.
+3. Make your configurations from that section. (ie. Selecting a format)
+4. Click "Export Figure".

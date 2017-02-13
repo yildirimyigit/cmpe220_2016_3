@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+\hPage{feyzioglu-021}
+
+\\Suppose we have two functions $f: A \rightarrow B$ and $g: B \rightarrow C.$ For any $a \in A,$ we find $af = b \in B$ and then apply $g$ to this element $af = b$ of $B.$ We get an element $c = bg$ of $C.$ In this way, the element $a$ of $A$ is assigned to an element $c$ of $C.$ Here $af = b$ is uniquely determined by $f$ (since $f$ is a mapping) and $bg = c$ is uniquely determined by $g$ (since $g$ is a mapping). So $c$ is uniquely determined: we have a a mapping from $A$ into $C.$
+
+\begin{definition}
+\\Let $f:A \rightarrow B$ and $g:B \rightarrow C$ be two functions. Then
+$$
+h = \{(a,(af)g) \in A \times C: a \in A\} \subseteq A \times C,
+$$
+which is a function from $A$ into $C$, is called the $composition\ of\ f\ with\ g$, or the $product\ of\ f\ by\ g.$
+\end{definition}
+
+\\We write $h = f \circ g$ or more simply $h = fg.$ Thus $a(fg)$ is defined as $(af)g.$
+
+\\In order to compose two functions $f$ and $g,$ we must make sure that the range of the first function $f$ is a subset of the domain of the second function $g.$ Otherwise, their composition is not defined. Note the order of the functions $f$ and $g.$ We apply $f$ first, then $g;$ and we write first $f,$ then $g$ in the composition notation $fg.$ One of the advantages of writing the functions on the right becomes evident here. If we had written the functions on the left, then $fg$ would have meant: first apply $g,$ then $f$ [ as in the calculus, where $(f \circ g )(x) = f(g(x))$] and we would have been reading backwards. Notice also that the domain of $fg$ is the domain of $f.$
+
+\begin{exmp}
+\begin{enumerate}
+    \item [(a)] Let $f: A \rightarrow B$ be a mapping. Then it is easily seen that $fı_B = f$ and $ı_Af = f.$ Indeed, the domains of $fı_B,f,ı_Af$ are all equal to $A$ and
+    $$
+    a(fı_B) = (af)ı_B = af and a(ı_Af) = (aı_A)f = af
+    $$
+    for all $a \in A.$ In particular, if $g:A \rightarrow A$ is a mapping, then $gı_A = g = ı_Ag$
+    \item[(b)] Let $f: \{1,2,3,4\} \rightarrow \{a,b,c,d\}$ and $g: \{a,b,c,d\} \rightarrow \{5,x,U, \varepsilon , \eta \}$ be given by
+    $$1f = a \qquad ag = U$$
+    $$2f = b \qquad bg = x$$
+    $$3f = c \qquad cg = \eta$$
+    $$4f = d \qquad dg = 5$$
+    \\Then we have
+\end{enumerate}
+\end{exmp}
+
+\end{document}

@@ -1,0 +1,61 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{33}
+% ++++++++++++++++++++++++++++++++++++++
+
+
+\newtheorem{defn}{Tanım}[section]
+\newtheorem{thm}{Teorem}[section]
+\hspace{1cm}Şekil 1.5.1a daki çizgeye ilişkin düğüm açıkları:
+
+\begin{align*}
+	&\alpha(d_1)=7 &   &\alpha(d_2)=6  &  &\alpha(d_3)=6 &  &\alpha(d_4)=5 \\
+	&\alpha(d_5)=4 &  &\alpha(d_6)=4  &  &\alpha(d_7)=4 &  &\alpha(d_8)=4 \\
+	&\alpha(d_9)=5 &  &\alpha(d_{10})=6  &  &\alpha(d_{11})=7 \\
+\end{align*}
+\hspace{1cm}Öyleyse, çizgenin yarıçapı 
+$\sigma = 4, 
+$
+özek düğümleri ise
+$ d_5,d_6,d_7,d_8 dir. 
+$
+Bu çizgenin özeği Şekil 1.5.1b de gösterilmiştir.
+$ (d_6,d_4,d_3,d_2,d_1)
+$
+düğümleri bir yarıçapsal yol tanımlar.\\
+\begin{defn}
+	$\Phi =  
+	$
+	enbüyük(i)
+	${\alpha(d_i)}
+	$
+	olarak tanımlanan enbüyük düğüm
+	açıklığına çizgenin \underline{çapı} denir.
+\end{defn}
+
+\hspace{1cm}Tanım 1.5.3 ve 1.5.6 dan, yarıçap ve çap arasında
+$\sigma  \leq \Phi \leq  2\sigma
+$
+eşitsizliğinin geçerli olduğu görülebilir. Şekil 1.5.1 deki çizgenin çapı 7 dir. Dolu çizgelerin kendileri bir özektir ve bu tür çizgeler için
+$\sigma = \Phi = 1.
+$
+Yarıçap ve en büyük kerte değeri K, çizgede olabilecek düğümlerin sayısına bir üst kısıt getirmektedir.
+\begin{thm}
+	Ç(d,a) daki düğümlerin en büyük kertesi K ise,
+	$d \leq  \dfrac{1}{K - 1} (K^{(\sigma+1)}-1)
+	$
+	eşitsizliği doğrudur.Bu eşitsizlik ancak dolu çizgeler için eşitliğe dönüşür.
+\end{thm}
+
+
+\end{document}

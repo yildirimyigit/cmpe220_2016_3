@@ -1,0 +1,67 @@
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\begin{document}
+
+
+\hPage{b1p2/282}
+
+	\begin{proof}
+		Let $A\neq0$.Multiplying (1) by $4A$ and completing to (perfect) square:
+		
+		\begin{align*}
+			(2Ax+By+D)^2-(By+D)^2+4A(y^2+4AEy)+4AF&=0\\
+			(2Ax+By+D)^2-\Big((B^2-4AC)y^2+2(BD-AE)y+(D^2-4AF)\Big)&=0
+		\end{align*}
+
+		To be factorable iff the bracket square.Then
+
+		\begin{align*}
+		\delta &= (BD-2AE)^2-(B^2-4AC)(D^2-4AF)=0\\
+		\delta &=-4A(4ACF+BDE-AE^2-CD^2-FB^2)=-2AT\Rightarrow T=0
+		\end{align*}
+		
+		When $A=0$, T becomes: $2(BDE-CD^2-FB^2):$ and (1) reduces to
+
+		\begin{center}
+		$Bxy+Cy^2+Dx+Ey+F=0$
+		\end{center}
+		
+		Multiplying it by $4C$ and completing to square we have:
+		
+		\begin{center}
+		$(2Cy+Bx+E)^2-\Big((Bx+E)^2-4CDx-4CF\Big)=0$
+		\end{center}
+		
+		where bracket is to be a perfect square implying $T=0$.
+	
+	\end{proof}
+
+	The proof can be done considering the coefficient $C$ instead of $A$, in a similar manner.
+	
+	\par The following theorem states the cases where the second degree curve is real or imaginary.
+
+	\begin{thm}
+ 	
+ 		A second degree curve given by 
+		\begin{center}
+		$Ax^2+Bxy+Cy^2+Dx+Ey+F=0 (A^2+B^2+C^2\neq 0)$ (1)
+		\end{center}
+	is imaginary (has no graph) iff
+		
+		\begin{enumerate}
+    			\item(Elliptic Case) $\Delta<0$ and $HT>0 (H=A+C)$
+    			\item (Parabolic Case)$\Delta=0$ and $\psi<0(\psi=\Delta'+\Delta''=D^2-4AF+E^2-4CF)$
+		\end{enumerate}
+	
+	\end{thm}
+
+	\begin{proof}
+			If the curve is real it contains at least one point in $\hSoR^2$.Therefore the family $y=k (k\in \hSoR) $intersects it at one or more 						point. Setting $y=k$ in (1) one obtains the equation.	
+	\end{proof}
+
+\end{document}  
+
+

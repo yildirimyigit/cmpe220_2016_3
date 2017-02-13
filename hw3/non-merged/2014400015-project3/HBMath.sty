@@ -1,0 +1,321 @@
+% cmpe220handoutsIncludes.sty
+% HB -------------------------------------------
+% version 20141130
+% - version 20141105
+% - version 20110219
+
+\ProvidesPackage{HBMath}
+
+\usepackage{etex}  % prevent counter errors
+
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+
+
+% AMS packages 
+%\usepackage{ams}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%\usepackage{ifpdf}
+%\ifpdf
+%   % put here packages only for the PDF:
+%   \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+%   \usepackage{hyperref} 
+%\else
+%   % put here packages only for the DVI:
+%\fi
+
+
+%
+%
+\usepackage{color}
+	\definecolor{darkred}{rgb}{0.8,0.1,0.1}
+	\definecolor{darkgreen}{rgb}{0,0.5,0}
+	\definecolor{darkblue}{rgb}{0,0,0.5}
+%% hyperlink and toc for PDF
+\usepackage{hyperref} % hyperlink and toc for PDF
+%%\usepackage[colorlinks]{hyperref}
+%\hypersetup{colorlinks}
+%\hypersetup{colorlinks,
+%linkcolor=darkblue,
+%	filecolor=darkgreen,
+%	urlcolor=darkred,
+%	citecolor=darkblue 
+%}
+
+\usepackage{url}
+
+\usepackage{lastpage} % last page % use \pageref{LastPage}
+
+
+% == algorithm ==
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\renewcommand{\algorithmiccomment}[1]{// #1}
+%\usepackage[linesnumbered,ruled]{algorithm2e}
+
+
+% graphics 
+\usepackage{epstopdf}
+\usepackage[usenames,dvipsnames]{pstricks}  
+\usepackage{epsfig} 
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[all]{xy}
+	\CompileMatrices % xy
+\usepackage{tikz}
+	\usetikzlibrary{shapes,snakes}
+\usepackage{pst-plot}
+\usepackage{pst-node}
+
+
+\usepackage{array}
+
+
+
+% multicolumn
+\usepackage{multicol}
+%\begin{multicols}{2}
+%bb
+%\columnbreak
+%aa
+%\end{multicols}
+
+% to cancel expressions
+\usepackage[makeroom]{cancel}
+
+
+%\marginpar{Add formula for curvature}
+
+%\usepackage{minitoc}
+
+
+
+
+% ========================================================================
+% Enumeration
+\usepackage{enumitem}
+
+\newenvironment{hItemize}[1]
+{\begin{enumerate}[label=#1.,leftmargin=*,topsep=-10pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
+{\end{enumerate}}
+
+\newenvironment{hItemizeBullet}
+{\begin{enumerate}[label=$\bullet$,leftmargin=*,topsep=-10pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
+{\end{enumerate}}
+
+\newenvironment{hEnumerateRoman}
+{\begin{enumerate}[label=\roman*.,leftmargin=*,topsep=-10pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
+{\end{enumerate}}
+
+\newenvironment{hEnumerateAlpha}
+{\begin{enumerate}[label=\alph*) ,leftmargin=*,topsep=-10pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
+{\end{enumerate}}
+
+\newenvironment{hEnumerateArabic}
+{\begin{enumerate}[label=\arabic*.,leftmargin=*,topsep=-10pt,partopsep=0pt,parsep=0pt,itemsep=0pt]}
+{\end{enumerate}}
+
+
+% ========================================================================
+%\input{hbHeader AMS
+%       Theorem environments
+
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[section]
+\newtheorem*{notation}{Notation}
+\newtheorem{exmp}{Example}[section] % @HB
+\newtheorem{exercise}{}[section] % @HB % exercises
+%\newtheorem{exercise}{Exercise}[section] % @HB % exercises
+
+
+\theoremstyle{remark}
+\newtheorem{hQuestion}{Question}[section]
+
+\theoremstyle{remark}
+\newtheorem{hReminder}{Reminder}[section]
+
+\theoremstyle{remark}
+\newtheorem{hProperty}{Property}[section]
+
+\theoremstyle{remark}
+\newtheorem{hNotation}{Notation}[section]
+
+\theoremstyle{remark}
+\newtheorem{hApplication}{Application}[section]
+
+\theoremstyle{remark}
+\newtheorem{hSummary}{Summary}[section]
+
+
+%%%================= Exam: Question No =======================================
+\newcounter{hQuestionNo}
+\newcommand{\hExamQuestion}%
+	{\stepcounter{hQuestionNo} \section*{Q\arabic{hQuestionNo} [20 points] }}
+%%%===========================================================================
+%%%================= Exam: solution on/off flag ==============================
+\newif\ifSolutions
+\Solutionstrue
+%\Solutionsfalse
+\def\answerBegin{\ifSolutions\ \\ \textbf{Solution.} \\}
+\let\answerEnd=\fi
+%%%===========================================================================
+
+
+% ========================================================================
+% References
+\newcommand{\reffig}[1]{Fig.~\ref{#1}}
+\newcommand{\reftbl}[1]{Table~\ref{#1}}
+\newcommand{\refsec}[1]{Sec.~\ref{#1}}
+\newcommand{\refthm}[1]{Theorem~\ref{#1}}
+\newcommand{\reflem}[1]{Lemma~\ref{#1}}
+\newcommand{\refdef}[1]{Definition~\ref{#1}}
+\newcommand{\refeq}[1]{Eq.~\ref{#1}}
+
+
+\newcommand{\prob}{\mathbb{P}}			% probability
+\newcommand{\hDif}{\mathrm{d}}			% differential dx
+
+\newcommand{\hAbs}[1]{\ensuremath{\left \lvert \, #1 \, \right \rvert} } % |x|
+
+
+% ========================================================================
+
+% operators: logic
+\newcommand{\hAnd}{\ensuremath{\  \land \ }} 
+\newcommand{\hOr}{\ensuremath{\  \lor \ }} 
+\newcommand{\hForAll}[2]{\ensuremath{\forall #1 \  \left[ #2 \right]}} 
+\newcommand{\hForAllNot}[2]{\ensuremath{\not \forall #1 \  \left[ #2 \right]}} 
+\newcommand{\hExists}[2]{\ensuremath{\exists #1 \  \left[ #2 \right]}} 
+\newcommand{\hExistsNot}[2]{\ensuremath{\not \exists #1 \  \left[ #2 \right]}} 
+\newcommand{\hImplies}{\ensuremath{\ \longrightarrow \ }} % if-then
+\newcommand{\hImpliesDouble}{\ensuremath{ \ \longleftrightarrow \ }} % iff
+\newcommand{\hImpliesP}{\ensuremath{\ \Longrightarrow \ }} % if-then
+\newcommand{\hImpliesDoubleP}{\ensuremath{ \ \Longleftrightarrow \ }} % iff
+%\newcommand{\hByDefinition}{\ensuremath{ \ \longleftrightarrow} \ } % by definition
+% definitions
+\newcommand{\hDefinitionIFF}{\ensuremath{ \ \overset{\Delta}{\longleftrightarrow}} \ } % <-->
+%\newcommand{\hDefinitionEqual}{\ensuremath{ \ \overset{\Delta}{=}} \ } % =
+\newcommand{\hDefinitionEqual}{\ensuremath{ \ \triangleq} \ } % =
+\newcommand{\hDefinitionEquiv}{\ensuremath{ \ \overset{\Delta}{\equiv}} \ } % =
+
+
+% set theory
+\newcommand{\hSetA}[1]{\ensuremath{\left \{ \, #1 \,  \right \}}}
+%\newcommand{\hSetB}[2]{\ensuremath{\left \{ \, #1 \; | \; #2 \, \right \}}}
+\newcommand{\hSetB}[2]{\ensuremath{\left \{ \, #1 \mid #2 \, \right \}}}
+\newcommand{\hRelation}[3]{\ensuremath{ #1 \, #2 \, #3 }}
+\newcommand{\hFunction}[3]{\ensuremath{ #1 \, \colon \, #2  \to #3 }}
+\newcommand{\hDom}{\ensuremath{\text{dom}}}
+\newcommand{\hRan}{\ensuremath{\text{ran}}}
+
+%x \mapsto f(x)
+
+% set theory: operators
+\newcommand{\hUnion}{\ensuremath{\cup}} 
+\newcommand{\hIntersection}{\ensuremath{\cap}} 
+\newcommand{\hComplement}[1]{\ensuremath{\overline{#1}}} 
+\DeclareMathOperator{\hSetDiff}{\smallsetminus}
+
+
+% poset
+\DeclareMathOperator{\hLub}{\mathrm{lub}}
+\DeclareMathOperator{\hGlb}{\mathrm{glb}}
+
+% algebraic structures
+\newcommand{\hSystemB}[2]{\ensuremath{ \left[ #1, #2 \right] }}
+\newcommand{\hSystemC}[3]{\ensuremath{ \left[ #1, #2, #3 \right] }}
+
+% pairs
+\newcommand{\hPairing}[2]		{\ensuremath{\left #1 \, #2 \, \right #2} } % |x|
+\newcommand{\hPairingBar}[1]	{\ensuremath{\left \lvert \, #1 \, \right \rvert} } % |x|
+\newcommand{\hPairingBraket}[1]	{\ensuremath{\left[ \, #1 \,\right] }} % [x]
+\newcommand{\hPairingParan}[1]	{\ensuremath{\left(  \, #1 \,  \right) }} % (x)
+\newcommand{\hPairingCurly}[1]	{\ensuremath{\left \{  \, #1 \,  \right \} }} % {x}
+\newcommand{\hPairingCeil}[1]	{\ensuremath{\lceil  \, #1 \,  \rceil }} % ceil(x)
+\newcommand{\hPairingFloor}[1]	{\ensuremath{\lfloor  \, #1 \,  \rfloor }} % floor(x)
+
+% number theory: operators
+%\newcommand{\hDivides}{\ensuremath{ \, | \, }} 
+%\newcommand{\hDividesNot}{\ensuremath{ \, \not | \, }} 
+\newcommand{\hDivides}{\ensuremath{ \, \mid \, }} 
+\newcommand{\hDividesNot}{\ensuremath{ \, \nmid \, }} 
+%\newcommand{\hDiv}{\ensuremath{\ \text{div} \ }} 
+\newcommand{\hDiv}{\ensuremath{\ \mathrm{div} \ }} 
+%\DeclareMathOperator{\hDivides}{\vert}
+
+% functions
+\DeclareMathOperator{\hLg2}{log_{2}}
+\DeclareMathOperator{\hH2}{H_{2}}
+\DeclareMathOperator{\hBinaryEntropy}{H_{2}}
+%\newcommand{\hH2}[1]{\ensuremath{ \binaryEntropy \left( #1 \right)}}
+%\newcommand{\hH2}[1]{\ensuremath{H_{}{2} \left( \, #1 \,\right) }}
+
+
+% common sets
+\newcommand{\hSoN}  {\ensuremath{\mathbb{N}}}      % set of Natural Numbers
+\newcommand{\hSoNp} {\ensuremath{\mathbb{N}^{+}}} % set of Natural +
+\newcommand{\hSoZ}  {\ensuremath{\mathbb{Z}}}      % set of Integers
+\newcommand{\hSoZp} {\ensuremath{\mathbb{Z}^{+}}} % set of Integers +
+\newcommand{\hSoZn} {\ensuremath{\mathbb{Z}^{-}}} % set of Integers -
+\newcommand{\hSoZnn}{\ensuremath{\mathbb{Z}_{\ge 0}}} % set of Integers non negative
+\newcommand{\hSoZnp}{\ensuremath{\mathbb{Z}_{\le 0}}} % set of Integers non positive
+\newcommand{\hSoQ}  {\ensuremath{\mathbb{Q}}}      % set of Rationals 
+\newcommand{\hSoQp} {\ensuremath{\mathbb{Q}^{+}}} % set of Rationals +
+\newcommand{\hSoQn} {\ensuremath{\mathbb{Q}^{-}}} % set of Rationals -
+\newcommand{\hSoQnn}{\ensuremath{\mathbb{Q}_{\ge 0}}} % set of Rationals non negative
+\newcommand{\hSoQnp}{\ensuremath{\mathbb{Q}_{\le 0}}} % set of Rationals non positive
+\newcommand{\hSoR}  {\ensuremath{\mathbb{R}}}      % set of Real Numbers
+\newcommand{\hSoRp} {\ensuremath{\mathbb{R}^{+}}} % set of Real +
+\newcommand{\hSoRn} {\ensuremath{\mathbb{R}^{-}}} % set of Real -
+\newcommand{\hSoRnn}{\ensuremath{\mathbb{R}_{\ge 0}}} % set of Reals non negative
+\newcommand{\hSoRnp}{\ensuremath{\mathbb{R}_{\ge 0}}} % set of Reals non positive
+\newcommand{\hSoC}  {\ensuremath{\mathbb{C}}}      % set of Complex Numbers
+\newcommand{\hSoCmZ}{\hSoC \smallsetminus \{ 0 \}} % C - 0
+%
+\newcommand{\hSoPrimes}{\ensuremath{\mathbb{P}}} % set of Prime Numbers
+\newcommand{\hSoTruth}{\ensuremath{\left \{ T, F \right \}}} % {T, F}
+%\newcommand{\hSoBinary}{\ensuremath{\left \{ 0, 1 \right \}}} % {0, 1}
+\newcommand{\hSoBits}{\ensuremath{\mathbb{B}}} % set of Bits
+%
+\newcommand{\hSoFunctions}[2]{\ensuremath{#2^{#1}}} % set of functions from 1to2
+\newcommand{\hSoSubsets}[1]{\ensuremath{2^{#1}}} % set of subsets of 1
+\newcommand{\hSoPowerSet}[1]{\ensuremath{\mathcal{P}(#1)}} % power set of 1
+
+
+
+
+
+
+%\newcommand{\hNextLine}{\hfill \\  }  % new line after theorem env.
+\newcommand{\hNewLine}{\hfill \\  }  % new line after theorem env.
+
+
+%\newcommand{\hEmphasis}[1]{\textcolor{red}{\textit{#1}}}	% emphasis
+
+% Definition and index handling
+% ---------------------------------------------------
+%\newcommand{\hDefined}[1]{\textcolor{black}{\textit{#1}}}	
+\newcommand{\hDefined}[1]{\textcolor{darkred}{\textit{#1}}}	
+\newcommand{\hDefinedC}[1]{\textcolor{darkred}{\textit{#1}}
+	\index{indexConcept}{#1}
+}	
+\newcommand{\hDefinedN}[1]{\textcolor{red}{\textit{#1}}
+	\index{indexNotation}{#1}
+}	
+
+

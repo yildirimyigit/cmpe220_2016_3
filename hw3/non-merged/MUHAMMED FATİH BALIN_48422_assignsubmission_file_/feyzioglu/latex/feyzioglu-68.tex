@@ -1,0 +1,55 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+\usepackage{multirow}
+\usepackage{calc}
+
+\begin{document}
+	\hPage{feyzioglu/68}\footnote{proof continued, because of this footnote it spans 2 pages but actually it fits in one page.}
+	\begin{proof}
+		\begin{align*}
+			y \circ (a \circ x) &= y \circ e\\
+			(y \circ a) \circ x &= y\\
+			e \circ x &= y\\
+			x &= y
+		\end{align*}
+	\end{proof}
+	This completes the proof.\\
+	
+	According to Lemma 7.3, a group $(G, \circ)$ has one and only one right
+	identity, which is also the unique left identity. Therefore, we can refer
+	to it as \textit{the} identity of the group, without mentioning right or left.
+	Similarly, since any $a \in G$ has a unique right inverse, which is also the
+	unique left inverse of $a$, we may call it the inverse of a. The inverse of $a$
+	is uniquely determined by $a$; for this reason, we introduce a notation
+	displaying the fact that it depends on $a$ alone. We write $a^{-1}$ for the
+	inverse of $a$ (read: $a$ inverse). Thus $a^{-1}$ is the unique element of $G$ such
+	that $a \circ a^{-1} = a^{-1} \circ a = e$, where e is the identity of the group.\\
+	
+	The group axioms, as presented in Definition 7.2, assert the existence of
+	a right identity, and a right inverse of each element. We proved in
+	Lemma 7.3 that a right identity is also a left identity and a right inverse
+	of an element is also a left inverse of the same element. One could give
+	an alternative definition of a group by so modifying the axioms that
+	they assert the existence of a left identity, and a left inverse of each
+	element. A lemma analogous to Lemma 7.3 would would prove then that there
+	is a unique left identity, which is also a unique right identity and that
+	each element has a unique left inverse, which is also a unique right
+	inverse of that element. Thus the existence of a right identity plus right
+	inverses lead to the same algebraic structure (group) as the existence of
+	a left identity plus left inverses.\\
+	
+	However, existence of a right identity and the existence of left inverses
+	do not always produce a group. For example, consider the set $\mathbb{Z} \times \mathbb{Z}$. For
+	any $(a, b), (c, d) \in \mathbb{Z} \times \mathbb{Z}$, we put $(a, b) \vartriangle (c, d) = (a, b + d)$. Let us check if
+	$(\mathbb{Z} \times \mathbb{Z}, \vartriangle)$ is a group.
+	\begin{hEnumerateRoman}
+		\item $\vartriangle$ is a binary operation on $\mathbb{Z} \times \mathbb{Z}$ since $a \in \mathbb{Z}, b + d \in \mathbb{Z}$
+		whenever $a, b, c, d \in \mathbb{Z}$. So $\mathbb{Z} \times \mathbb{Z}$ is closed under $\vartriangle$.
+		\item Is $\vartriangle$ associative? For any $(a, b), (c, d), (e, f) \in \mathbb{Z} \times \mathbb{Z}$, we ask
+		\begin{align*}
+			[(a, b) \vartriangle (c, d)] \vartriangle (e, f) &\stackrel{?}{=} (a, b) \vartriangle [(c, d) \vartriangle (e, f)]\\
+			(a, b + d) \vartriangle (e, f) &\stackrel{?}{=} (a, b) \vartriangle (c, d + f)
+		\end{align*}
+	\end{hEnumerateRoman}
+\end{document}

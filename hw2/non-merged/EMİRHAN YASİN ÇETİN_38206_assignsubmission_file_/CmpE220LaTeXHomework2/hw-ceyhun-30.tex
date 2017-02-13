@@ -1,0 +1,73 @@
+\documentclass[11pt, twoside, a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\linespread{1.6}
+
+\usepackage{natbib}
+
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\geometry{includeheadfoot,
+  headheight=14pt,
+  left=4cm,
+  right=2cm,
+  top=1cm,
+  bottom=2.5cm}
+
+\usepackage{fancyhdr}
+\usepackage[turkish]{babel} 
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\setcounter{page}{30}
+\fancyfoot[LE,RO]{\thepage}
+\pagestyle{fancy}
+
+\begin{document}
+
+\textbf{Tanım} \hspace{0.7cm} 1.4.9 \hspace{0.7cm} öb(Ç) olarak gösterilen, çizgedeki öbeklerin sayısına \textit{\underline{çizge öbek sayısı}} \vspace{0.25cm}
+\hspace{4.25cm} denir. 
+
+\textbf{Tanım} \hspace{0.7cm} 1.4.10 \hspace{0.4cm} öb($d_i$) olarak gösterilen, $d_i$ düğümünün ilgili bulunduğu \vspace{0.25cm}
+
+\hspace{3.7cm} öbeklerin sayısına,  \textit{\underline{düğüm öbek sayısı}} denir.	\vspace{0.25cm}
+
+Örneğin, Şekil 1.4.2a da verilen çizge için,
+
+\begin{center}
+öb(Ç) = $8$
+\end{center}
+
+öb($d_0$) = $4$          \hspace{2cm}                   öb($d_1$) = $2$                 \hspace{2cm}                 öb($d_2$) = $2$                \hspace{2cm}                        öb($d_3$) = $2$	  \vspace{0.25cm}
+
+öb($d_4$) = $2$	 \hspace{2cm}	öb($d_5$) = $1$	 \hspace{2cm}	öb($d_6$) = $1$	 \hspace{2cm}	öb($d_7$) = $1$ 	\vspace{0.25cm}
+
+öb($d_8$) = $1$	 \hspace{2cm}	öb($d_9$) = $1$	 \hspace{2cm}	öb($d_10$) = $1$  \hspace{1.85cm}	öb($d_{11}$) = $1$	\vspace{0.25cm}
+
+öb($d_{12}$) = $1$ \vspace{0.25cm}
+
+olduğu görülebilir. Çizgedeki öbek sayıları ile ilgili aşağıdaki teoremi kanıtlamadan \vspace{0.25cm}
+\hspace{0.5cm} vereceğiz. \vspace{0.25cm}
+
+\textbf{Teorem} \hspace{0.7cm} 1.4.1 \hspace{0.7cm} Çizgedeki çizge öbek, düğüm öbek ve parça sayıları, 
+
+\begin{center}
+$$ ob(C) =  p +  \sum_{(i)} [ob(d_i) - 1] $$
+\end{center}
+
+\hspace{4.5cm}  eşitliğini sağlar. \vspace{0.25cm}
+
+Teorem 1.4.1 in doğruluğu, Şekil 1.4.2a daki çizgeden ($p=1$) hemen görülecektir.
+
+\end{document}
+

@@ -1,0 +1,72 @@
+\documentclass{amsbook}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+\hPage{b1p1/346}
+\pagenumbering{gobble}
+
+\begin{equation*}
+    I = uv - \int v du = x \arcsin{x} - \int\frac{x dx}{\sqrt{1-x^2}}
+\end{equation*}
+
+\indent The new integral is easily evaluated by the substitution $t = 1 - x^2, dt = -2x$:
+
+\begin{equation*}
+    \int\frac{x dx}{\sqrt{1-x^2}} = -\frac{1}{2} \int t^{-\frac{1}{2}} dt = -\frac{1}{2}
+    \frac{t^{\frac{1}{2}}}{{\frac{1}{2}}} + c = -\sqrt{t} + c,    
+\end{equation*}
+
+\begin{equation*}
+    I = x \arcsin{x} - \sqrt{1-x^2} + c    
+\end{equation*}
+
+\begin{exmp}
+     Evaluate $I(x) = \int x^2\ \sin{x}\ dx$ with $I(\frac{\pi}{2}) = 3$.
+\end{exmp}
+
+\subsection*{\underline{Solution}}
+The setting $u = \sin{x}, dv = x^2 dx$ obviously does not work, since $v = x^3 / 3$ leads to a more complicated integral.
+
+Trying
+\begin{align*}
+u&=x^2,           &  dv &=sinx\ dx\\
+du&=2x dx,         &  v&=-cosx,
+\end{align*}
+we have
+\begin{equation*}
+    I(x) = -x^2 \cos{x} + 2 \int x \cos{x}\ dx    
+\end{equation*} 
+where for new integral "by parts" is needed again:
+
+\begin{align*}
+u&=x,           &  dv &=cosx\ dx\\
+du&=dx,         &  v&=sinx
+\end{align*}
+
+\begin{align*}
+ I(x) &= -x^2 cos{x} + 2(x sin{x} -\int sin{x}\ dx ) \\
+      &= -x^2 \cos{x} + 2 x \sin{x} + 2 \cos{x} +\ c,
+\end{align*}
+
+\begin{equation*}
+    I (\pi/2) = 3 \Rightarrow 0 + \pi + 0 + c  = 3 \Rightarrow c = 3 -\pi
+\end{equation*}
+and 
+\begin{equation*}
+    I(x) = -x^2 \cos{x} + 2x \sin{x} + 2 \cos{x} + 3 - \pi .
+\end{equation*}
+
+The next example differs from previous ones by arrival at the original integral during process of integration: \\
+
+\begin{exmp}
+      $I = \int \cos^{4}{x}$
+\end{exmp}
+
+\subsection*{\underline{Solution}}
+\begin{align*}
+u&=\cos^{3}{x},           &  dv &=\cos{x}\ dx\\
+du&=-3\cos^{2}{x}\ \sin{x}\ dx,         &  v&=\sin{x}
+\end{align*}
+
+\end{document}

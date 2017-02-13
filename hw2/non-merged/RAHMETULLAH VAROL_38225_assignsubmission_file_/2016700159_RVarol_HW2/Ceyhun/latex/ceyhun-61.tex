@@ -1,0 +1,55 @@
+
+\documentclass[11pt]{amsbook}
+\usepackage[turkish]{babel}
+
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+\usepackage{arydshln,leftidx,mathtools}% http://ctan.org/pkg/{arydshln,leftidx,mathtools}
+\usepackage{lipsum}
+
+\begin{document}
+\[
+\bar P_j = \left[ 
+\begin{array}{c@{}:c@{}}
+  \begin{array}{cc}
+         \hfill & \hfill \\
+         \bar P_{j-1} & \hfill \\
+         \hfill & \hfill \\
+  \end{array} &
+  \begin{array}{cc}
+         0 \\[-5pt] \vdots \\[-4pt] 1 \\[-4pt] 0 \\[-4pt] \vdots \\
+  \end{array} \\
+  \hdashline \mathbf{0} & \mathbf{1} \\
+\end{array}\right]
+	\begin{array}{cc}
+         \quad \\[-5pt] \quad \\[-4pt] \leftarrow \text{m ninci dizek} \\ \quad \\[-4pt] \quad \\ \quad
+	\end{array} \\
+\]  
+
+\begin{enumerate}
+	\item[b)] $F_j$ nin, toplandıklarında hep birlerden oluşan yeni bir dizek verecek $m$ ve $n$ gibi iki dizeği varsa, ve $P_{j-l}$ in $m$. ve $n$ ninci dizeklerinde bunlardan başka sıfır olmayan terim yoksa
+
+\[
+\bar P_j = \left[ 
+\begin{array}{c@{}:c@{}}
+  \begin{array}{cc}
+         \hfill & \hfill \\
+         \bar P_{j-1} & \hfill \\
+         \hfill & \hfill \\
+  \end{array} &
+  \begin{array}{cc}
+         0 \\[-5pt] \vdots \\[-4pt] 1 \\[-4pt] 0 \\[-4pt] \vdots \\[-4pt] 1 \\[-4pt] 0 \\[-4pt] \vdots \\
+  \end{array}
+\end{array}\right]
+  \begin{array}{cc}
+         \quad \\[-5pt] \quad \\[-4pt] \leftarrow \text{m ninci dizek} \\[-4pt] \quad \\[-4pt] \quad \\[-4pt] \quad \\[-4pt] \leftarrow \text{n ninci dizek} \\[-4pt] \quad \\
+  \end{array}
+\]  
+
+olacaktır.
+
+Eğer $F_j$ de, a) ya da b) deki koşulları sağlayan nitelikte dizekler yoksa, $A_j$ anladığımız anlamda bir çizge ile gerçekleşemez. $A_j$ nin gerçekleşebilmesi için yukarıda açıklanan durumların bir yeter ve gerek koşul oluşturdukları gözden kaçmamalıdır. Durum 2 de a) ve b) de öne sürülen koşulların birlikte sağlandığı
+durumlarda eğer bir seçenek çözüme gitmezse, öbür bütün seçeneklerin de denenmesi gerekebilir.
+\end{enumerate}
+\end{document}

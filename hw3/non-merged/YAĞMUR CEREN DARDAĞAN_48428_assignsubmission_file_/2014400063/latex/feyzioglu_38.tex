@@ -1,0 +1,40 @@
+\documentclass{amsbook}
+\usepackage{../HBSuerDemir}
+\author{yagmur.dardagan }
+\date{December 2016}
+\begin{document}
+\hPage{feyzioglu-038}
+\setcounter{page}{38}
+\noindent We subtract \textit{b} from \textit{a} until we get a number \textit{r} smaller than \textit{b}. This is exactly \\
+what happens when we perform division, and this is essentially the proof of Theorem 5.3.
+\\
+\noindent Given any two integers \textit{a},\textit{b} , an integer \textit{d} is said to be a \textit{common divisor of a and b}\\ if \textit{$d\hDivides a$} and \textit{$d \hDivides b$}. Using the division algorithm, we can show that any two integers have a greatest common divisor, provided only that not both of them are equal to zero. \\
+
+\begin{thm}
+Let \textit{$a,b \in \hSoZ$, not both zero. Then there is a unique integer such that}
+    \begin{hEnumerateRoman}
+    
+        \item \textit{$d\hDivides a $and $d \hDivides b$} 
+        \item \textit{for all $d_1 \in \hSoZ$, if $d_1\hDivides a_1$ and $d_1\hDivides b_1$, then $d_1\hDivides d$ } 
+        \item \textit{$d > 0$} 
+    \end{hEnumerateRoman}
+
+\end{thm}
+
+\begin{proof}
+The proof will be similar to the proof of Theorem 5.3 .We consider the set \textit{ U =  $\{ ax - by \in \hSoZ : x,y \in \hSoZ\}$}. Now \textit{U} contains positive integers. (For example , $a(\mp 1) - b0$ is positive when $a \neq 0$ and the 
+sign is chosen suitably. When $a =0$, $a1 - b(\mp 1) = \pm b $ is positive, provided we choose the sign appropriately,  since $b \neq 0$ when $ a = 0$ by hypothesis.) We choose the smallest positive integer in \textit{U}. Let it be called \textit{d}. So \textit{$d > 0$} and \textit{d} satisfies (iii). Moreover, if $d_1 \hDivides a$ and $d_1 \hDivides b$,   then $d_1 \hDivides ax-by$ for any $x,y \in \hSoZ$ by Lemma 5.2(7), so $d_1$ divides every element of \textit{U}. In particular, $d_1 \hDivides d$. Thus (ii) is satisfied. It remains to prove(i).\\
+\\
+\noindent By the very definition of \textit{U}, we have $d = ax_0 - by_0$ for some $x_0,y_0 \in \hSoZ$. We \\ want to prove $d \hDivides a$ and $d \hDivides b$. Using the division algorithm, we write \textit{$a = qd $} \\ where \textit{q} and \textit{r} are integers and $0 \leq r < d$. Then \\
+    \begin{align*}
+        a &= q(ax_0 - by_0) +r,\\ 
+        r &= a - q(ax_0 - by_0)\\
+        &= a(1 - qx_0) - b(-y_0) ,with  1 - qx_0, -y_0 \in \hSoZ;
+    \end{align*}
+       \bigbreak
+\noindent so \textit{r} is an element of \textit{U} and $0 \leq r < d$. Since \textit{d} is the smallest positive \\ integer in \textit{U} and $r < d$, we have necessarily $r = 0$. This gives $a = qd$,so $ d \hDivides a$ \\ The proof of $d \hDivides b$ is similar and will be omitted    
+\end{proof}
+\bigbreak
+\noindent Now the uniqueness of \textit{d}. Suppose $ d^{'}$ satisfies the conditions (i), (ii), (iii), too. Then $d^{'} \hDivides a$, $d^{'} \hDivides b$ by (i), and so $d^{'} \hDivides d$ by (ii). Also, $d \hDivides a$ , $d \hDivides b$ by (i), and so 
+
+\end{document}

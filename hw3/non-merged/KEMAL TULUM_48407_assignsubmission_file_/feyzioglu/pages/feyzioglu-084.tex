@@ -1,0 +1,67 @@
+%Correct the file name.
+%X: book number
+%Y: part number
+%ZZZ: page number in three digits. So page 3 would be 003.
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu-084}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{enumerate}
+	\item \footnote{This item begins within the previous page.}
+	We must prove this relation also when $m \geq 0$, $n \leq 0$; $m \leq 0$, $n \geq 0$; $m \leq 0$, $n \leq 0$. Changing our notation 
+	(replacing m,n by $\hAbs{m}$, $\hAbs{n}$) we must prove (i) $a^ma^{-n} = a^{m-n}$; (ii) $a^{-m}a^{n} = a^{-m+n}$; (iii) $a^{-m}a^{-n} = a^{-m+(-n)}$ 
+	for all $m, n \geq 0$.
+	\begin{enumerate}[label=(\roman*)]
+
+		\item \par Let $m,n \geq 0$. If $m \geq n$, then $a^{m-n}a^n =  a^m$ by (e). Multiplying by
+		$(a^n)^{-1}= a^{-n}$ on the right, we get $a^{m-n} = a^ma^{-n}$ if $m \geq n$. Taking the inverses
+		of both sides of this equation, we get, in case 
+		$m \geq n$, $a^n a^{-m} = [(a^n)^{-1}]^{-1}(a^m)^{-1} = [a^m(a^n)^{-1}]^{-1} = (a^ma^{-n})^{-1} = (a^{m-n})^{-1} = a^{-(m-n)} = a^{-m+n} $.  
+		Interchanging $m$ and $n$, we get $a^ma^{-n} = a^{-n+m} = a^{m-n}$ in case $n \geq m$. So $a^m a^{-n} = a^{m-n}$,
+		irrespective of whether $m \geq n$ or $n \geq m$.
+
+		\item  Let $m,n \geq 0$. If $n \geq m$, then $a^{m}a^{-m+n} =  a^n$ by (e). Multiplying by
+		$(a^m)^{-1}= a^{-m}$ on the left, we get $a^{-m+n} = a^{-m}a^{n}$ if $n \geq m$. Taking the inverses
+		of both sides of this equation, we get, in case 
+		$n \geq m$, $a^{-n} a^{m} = a^{-n}[(a^m)^{-1}]^{-1} = (a^n)^{-1} (a^{-m})^{-1} = (a^{-m} a^{n})^{-1} = a^{-m+n)^{-1}} = (a^{n-m})^{-1} = a^{-(n-m)} = a^{-n+m} $ .  
+		Interchanging $n$ and $m$, we get $a^{-m}a^{n} = a^{-m+n}$ in case $m \geq n$. So $a^{-m} a^{n} = a^{-m+n}$,
+		irrespective of whether $m \geq n$ or $n \geq m$.
+
+		\item  Let $m, n \geq 0$. We have $a^m a^n = a^{m+n}$ by (e). Taking the inverses of both sides of this equation, we get $a^{-m}a^{-n} = 
+		(a^m)^{-1}(a^n)^{-1} = (a^n a^m)^{-1} = (a^{m+n})^{-1} = a^{-(m+n)} = a^{-m+(-n)}$ for all $m, n \geq 0$. \\
+		Thus $a^m a^n = a^{m + n}$ for all $a \in G$ and $m, n \in \hSoZ$.  
+	\end{enumerate}
+	
+	\item We prove $(a^{-1})^m = a^{-m}$. This is true if $m = 1$, since $(a^{-1})^{1} = a^{-1} =  (a^1)^{-1}$.
+	Suppose now $m \in \hSoN$, $m \geq 2$ and $(a^{-1})^{m-1} = a^{-(m-1)}$. Then $(a^{-1})^m = (a^{-1})^{m-1}(a^{-1}) = 
+	a^{-(m-1)} a^{-1} = a^{-m+1} a^{-1} = a^{-m+1-1} = a^{-m}$. So $(a^{-1})^{m} = a^{-m}$ for all $m \in \hSoN $ by induction. It is 
+	also true when $m = 0$, as $(a^{-1})^0 = 1 = a^0 = a^{-0}$. Now we must prove it for $m < 0$. With a slight change in notation, we are 
+	prove $(a^{-1})^{-m} = a^m$ for all $m \in \hSoN$. We have indeed 
+	$(a^{-1})^{-m} = [(a^{-1})^{m}]^{-1} = (a^{-m})^{-1} = [(a^m)^{-1}]^{-1} = a^m$.
+	The first equality in this chain follows from Definition 8.6, \ref{definiton8.6} \footnote{ Definition 8.6 appears on the page 83. That's why ref does not work properly} 
+	with $a^{-1}$ in place of a,
+	the second from the fact that $(a^{-1})^m = a^{-m}$ for all $m \in \hSoN$, which we just proved and the third from Definition 8.6. \ref{definiton8.6}
+	\footnote{ Definition 8.6 appears on the page 83, That's why ref does not work properly}
+	So $(a^{-1})^m = a^{-m}$ for all $m \in \hSoZ$.
+	
+	\item We prove $(a^m)^n = a^{mn}$. If $m \geq 1$, $n \geq l$, Lemma 8.5 \ref{lemma8.5}
+	\footnote{Lemma 8.5 appears on the page 83.That's why ref does not work properly} yields the result.
+	If $m = 0$; then $(a^0)^n = 1^n = 1 =  a^0 = a^{0n}$ for all $n \in \hSoZ$; and if $n = 0$, then
+	$(a^m)^0 = 1 = a^0 = a^{m0}$ for all $m \in \hSoZ$. So we have
+	$$
+		(a^m)^n = a^{mn} \text{ whenever } m,n \geq 0.
+	$$
+	We must prove this relation also when $m \geq 0$, $n \leq 0$; $m \leq 0$, $n \geq 0$; $m \leq 0$, $n \leq 0$. Replacing m,n by $\hAbs{m}$, $\hAbs{n}$
+	we must prove (i) $(a^m)^{-n} = a^{m(-n)}$; (ii) $(a^{-m})^n = a^{(-m)n}$; (iii) $(a^{-m})^{-n} = a^{(-m)(-n)}$ for all $m, n \geq 0$. 
+
+\end{enumerate}
+% =======================================================
+\end{document}  
+

@@ -1,0 +1,108 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.30)  7 NOV 2016 00:27
+entering extended mode
+**./b2p2-411.tex
+(b2p2-411.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\irem gokceler\Desktop\MikTex\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\irem gokceler\Desktop\MikTex\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+LaTeX Warning: Unused global option(s):
+    [12].
+
+(b2p2-411.aux)
+\openout1 = `b2p2-411.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (b2p2-411.aux) ) 
+Here is how much of TeX's memory you used:
+ 210 strings out of 493334
+ 2228 string characters out of 3134926
+ 57242 words of memory out of 3000000
+ 3824 multiletter control sequences out of 15000+200000
+ 4239 words of font info for 16 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 23i,4n,17p,205b,107s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users
+/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Us
+ers/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Users/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Users/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+C:/Users/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+<C:/Users/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmr5.pfb
+><C:/Users/irem gokceler/Desktop/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb
+>
+Output written on b2p2-411.pdf (1 page, 81220 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,60 @@
+\ProvidesPackage{Ceyhun}
+
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+\usepackage{geometry}
+\geometry{
+  top=1in,
+  inner=1in,
+  outer=1in,
+  bottom=1in,
+  headheight=3ex,
+  headsep=2ex,
+}
+
+\titleformat{\chapter}
+    [display]
+    {\bfseries}
+    {\huge \thechapter. BÖLÜM}
+    {0ex}
+    {\titlerule[0.8pt]\Large}
+    [\vspace{7ex}]
+
+\titleformat{\section}
+    {\bfseries \large}
+    {\thesection}
+    {0.4em}
+    {}
+
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{
+    \markboth{\thechapter. BÖLÜM}{}
+}
+\renewcommand{\sectionmark}[1]{
+    \markright{\thesection{} #1}
+}
+
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[OR, EL]{\thepage}
+\fancyhead[OL]{\leftmark}
+\fancyhead[EL]{\rightmark}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+\newtheorem{teorem}{Teorem}[section]
+\theoremstyle{definition}
+\newtheorem{tanim}{Definition}[section]
+
+\newenvironment{teo}{
+    \teorem
+    \minipage[t]{\linewidth}
+}{\endminipage\endteorem}
+
+\renewcommand{\qedsymbol}{}
+\newenvironment{tanit}[1][Tanıt\nopunct]{%
+    \proof[#1]\hfill\\[1ex]%
+}{$\blacksquare$\endproof}

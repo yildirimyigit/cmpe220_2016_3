@@ -1,0 +1,38 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{057}
+% ++++++++++++++++++++++++++++++++++++++
+
+terimler bulunacaktır. Öyleyse, genel bir A matrisi, dizek ve dikeçleri yeniden düzenlenerek, her zaman aşağıdaki gibi yazılabilir,
+\[
+	A = 
+	\begin{bmatrix}
+		0_{n_{1}} & A_{12}^{\prime} & A_{13}^{\prime} &  & A_{1m}^{\prime} \\
+		A_{12} & 0_{n_{2}} & A_{23}^{\prime} &  & A_{2m}^{\prime} \\
+		A_{13} & A_{23} & 0_{n_{3}} &  & A_{3m}^{\prime} \\
+		\hdotsfor{5} \\
+		A_{1m} & A_{2m} & A_{3m} &  & 0_{n_{m}}
+	\end{bmatrix}
+\]
+Burada; $0_{n_{j}}$ $n_{j} \times n_{j}$ boyutundaki sıfır matrisi göstermektedir. Ayrıca,
+\[
+	a = n_{1}+n_{2}+ \cdots + n_{m}
+\]
+eşitliği de sağlanmaktadır.
+
+A nın bu genel yazılımındaki $0_{n_{j}}$ altmatrisi, çizgede kendi aralarında bitişik olmayan $n_{j}$ sayıda ayrıtın bulunduğunu belirtir. Bu gözlem sonucu, A matrisinin gerçekleştirimi için \emph{gerek} koşulu aşağıdaki gibi verebiliriz.
+\begin{theorem}
+	İndirgenmiş ayrıt matrisinin gerçekleştirimi için gerek koşul, bütün i ve j ler için, $A_{ij}$ altmatrisinin dizeklerinde, iki ya
+\end{theorem}
+
+\end{document}

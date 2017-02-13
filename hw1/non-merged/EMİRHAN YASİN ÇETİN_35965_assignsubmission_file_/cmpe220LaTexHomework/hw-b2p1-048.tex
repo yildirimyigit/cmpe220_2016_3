@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\linespread{1.6}
+
+\usepackage{natbib}
+
+\usepackage{geometry}
+
+\geometry{includeheadfoot,
+  headheight=14pt,
+  left=4cm,
+  right=2cm,
+  top=1cm,
+  bottom=2.5cm}
+
+\usepackage{fancyhdr}
+
+\fancyhf{}
+
+\fancyhead[C]{\thepage}
+
+\pagestyle{fancy}
+
+\fancypagestyle{plain}
+
+\fancyhf{} % clear all header and footer fields
+
+\fancyhead[C]{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\setcounter{page}{48}
+
+
+
+\begin{document}
+
+\hspace{0.5cm} $e^{ix}= 1 + \frac{ix}{1!} + \frac{(ix)^2}{2!}+ ... + \frac{(ix)^{n}}{n!} + ... $ \vspace{0.25cm}
+
+\hspace{1cm} $= 1 + i\frac{x}{1!} - \frac{x^2}{2!} - i\frac{x^3}{3!} + ... + (i^n)\frac{x^n}{n!} + ...$ \vspace{0.25cm}
+
+\hspace{1cm} $= (1 - \frac{x^2}{2!} + \frac{x^4}{4} - ... + (-1)^n \frac{x^{2n}}{(2n!)} + ... )$ \vspace{0.25cm}
+
+\hspace{1cm} $+  i (x - \frac{x^3}{3!} + \frac{x^5}{5!} - ... + (-1)^n \frac{x^{n-1}}{(2n-1)!} + ...)$ \vspace{0.25cm}
+
+\hspace{1cm} $= cosx + i sinx$ \vspace{0.25cm}
+
+\hspace{1.4cm} $e^{ix} = cosx + i sinx$ \hspace{1.5cm}  $(EULER)$ \vspace{0.25cm}
+
+\hspace{0.5cm} \underline{Example 2}. \hspace{0.25cm} Obtain the McLAURIN series for $ln \sqrt{\frac{1+x}{1-x}}$. \vspace{0.30cm}
+
+\hspace{0.5cm} \underline{Solution}. \hspace{0.25cm}  Writing \vspace{0.25cm}
+
+\hspace{0.75cm} $ln \sqrt{\frac{1+x}{1-x}} = \frac{1}{2} ln \frac{1+x}{1-x} = \frac{1}{2} [ln(1+x) - ln(1-x)]$, 
+
+from  \vspace{0.25cm}
+
+\hspace{0.75cm} $ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - ... + \frac{x^{2n}}{2n} - \frac{x^{2n-1}}{2n-1} + ... $ \hspace{1cm} $(-1,1)$ \vspace{0.25cm}
+
+\hspace{0.75cm} $ln(1-x) = -x - \frac{x^2}{2} - \frac{x^3}{3} - ... - \frac{x^{2n}}{2n} - \frac{x^{2n-1}}{2n-1} - ...  $  \hspace{0.7cm} $(-1,1)$ \vspace{0.25cm}
+
+we get  \vspace{0.25cm}
+
+\hspace{0.75cm} $ln \sqrt{\frac{1+x}{1-x}} = x + \frac{x^3}{3} + \frac{x^5}{5} + ... + \frac{x^{2n-1}}{2n-1} + ... $  \hspace{2.25cm} $(-1,1)$ \vspace{0.3cm}
+
+\hspace{0.5cm} \underline{Example 3}. Obtain the McLAURIN series for \vspace{0.25cm}
+
+\hspace{0.5cm} a) $x^3 cosx$ \hspace{2cm} b) $[ln(1+x)]sinx$ \vspace{0.25cm}
+
+\hspace{0.5cm} \underline{Solution}. \vspace{0.25cm}
+
+\hspace{0.5cm} a) $$x^3 cosx = x^3 \sum_{0} (-1)^n \frac{x^{2n}}{(2n)!} =   \sum_{0} (-1)^n \frac{x^{2n+3}}{(2n)!} $$ \vspace{0.25cm}
+
+\hspace{0.5cm} b) We have \vspace{0.25cm}
+
+\hspace{1cm} $ [ln(1+x)] sinx = (x- \frac{x^2}{2} + \frac{x^3}{3} - ... + (-1)^{n-1} \frac{x^n}{n} + ... )  $ \vspace{0.25cm}
+
+\hspace{4.20cm} $ (x - \frac{x^3}{3!} + \frac{x^5}{5!} - ... + (-1)^n \frac{x^{2n+1}}{(2n+1)!} - ...)         $
+
+\end{document}

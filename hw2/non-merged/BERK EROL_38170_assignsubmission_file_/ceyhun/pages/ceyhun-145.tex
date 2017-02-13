@@ -1,0 +1,43 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+\usepackage{../Ceyhun}
+\usepackage{../amsTurkish}
+
+\begin{document}
+\hPage{145}
+\begin{theorem}
+olmaması için gerek ve yeter koşul, bu altmatrise ilişkin dikeçlerin çizgede bir tümlerağaç oluşturmasıdır.
+\end{theorem}
+
+Ayrıca, B\textsubscript{t}, Q\textsubscript{t} ya da P matrisinin tekil olmayan herhangi dördül bir altmatrisine ilişkin belirtenin 10 tabanına göre yapılan işlemler sonucu, değerin $\pm$ 1 olacağı da gösterilebilir (bu özellikteki matrislere \textit{birimsel matris} denir). Birimsel olma özelliğinden ve Binet-Cauchy teoreminden yararlanarak, çizgedeki ağaç ya da tümlerağaç sayısı $\mu$ nun,
+\begin{align*}
+    \mu &= |\ Q_{t} \ {Q_{t}}^\prime | \\
+    \mu &= |\ B_{t} \ {B_{t}}^\prime | \\
+    \mu &= |\ P \ \  P^\prime \ |
+\end{align*}
+olacağını gösterebiliriz. Örneğin \reffig{fig:Sekil3.3.1} deki çizgede \reffig{fig:Sekil3.3.2} de gösterildiği gibi,
+\begin{align*}
+    |\ Q_{t} \ {Q_{t}}^\prime | &= 
+    \begin{vmatrix}
+        \begin{bmatrix}
+            1 & 0 & 0 & 1 & 1 & 0 \\
+            0 & 1 & 0 & 1 & 1 & 1 \\
+            0 & 0 & 1 & 0 & 1 & 1
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1 \\
+            1 & 1 & 0 \\
+            1 & 1 & 1 \\
+            0 & 1 & 1 \\
+        \end{bmatrix}
+    \end{vmatrix} \\ &= 
+    \begin{vmatrix}
+        3 & 2 & 1 \\
+        2 & 4 & 2 \\
+        1 & 2 & 3 
+    \end{vmatrix} = 16
+\end{align*}
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu-054}
+% ++++++++++++++++++++++++++++++++++++++
+
+% =======================================
+\subsection{Integers Modulo n}
+In Example 2.3(e), we have defined the congruence of two integers $a, b$ with respect
+to a modulus $n \in \mathbb{N}$.
+Let us recall that $a \equiv b \pmod{n}$ means $n | a-b$.
+We have proved that congruence is an equivalence relation on $\mathbb{Z}$.
+The equivalence classes are called the \hDefined{congruence classes} or \hDefined{residue classes} (modulo $n$).
+The congruence class of $a \in \mathbb{Z}$ will be denoted by $\bar{a}$.
+Notice that there is ambiguity in this notation, for there is no reference to the modulus.
+Thus 1 represents the residue class of 1 with respect to the modulus 1, also with respect to the modulus 2,
+also with respect to the modulus 3, in fact with respect to any modulus.
+However, the modulus will be usually fixed throughout a particular discussion and
+$\bar{a}$ will represent the residue class of $a$ with respect to that fixed modulus.
+The ambiguity is therefore harmless.
+
+By the division algorithm (Theorem 5.3), any integer $k$ can be written as
+$k = qn + r$, with $q, r \in \mathbb{Z}, 0 \leq r < b$. So any integer $k$ is
+congruent$\pmod{n}$ to one of the numbers $0,1,2,\cdots,n-1$.
+Furthermore, no two distinct of the numbers $0,1,2,\cdots,n-1$ are congruent$\pmod{n}$,
+for if $r_1, r_2 \in \{0,1,2,\cdots,n-1\}$ and $r_1 \equiv r_2 \pmod{n}$, then
+$n | r_1 - r_2$, so $n \leq |r_1 - r_2|$ by Lemma 5.2(11), and so $n \leq (n-1) - 0$,
+which is impossible. Thus any integer is congruent to one of the numbers $0,1,2,\cdots,n-1$,
+and these numbers are pairwise incongruent. This means that $0,1,2,\cdots,n-1$
+are the representatives of the residue classes. Hence there are exactly $n$
+residue classes$\pmod{n}$, namely
+
+\begin{alignat*}{3}
+  \bar{0}   &= \{ x \in \mathbb{Z}: x \equiv 0 \pmod{n} \}
+           &&= \{ nz \in \mathbb{Z}: z \in \mathbb{Z} \}
+           &&=: n\mathbb{Z} \\
+  \bar{1}   &= \{ x \in \mathbb{Z}: x \equiv 1 \pmod{n} \}
+           &&= \{ nz + 1 \in \mathbb{Z}: z \in \mathbb{Z} \}
+           &&=: n\mathbb{Z} + 1 \\
+  \bar{2}   &= \{ x \in \mathbb{Z}: x \equiv 2 \pmod{n} \}
+           &&= \{ nz + 2 \in \mathbb{Z}: z \in \mathbb{Z} \}
+           &&=: n\mathbb{Z} + 2 \\
+  \cdots \\
+  \overline{n-1} &= \{ x \in \mathbb{Z}: x \equiv n - 1 \pmod{n} \}
+           &&= \{ nz + (n - 1) \in \mathbb{Z}: z \in \mathbb{Z} \}
+           &&=: n\mathbb{Z} + (n - 1)
+\end{alignat*}
+
+The set $\{ \bar{0},\bar{1},\bar{2},\cdots,\overline{n-1} \}$ of residue classes$\pmod{n}$
+will be denoted by $\mathbb{Z}_n$. An element of $\mathbb{Z}_n$, that is, a residue class$\pmod{n}$
+is called an \hDefined{integer modulo n}, or an \hDefined{integer mod n}.
+An integer mod $n$ is not an integer, not
+
+% =======================================================
+\end{document}

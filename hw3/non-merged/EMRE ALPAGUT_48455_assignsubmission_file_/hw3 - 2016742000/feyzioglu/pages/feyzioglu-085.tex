@@ -1,0 +1,54 @@
+
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu-085}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{proof} Writing ($e'$) with $a^{-1}$ in place of $a$ and using (2), we get $(a^{m})^{-n}$=$[(a^{m})^{-1}]^{n}$=
+$(a^{-m})^{n}$=$[(a^{-1})^{m}]^{n}$=$(a^{-1})^{mn}$=$a^{-(mn)}$=$a^{m(-n)}$. This proves $(i)$. We also get $(a^{-m})^{n}$=$a^{-(mn)}$=$a^{-(m)n}$. This proves $(ii)$. Finally, we have $(a^{-m})^{-n}$=$[(a^{m})^{-1}]^{-n}$=
+$([(a^{m})^{-1}]^{-1})^{n}$=$(a^{m})^{n}$=$a^{mn}$=$a^{(-m)(-n)}$. This proves $(iii)$.
+
+Thus $(a^{m})^{n}$=$a^{mn}$ for all $m,n \in \hSoZ$. 
+\bigbreak
+The proof is complete.
+\end{proof}
+
+\begin{lem} $Let$ $G$ $be$ $a$ $group$ $and$ $a_{1},a_{2},\dotsc,a_{n}$ $\in$ $G$. Then
+\begin{center}
+ $(a_{1} a_{2} \dotsc a_{n})^{-1}$=$a_{n}^{-1} \dotsc a_{2}^{-1} a_{1}^{-1}$
+\end{center}
+
+\begin{proof} By induction on $n$. If $n$ = 2, the assertion is true by Lemma 8.2(2). Suppose now $n \in \hSoN$, $n \geq 3$ and $(a_{1} a_{2} \dotsc a_{n-1})^{-1}$=$a_{n-1}^{-1} \dotsc a_{2}^{-1} a_{1}^{-1}$. Then
+\begin{align*}
+ (a_{1} a_{2} \dotsc a_{n-1} a_{n})^{-1} & = ((a_{1} a_{2} \dotsc a_{n-1}) a_{n})^{-1} \\
+& = a_{n}^{-1}(a_{1} a_{2} \dotsc a_{n-1})^{-1} \\
+& = a_{n}^{-1}(a_{n-1}^{-1} \dotsc  a_{2}^{-1} a_{1}^{-1}) \\
+& = a_{n}^{-1} a_{n-1}^{-1} \dotsc  a_{2}^{-1} a_{1}^{-1} 
+\end{align*}
+
+as was to be proved.
+\end{proof}
+
+Lemma 8.8 gives an alternative proof of $(a^{-1})^{m}$=$(a^{m})^{-1}$. When our group is commutative, we have additional results for example $a^{m}b^{n}$=$b^{n}a^{m}$.
+\end{lem}
+
+\begin{lem} $Let$ $G$ $be$ $a$ $group$ $and$ $a,b \in G$. $If$ $ab=ba$ $then$
+\begin{flalign*}
+&(1) ab^{n} = b^{n}a; & \\
+&(2) a^{m}b^{n} = b^{n}a^{m}; 
+\end{flalign*}
+for all $m,n \in \hSoZ $.
+
+\begin{proof} (1) We prove $ab^{n}$=$b^{n}a$: The case n=0 is trivial. Also $ab^{1}=ab=ba=b^{1}a$ by hypothesis and the claim is true for $n = 1$. Suppose now $n \in \hSoN$, $n \geq 2$ and the claim is proved for $n-1$, so that $ab^{n-1}$=$b^{n-1}a$. Then $ab^{n}=a(b^{n-1}b)=(ab^{n-1})b=(b^{n-1}a)b=b^{n-1}(ab)=b^{n-1}(ba)=(b^{n-1}b)a=b^{n}a$. By induction, $ab^{n}=b^{n}a$ for all $n \in \hSoN$.
+\end{proof}
+\end{lem}
+\end{document}  
+
+
+
