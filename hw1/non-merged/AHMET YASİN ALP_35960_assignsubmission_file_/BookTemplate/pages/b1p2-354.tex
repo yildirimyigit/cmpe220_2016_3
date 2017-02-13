@@ -1,0 +1,40 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\newtheorem*{theorem}{\underline{Theorem}}
+\newtheorem*{prf}{\underline{Proof}}
+
+
+\begin{document}
+
+\hPage{b1p2/354}
+
+\begin{enumerate}
+	\item[B.] THE FUNDAMENTAL THEOREMS
+\end{enumerate}
+
+We state two fundamental theorems (F.T.) the proofs of which are based on the following mean value theorem for integrals:
+
+\begin{theorem}[MVT for integrals]
+If $f(x)\in C(a,b)$, then there exists an interior point $c\in (a,b)$ such that $$\int\limits_{a}^{b} f(x)dx = (b-a)f(c)$$
+\end{theorem}
+
+\begin{prf}
+If the function is constant, say $f(x)=y_0$, then $$\int\limits_{a}^{b} f(x)dx=\int\limits_{a}^{b} y_0 dx=y_0 \int\limits_{a}^{b} dx=(b-a)y_0 =(b-a)f(c)$$ for any $c\in (a,b)$.
+
+Let then $f(x)$ be a non constant function. By its continuty it attains $m=min \ f(x), \ M=max \ f(x)$ on $(a,b)$ so that $$\int\limits_a^b mdx \leq \int\limits_a^b f(x)dx \leq \int\limits_a^b Mdx$$ 
+
+$$m(b-a) \leq \int\limits_a^b f(x)dx \leq M(b-a)$$
+
+$$m \leq \frac{\int\limits_a^b f(x)dx}{b-a} \leq M.$$ Again from continuity of $f(x)$ the intermediate value $$\overline{y}=\frac{\int\limits_a^b f(x)dx}{b-a}$$ is attained at a point c which is certainly between a and b, so that 
+\[
+ \overline{y}=\frac{\int\limits_a^b f(x)dx}{b-a}=f(c) \tag{a}
+\]
+
+\par The value $\overline{y}$ defined by (a) or by $$\overline{y}=\frac{\int\limits_a^b f(x)dx}{\int\limits_a^b dx}$$
+\end{prf}
+
+
+\end{document}  
+

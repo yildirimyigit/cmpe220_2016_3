@@ -1,0 +1,41 @@
+\documentclass[reqno]{amsbook}
+\usepackage[utf8]{inputenc}
+\usepackage{HBSuerDemir}
+\usepackage{enumitem}
+
+\begin{document}
+    \hPage{b2p2/428}
+    \footnote{I have used [reqno] in "documentclass" options in order to align the equation explanations right, instead of left(as default)}
+    \begin{enumerate}[label= D.]
+        \item GEOMETRIC AND PHYSICAL APPLICATIONS
+    \end{enumerate}
+    \begin{hEnumerateArabic}
+        \item Volume of a solid:\\
+    \end{hEnumerateArabic}
+    From $Prop. 1$ we have,
+    \begin{equation*}
+        \hAbs{R} = \iiint_R \mathrm{d}V = V (volume)
+    \end{equation*}
+    Then
+    \begin{align*}
+        \hAbs{R} &= \iiint_R \overline{\mathrm{d}x \,\mathrm{d}y \,\mathrm{d}z} \tag{in cartesian coordinates} \\
+        \hAbs{R} &= \iiint_R \mathrm{r} \, \mathrm{d}z \, \overline{\mathrm{d}r \,\mathrm{d}\theta} \tag{in cylindrical coordinates} \\
+        \hAbs{R} &= \iiint_R \mathrm{\rho^2} \, \mathrm{\sin \varphi} \, \overline{\mathrm{d}\rho \,\mathrm{d}\varphi \,\mathrm{d}\theta} \tag{in spherical coordinates}
+    \end{align*}
+    Having examples on cartesian and spherical coordinates previously, we give one on cylindrical coordinates.
+    \begin{exmp}
+        Find the volume of the solid in the I. Octant bounded by the cylinders $x^2 + y^2 = a^2$, $x^2 + z = b^2$ $(b \geq a)$
+    \end{exmp}
+    \begin{hSolution}
+        \begin{equation*}
+            \begin{split}
+                \hAbs{R} & = \iiint_R \mathrm{d}z \, \mathrm{d}r \,\mathrm{d}\theta \\
+                & = \int_0^{\pi/2} \int_0^a \int_0^{b^2-r^2\cos^2\theta} \mathrm{r} \, \mathrm{d}z \, \mathrm{d}r \,\mathrm{d}\theta \\
+                & = \int_0^{\pi/2} \int_0^a \mathrm{r(b^2-r^2\cos^2\theta)} \, \mathrm{d}r \,\mathrm{d}\theta \\
+                & = b^2\int_0^{\pi/2} \int_0^a \mathrm{r} \, \mathrm{d}r \,\mathrm{d}\theta - \int_0^{\pi/2} \int_0^a \mathrm{r^3} \, \mathrm{cos^2\theta} \, \mathrm{d}r \,\mathrm{d}\theta \\
+                & = \frac{1}{4}\pi a^2 b^2 - \frac{\pi}{4}\frac{a^4}{4} \\
+                & = \frac{\pi}{16} a^2 (4b^2 - a^2)
+            \end{split}
+        \end{equation*}
+    \end{hSolution}
+\end{document}

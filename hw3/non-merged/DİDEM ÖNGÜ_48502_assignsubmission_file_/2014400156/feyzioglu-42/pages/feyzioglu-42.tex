@@ -1,0 +1,62 @@
+\documentclass{amsbook}
+\usepackage[turkish]{babel}
+\usepackage{amsmath}
+\usepackage{../Ceyhun}
+\usepackage{amsthm}
+
+\begin{document}
+
+so $r_{k}$ can be represented as $r_{k-3}x-r_{k-2}y$, namely with $x=-q_{k}$, $y=-(1+q_{k-1}q_{k})$. In general, if $r_{k}$ can be written in the form
+
+\begin{align*}
+r_{i}x-r_{i+1}y, \qquad x,y\in Z,
+\end{align*}
+
+we get, using the (i+1)-st equation in the Euclidean algorithm,
+
+\begin{align*}
+r_{k}&=r_{i}x-r_{i+1}y\\
+&=r_{i}x-(r_{i-1}-q_{i+1}r_{i})y\\
+&=r_{i-1}(-y)+r_{i}(x+q_{i+1}y).
+\end{align*}
+
+which shows that $r_{k}$ can be written also in the form $r_{i-1}x_{1}-r_{i}y_{1}$, namely with $x_{1}=-y$, $y_{1}=-(x+q_{i+1}y)$. Going through the equations in this way, we finally obtain
+
+\begin{align*}
+r_{k}=ax_{0}-by_{0}
+\end{align*}
+
+for some $x_{0}$,$y_{0}\in$ Z. This completes the proof.\\
+
+\textbf{5.8 Example: } 
+ To find the greatest common divisor of 14732 and 37149, and to express it in the form 14732x - 37149y, with x,y $\in$ Z.\\
+We have
+
+\begin{align*}
+37149&=2.14732+7685\\
+14732&=1.7685+7047\\
+7685&=1.7047+638\\
+7047&=11.638+29\\
+638&=22.29
+\end{align*}
+
+and the last nonzero divisor is 29. So (14732,37149) = 29. Also
+
+\begin{align*}
+29&=7047-11.638\\
+&=7047-11(7685-1.7047)\\
+&=12.7047-11.7685\\
+&=12(14732-1.7685)-11.7685\\
+&=12.14732 - 23(37149 - 2.14732)\\
+&=58.14732 - 23.37149,
+\end{align*}
+
+so 29 = 14732x- 37149y with x = 58, y = 23.
+
+\textbf{5.9 Definition: }
+  Let a ,b be integers, not both zero. a is said to be \textit{relatively prime} to b if (a,b) = 1.\\\\
+Since (a,b) = (b,a), b is relatively prime to a in case a is relatively prime to b. This observation enables us to use a symmetric phrase in this case. We say a and b are relatively prime if (a,b) =1. 
+
+\hPage{042}
+
+\end{document}  

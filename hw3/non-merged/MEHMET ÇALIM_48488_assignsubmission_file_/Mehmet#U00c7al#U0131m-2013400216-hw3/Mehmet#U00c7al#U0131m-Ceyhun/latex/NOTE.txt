@@ -1,0 +1,4 @@
+In my page consist of 2 figures each includes 2 Subfigures and the
+text below subfigures includes name of the figures. Since I could not
+add extra package(like caption-subcaption) I had to use first subfigures 
+names in text instead of figures names.

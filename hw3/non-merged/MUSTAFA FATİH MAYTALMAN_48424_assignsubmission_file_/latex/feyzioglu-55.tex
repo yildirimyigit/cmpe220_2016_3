@@ -1,0 +1,17 @@
+\documentclass[12pt,a4 paper]{article}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+    an element of $\mathbb{Z}$; it is a subset of $\mathbb{Z}$. An integer $\mod n$ is not an integer with a property  \quad''$\mod n$ ''. It is an object whose name consists of the three words ''integer'', ''mod(ulo)'', ''$n$''.\\
+    \textbf{6.1 Lemma:} Let $n \in \mathbb{N},a,a_1,b,b_1 \in \mathbb{Z}$.If $a \equiv a_1(\mod n)$ and $b\equiv b_1 (\mod n),$ then $a+b \equiv a_1 + b_1 (\mod n)$ and $ab \equiv a_1 b_1 (\mod n)$.\par\\
+    \textbf{Proof:} If  $a\equiv a_1 (\mod n)$ and $b\equiv b_1 (\mod n)$, then $n|a-a_1$ and $n|b-b_1$.Hence $n|(a-a_1)+(b-b_1)$ by Lemma 5.2(5), which gives $n|(a+b)-(a_1+b_1)$, so $a+b\equiv a_1+b_1 (\mod n)$. Also, $n | b(a-a_1) + a_1(b-b_1)$ by Lemma 5.2(7), which gives $n|ba-a_1 b_1$, so $ab\equiv a_1 b_1(\mod n)$.\\
+    \\We want to define a kind of addition $\oplus$ and a kind of multiplication $\otimes$ on $\mathbb{Z}_n$. We put 
+        $$\bar{a}\oplus \bar{b}= \overline{a+b} (*)$$
+        $$\bar{a}\otimes \bar{b}=\overline{ab} (**)$$
+    for all $\bar{a},\bar{b}\in \mathbb{Z}_n$ (for all $a,b\in \mathbb{Z}$). This is a very natural way of introducing addition and multiplication on $\mathbb{Z}_n$.\\
+    
+    (*) and (**) seem quite innocent, but we must check that $\otimes $ and $\oplus$ are really binary operations on $\mathbb{Z}_n$. The reader might say at this point that $\otimes$ and $\oplus$ are clearly define on $\mathbb{Z}_n$ and that there is nothing to check. But yes, there is. Let us remember that a binary operation on $\mathbb{Z}_n$ is a function from $\mathbb{Z}_n \times \mathbb{Z}_n$ into $\mathbb{Z}_n$ (Definition 3.18). As such, to each pair ($\bar{a},\bar{b}$) in $\mathbb{Z}_n\times \mathbb{Z}_n$, there must correspond a \textit{single} element $\bar{a}\otimes \bar{b}$ and $\bar{a} \oplus \bar{b}$ if $\otimes$ and $\oplus$ are to be binary operations on $\mathbb{Z}_n$ (Definition 3.1). We must check that the rules (*) and (**) produce elements of $\mathbb{Z}_n$ that are uniquely determined by $\bar{a}$ and $\bar{b}$.\\
+    
+    The rules (*) and (**) above convey the wrong impression that $\bar{a} \otimes \bar{b}$ and $\bar{a} \oplus \bar{b}$ are uniquely determined by $\bar{a}$ and $\bar{b}$. In order to penetrate into the matter, let us try to evaluate $X \otimes Y$, where $X,Y\in \mathbb{Z}_n$ are not given directly as the residue classes of integers $a,b\in \mathbb{Z}$.(We discuss $\otimes$; the discussion applies equally well to $\oplus$.) How do we find $X \otimes Y$? Since $X,Y \in \mathbb{Z}_n$, there are integers $a,b\in \mathbb{Z}$ with $\bar{a}=X,\bar{b}=Y$. Now add $a$ and $b$ in $\mathbb{Z}$ to get $a+b \in \mathbb{Z}$, then take the residue class of $a+b$. The result is $X \otimes Y$.
+\end{document}

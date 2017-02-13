@@ -1,0 +1,54 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+\DeclareMathOperator{\Ch}{Ch}
+\DeclareMathOperator{\Sh}{Sh}
+\DeclareMathOperator{\ArgCh}{ArgCh}
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/461}
+% ++++++++++++++++++++++++++++++++++++++
+
+After a substituion, the integrand becomes a function of a trigonometric or a hyperbolic function which in turn can be transformed into a type given in §7.2, if necessary.
+
+\begin{exmp}
+Evaluate\\
+\par a) $A = \int \frac{x^2}{\sqrt{9-x^2}} dx $, 
+\quad b) $B = \int \sqrt{x^2-4x}\, dx $,
+\quad c) $C = \int \frac{1}{x\sqrt{4x^2+x-1}}\,dx$
+\end{exmp}
+
+\begin{hSolution}
+\begin{hEnumerateAlpha}
+\item Setting $x=3 \sin t$, we have
+
+\begin{eqnarray*}
+    A &=& \int \frac{9 \sin^2 t}{3 \cos t}\cdot 3\cos t \,dt = 9 \int \sin^2 t\, dt\\
+    &=& \frac{9}{2}\int (1-\cos 2t) \,dt = \frac{9}{2}(t-\frac{\sin 2t}{2})+c\\
+    &=& \frac{9}{2} (\arcsin \frac{x}{3}-\sin t \cos t)+c\\
+    &=& (\arcsin \frac{x}{3} -\frac{x}{3}\sqrt{1-\frac{x^2}{9}})+c
+\end{eqnarray*}
+
+\par Apply the other substitution:\footnote{New math operators $\Ch$, $\ArgCh$ and $\Sh$ declared in the preamble}\\
+\item \quad \quad $x^2-4x = (x-2)^2-4$ \quad \quad $u=x-2$
+
+\begin{eqnarray*}
+    B &=& \int \sqrt{u^2-4} \,du \text{.\quad Setting } u=2 \Ch t\text{, we have}\\
+    B &=& \int \sqrt{4 \Ch^2 t-4} \cdot 2 \Sh t\, dt\\
+    &=& 4 \int \Sh^2t \,dt = 2 \int (\Ch 2t-1) \,dt =\Sh 2t -2t +C\\
+    &=& 2 \Sh t \Ch t - 2 \ArgCh \frac{u}{2} +C\\
+    &=& 2\sqrt{\frac{u^2}{4}-1}\frac{u}{2}-2 \ArgCh \frac{u}{2}+C\\
+    &=& \frac{1}{2}(x-2)\sqrt{x^2-4x}-2 \ArgCh\frac{x-2}{2}+C
+\end{eqnarray*} 
+
+Apply the other substitution:
+\item \quad \quad $C=\int\frac{1}{x\sqrt{4x^2+x-1}}\,dx$
+\par If the integrand had no x as a factor on the denominator,
+
+\end{hEnumerateAlpha}
+\end{hSolution}
+
+% =======================================================
+\end{document}  

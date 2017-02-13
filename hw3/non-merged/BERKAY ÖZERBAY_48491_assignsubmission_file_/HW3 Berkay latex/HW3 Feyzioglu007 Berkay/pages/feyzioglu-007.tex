@@ -1,0 +1,60 @@
+%Correct the file name.
+%X: book number
+%Y: part number
+%ZZZ: page number in three digits. So page 3 would be 003.
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\theoremstyle{definition}
+
+\newtheorem{definition}{Definition}
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu-007}
+% ++++++++++++++++++++++++++++++++++++++
+
+
+
+\centerline{\textbf{§2}}
+\centerline  {\textbf{Equivalence Relations}}
+
+\vspace{1cm}
+
+\noindent In mathematics, we often investigate relationships between  certain
+objects (numbers, functions, sets, figures, etc.). If an element a of $a$ set$ A$
+is related  to an element $b$ of a set $B$, we might write \\
+\centerline  {$a$ is related to $b$ }
+or shortly\\
+\centerline  {$a$  related  $b$ }
+or even more shortly \\
+\centerline  {$a \ R \ b$ }
+
+\noindent The essential point is that we have two objects; a and b, that are related
+in some way. Also, we say "$a$ is related to $b$", not "$b$ is related to $a$",so
+the \textit{order} of $a$ and $b$ is important. In other words, the ordered pair$(a ,b)$
+is distinguished by the relation. This observation suggests the following
+formal definition of a relation. 
+\begin{definition}
+	Let A and B two sets. A \textit{relation R from A into B} is a subset of the cartesian product A $\times$B.
+\end{definition}
+\noindent If $A$ and $B$ happen to be equal, we speak of a relation on $A$ instead of
+using the longer phrase "a relation from$A$ into $A$"\\
+
+\noindent Equivalence relations constitute a very important type of relations on a
+set. 
+\begin{definition}
+	Let A be a nonempty set. A relation \textit{R} on A (that is, a subset \textit{R} of \textit{R$\times$R}) is called and \textit{equivalence relation on A} if the following holds:
+\end{definition}
+\begin{enumerate}[label=(\roman*)]
+	\item $(a,a)$ $\epsilon$ $R$ for all $a$ $\epsilon$ $ A$, 
+	\item if $(a,b)$ $\epsilon$ $R$, then $(b,a)$ $\epsilon$ $R$ (for all $a,b$ $\epsilon$ A). 
+	\item if $(a,b)$ $\epsilon$ $R$ and $(b,c$) $\epsilon$ R, then $(a,c)$ $\epsilon$ $R$ 
+\end{enumerate}
+(for all $ a,b,c $ $\epsilon$ $R$)
+
+\end{document}

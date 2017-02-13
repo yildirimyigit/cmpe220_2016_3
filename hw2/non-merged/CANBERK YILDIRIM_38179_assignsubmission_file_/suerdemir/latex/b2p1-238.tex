@@ -1,0 +1,119 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+%\usepackage{../Ceyhun}	% ------------------------
+%\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/238}
+% ++++++++++++++++++++++++++++++++++++++
+normal of $\Gamma$ 
+    \begin{exmp}
+    A particle is moving on the path
+    \[
+    \Gamma : r(t) = \ell n t i + \frac{1}{2} t^2 j + \sqrt{2} t k
+    \]
+    \begin{hEnumerateAlpha}
+	\item
+	find velocity and acceleration vectors, 
+	\item
+	find the components $a_T$, $a_N$ of $a(t)$ at $t=1$.
+	\end{hEnumerateAlpha}
+	\begin{hSolution}
+    	\begin{hEnumerateAlpha}
+    	\item
+    	$v(t) = r(t) = \frac{1}{t}i + tj + \sqrt{2}k$ \\
+    	$a(t) = r(t) = -\frac{1}{t^2}i + j$
+    	\item
+    	$a_T = s$ where
+    	\[
+    	ds = \sqrt{x^2+y^2+z^2} dt = \frac{t^2+1}{t}dt
+    	\]
+    	$s = 
+    	    \frac
+    	        {ds}
+    	        {dt} 
+    	        = \frac
+    	            {t^2+1}
+    	            {t} 
+    	            \Rightarrow s = 
+    	            \frac{t^2-1}{t^2} 
+    	            \Rightarrow a_T(1) = s(1) = 0$.\\
+    	$a_N = 
+    	\frac
+    	    {v^2}
+    	    {\rho} 
+    	    = v^2k$  where  $  v^2 = 
+    	    (\frac
+    	        {t^2+1}
+    	        {t})^2 
+    	        \Rightarrow v^2(1) = 4$
+    	\begin{align*}
+            \kappa = 
+            \hAbs{r''} 
+            &= \hAbs{
+                    \frac
+                    {dr'}
+                    {ds}} \\
+        r' &= r(t)
+            \frac
+                {dt}
+                {ds} = (\frac
+                         {1}
+                         {t}i + tj + 
+                         \sqrt
+                         {2}k)
+                            \frac
+                            {t}
+                            {t^2+1} \\
+        r'' &= 
+            [(-\frac
+                {1}
+                {t^2}i+j)
+                    \frac
+                    {t}
+                    {t^2+1} + (\frac
+                                {1}
+                                {t}i + tj + 
+                                \sqrt
+                                {2}k)
+                                    \frac
+                                    {1-t^2}
+                                    {(t^2+1)^2}] 
+                                        \frac
+                                        {t}
+                                        {t^2+1}\\
+        \Rightarrow r''(1) &= 
+            [(-i+j)
+                \frac
+                {1}
+                {2}]
+                    \frac
+                    {1}
+                    {2} = 
+                        \frac
+                        {1}
+                        {4}(-i+j)\\
+        \Rightarrow  \ 
+            \kappa(1) &= 
+                \hAbs
+                {r''(1)} = 
+                    \frac
+                    {\sqrt{2}}
+                    {4}.\ Then\\ 
+        &a_N(1) = v^2(1)
+            \kappa(1) = 
+                \sqrt{2}.
+        \end{align*}
+    	\end{hEnumerateAlpha}
+	\end{hSolution}
+    \end{exmp}
+    
+    
+\end{document}
+    

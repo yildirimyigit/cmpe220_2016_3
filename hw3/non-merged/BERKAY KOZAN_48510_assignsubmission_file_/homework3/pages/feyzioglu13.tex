@@ -1,0 +1,40 @@
+\documentclass[11pt]{amsbook}
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+    \hPage{feyzioglu-013}
+    \begin{proof}\footnote{The proof starts at the former page, ends in this one. So I had to use begin for the proof.}
+    two or more of the subsets $P_{i}$, for then $P_{i}$ would not be mutually disjoint.
+    So each element of $A$ belongs to one and only one of the subsets $P_{i}$.\\
+    Let $a,b$ be elements of A and suppose $a \in P_{i_{0}}$ and $b \in P_{i_{1}}$. We put $a \approx b$ if $ P_{i_{0}} = P_{i_{1}}$
+    , i.e., we put $a\approx b$ if the sets $P_{i}$ to which $a$ and $b$ belong are identical. We show that $\approx$ is an equivalence relation.
+    \begin{hEnumerateRoman}
+        \item For any $a\in A$, of course $a$ belongs to the set $P_{i_{0}}$ it belongs to, and so $a\approx a$ and $\approx$ is reflexive. 
+        \item Let $a \approx b$. This means $a$ and $b$ belong to the same set $P_{i_{0}}$, say, so $b$ and $a$ belong to the same set $P_{i_{0}}$, hence $b \approx a$. So $\approx$ is symmetric.
+        \item Let $a\approx b$ and $b\approx c$. Then the set $P_{i}$ to which $b$ belongs contains $a$ and $c$. Thus $a$ and $c$ belong to the same set $P_{i}$ and $a\approx c$. This proves that $\approx$ is transitive.\\
+    \end{hEnumerateRoman}
+    We showed that $\approx$ is indeed an equivalence relation on $A$. It remains to prove that $P_{i}$ are the equivalence classes under $\approx$. For any $a\in A$, we have, if $a\in P_{i_{1}}$,
+    \begin{align*}
+        \hAbs{a}&=\hPairingCurly{x\in A : x\approx a}\\
+        &=\hPairingCurly{x\in A :\ x\ belongs\ to\ P_{i_{1}}}\\
+        &=\hPairingCurly{x\in \bigcup_{\substack{i\in 1}} P_{i} :\ x\ belongs\ to\ P_{i_{1}}}\\
+        &=P_{i_{1}}.\\
+    \end{align*}
+    This proves that $P_{i}$ are the equivalence classes under $\approx$.
+    \end{proof}
+    \section*{Examples}
+    \begin{hEnumerateArabic}
+        \item On $\hSoN \times \hSoN$, define a relation $\equiv$ by declaring $\hPairingParan{a,b}\equiv \hPairingParan{c,d}$ if and only if $a+d=b+c$. Show that $\equiv$ is an equivalence relation on $\hSoN \times \hSoN$.
+        \item Determine whether the relation $\sim$ on $\hSoR$ is an equivalence relation on $\hSoR$, when $\sim$ is defined by declaring $x\sim y$ for all $x,y\in \hSoR $ if and only if 
+        \begin{hEnumerateAlpha}
+            \item there are integers $a,b,c,d$ such that $ad-bc=\pm 1$ and $x=\frac{ay+b}{cy+d}$;
+            \item $\hAbs{x-y} < 0.000001$;
+            \item $\hAbs{x}=\hAbs{y}$;
+            \item $x-y$ is an integer;
+            \item $x-y$ is an even integer; 
+            \item there are natural numbers $n,m$ such that $x^{n} = y^{m}$; 
+            \item there are natural numbers $n,m$ such that nx = my;
+            \item $x\geq y$.
+        \end{hEnumerateAlpha}
+\end{hEnumerateArabic}
+\end{document}

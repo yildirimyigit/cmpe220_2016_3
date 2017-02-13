@@ -1,0 +1,51 @@
+\documentclass[11pt]{amsbook}
+\usepackage[turkish]{babel}
+\usepackage{../Ceyhun}
+\usepackage{../amsTurkish}
+\usepackage[utf8]{inputenc}
+
+
+
+\usepackage{../kbordermatrix}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{64}
+% ++++++++++++++++++++++++++++++++++++++
+% =======================================
+\subsection{Ayrıt matrisinin gerçekleştirimi}
+
+
+\renewcommand{\kbldelim}{[}% Left delimiter
+\renewcommand{\kbrdelim}{]}% Right delimiter
+\[
+  \text{$f_5$} = \kbordermatrix{
+    & 1 & 2 & 3 & 4 \\
+    & 0 & 1 & 1 & 1 
+  }
+\]
+
+
+
+
+öyleyse, $ \bar{P_3} $ matrisine geri giderek 2 ve 3 üncü dizeklerin alındığı \"{o}bür seçeneği işaretleyelim. Bu yeni $ \bar{P_4} $ matrisi
+
+
+\renewcommand{\kbldelim}{[}% Left delimiter
+\renewcommand{\kbrdelim}{]}% Right delimiter
+\[
+  \text{$ \bar{P_4}$} = \kbordermatrix{
+    & 1 & 2 & 3 & 4 \\
+    1 & 1 & 1 & 0 & 0 \\
+    2 & 1 & 0 & 0 & 1 \\
+    3 & 0 & 1 & 1 & 1 \\
+    4 & 0 & 0 & 1 & 0 
+  }
+\]
+
+olacaktır. Yöntemi j = 5,6,7,8 ve 9 için uygulayarak Şekil 2.2.4b de gösterilen çizgeyi elde ederiz. \par
+Yukarda açıkladığımız bu yöntemi ayrıntılı olarak incelersek, ancak Şekil 2.2.1 de gösterilen çizgilere ilişkin ayrıt matrisini gerçekleştiriminde bir belirsizlik çıkacağı ve bu durumun dışındaki bütün gerçekleştirilebilen matrisler için, eşyapılılık altında tek bir çizge bulunacağı görülür (gösteriniz).
+
+
+\end{document}

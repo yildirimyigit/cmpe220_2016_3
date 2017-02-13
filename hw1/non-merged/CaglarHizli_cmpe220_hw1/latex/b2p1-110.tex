@@ -1,0 +1,253 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{../HBSuerDemir}	% ------------------------
+
+%\usepackage[update,prepend]{epstopdf}
+
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./images}
+\epstopdfsetup{update} % only regenerate pdf files when eps file is newer
+
+\setcounter{tocdepth}{3}
+
+\usepackage{fancyhdr} % Header/Footer
+\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[CO,CE]{óDraftó}
+\fancyfoot{}
+%\fancyfoot[CO,CE]{Draft}
+%\fancyfoot[RO,LE] {\thepage}
+\fancyfoot[L]{\footnotesize 
+Freshman Calculus by Suer \& Demir  \textbf{DRAFT} \\
+\LaTeX  by Haluk Bingol 
+\href{http://www.cmpe.boun.edu.tr/~bingol}
+{http://www.cmpe.boun.edu.tr/~bingol} 
+%\large 
+%\footnotesize 
+\today}
+\fancyfoot[R]{{\thepage} of \pageref{LastPage}}
+
+%
+%
+%
+%%\documentclass[11pt,twocolumn]{amsart}
+%\documentclass[11pt]{amsart}
+%
+%
+%\usepackage{../HBSuerDemir}	% ------------------------
+%
+%%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%%%\geometry{landscape}                % Activate for for rotated page geometry
+%%%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%%\usepackage{graphicx}
+%%\usepackage{amssymb}
+%%\usepackage{epstopdf}
+%%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+%
+%% ==== HB Header Common Packages v20160423 ====V
+%	\usepackage[utf8]{inputenc} % To use Unicode characters
+	\usepackage[iso]{datetime}
+%	\usepackage{amsmath, amssymb}
+%	%	\usepackage{etex}
+%	
+%	\usepackage[a4paper]{geometry}
+%	
+%	\usepackage{xcolor}
+%	% black, blue, brown, cyan, darkgray, gray, green, lightgray, lime, 
+%	% magenta, olive, orange, pink, purple, red, teal, violet, white, yellow
+%	\usepackage[colorlinks=true,linkcolor=red,urlcolor=blue,citecolor=red]%
+%		{hyperref}
+%	\usepackage{graphicx,epstopdf}
+%	% \graphicspath{{fig}}
+%	% \graphicspath{{../pdf/}{../jpeg/}}
+%	% \DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
+%	% \DeclareGraphicsRule{.tif}{png}{.png}%
+%	%	{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+%	\usepackage{subfigure}
+%% ==== HB Common Packages v20160423 ====A
+%% ==== HB Header Common Declarations v20161001 ====V
+	\newcommand{\hbTimeStamp}{{\color{red}--Draft-- v\today}} % version
+%	%
+%	\newcommand{\reffig}[1]{Fig.~\ref{#1}}
+%	\newcommand{\refeq}[1]{Eq.~\ref{#1}}
+%	\newcommand{\reftbl}[1]{Table~\ref{#1}}
+%	\newcommand{\refsec}[1]{Sec.~\ref{#1}}
+	\newcommand{\refcite}[1]{Ref~\cite{#1}}
+	\newcommand{\hbQuote}[1]{{\small \textsf{``#1''}}}
+	\newcommand{\reflst}[1]{List.~\ref{#1}}  % code listing
+	%
+%	\newcommand{\refthm}[1]{Theorem~\ref{#1}}
+	\newcommand{\refthmA}[2]{\refthm{#1}(\ref{#2}}
+%	\newcommand{\reflem}[1]{Lemma~\ref{#1}}
+%	\newcommand{\refdef}[1]{Definition~\ref{#1}}
+	\newcommand{\refexmp}[1]{Example~\ref{#1}}
+%	%
+%	\newcommand{\hbEtal}{et al. }
+%	\newcommand{\hbIe}{i.e., }
+%	\newcommand{\hbEg}{e.g., }
+%	%
+%	\newcommand{\hbIdea}[1]{{\color{olive}{\scriptsize [{#1}]}}}
+%	\newcommand{\hbFootnote}[2]{\footnote{{\color{red} @#1 : }#2}}
+%% ==== HB Header Common Declarations v20160423 ====A
+%
+%: == HB Code Listing v20161002 ====V
+%\usepackage{listingsutf8}
+\usepackage{listings}             % Include the listings-package
+\definecolor{hbGreen}{rgb}{0,0.6,0}
+\definecolor{hbGray}{rgb}{0.5,0.5,0.5}
+\definecolor{hbMauve}{rgb}{0.58,0,0.82}
+\definecolor{hbbgColor}{rgb}{0.98,0.98,0.98}
+%
+\lstset{ %
+	backgroundcolor=\color{hbbgColor},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+%  basicstyle=\tiny, % the size of the fonts that are used for the code
+	basicstyle=\tiny\ttfamily, % the size of the fonts that are used for the code
+%  basicstyle=\scriptsize\ttfamily, % the size of the fonts that are used for the code
+%  basicstyle=\footnotesize\ttfamily, % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{hbGreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	frame=single,                    % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Sh,                     % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{hbGray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{hbMauve},     % string literal style
+	tabsize=1,                       % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+	literate={├}{|}1 {─}{--}1 {└}{+}1
+}
+\lstset{basicstyle=\ttfamily}
+% == HB Code Listing v20161002 ====A
+%
+%- == specific ==========
+	\newcommand{\hCode}[1]{{\small \texttt{#1}\,}}		% code
+% == specific ==========
+%
+\title{
+	Manual for\\
+	\LaTeX\ Homeworks of cmpe220\\
+	{\footnotesize \hbTimeStamp}
+}
+\author{Haluk O. Bingol}
+\date{}                                           % Activate to display a given date or no date
+
+
+\begin{document}
+\hPage{b2p1/110}
+
+\noindent36. Discuss the solution of the system:
+\[
+    y + z = 1,  2x -2y -z = 0,  4x + 3y +5z = 7
+\]
+37. Discuss the solution by the use of augmented matrix:
+\[
+ \begin{bmatrix}
+    2  & -3 &  1 \\
+    3  & 0 &  2 \\
+    1  & 3 &  1 \\
+\end{bmatrix} 
+ \begin{bmatrix}
+    x  \\
+    y  \\
+    z  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    2  \\
+    5  \\
+    4  \\
+\end{bmatrix}
+\]
+38. Find right inverses, if any, of the following matrices:
+\[
+a) 
+ \begin{bmatrix}
+    2  & 0 \\
+    -1  & 3  \\
+    1  & 1  \\
+\end{bmatrix}
+\qquad b) 
+ \begin{bmatrix}
+    3, 7 \\
+\end{bmatrix}
+\]
+39. Find left inverses, if any, of the matrices given in Exercise 38. \newline
+40. Find the inverse of $
+ \begin{bmatrix}
+    a  & b &  b \\
+    0  & d &  e \\
+    0  & 0 &  f \\
+\end{bmatrix}
+\qquad (adf \neq 0)
+$ \newline
+41. Solve:
+\[
+ \begin{bmatrix}
+    1  & 1 &  1 \\
+    a  & b &  c \\
+    a^2-1  & b^2-1 &  c^2-1 \\
+\end{bmatrix} 
+ \begin{bmatrix}
+    x  \\
+    y  \\
+    z  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1  \\
+    p  \\
+    p^2-1  \\
+\end{bmatrix}
+\]
+and evaluate
+\[
+(a^2-a)x+(b^2-b)y+(c^2-c)z-(p^2-p)
+\]
+42. Find the inverse of:
+\[
+a) 
+ \begin{bmatrix}
+    2  & 1 &  -1 \\
+    0  & 2 &  1  \\
+    5  & 2 &  -3 \\
+\end{bmatrix}
+\qquad b) 
+ \begin{bmatrix}
+   1  & 0 &  2 \\
+    2  & -1 &  3 \\
+    0  & 1 &  8 \\
+\end{bmatrix}
+\]
+43. Find $x, y\in \mathbb{R}$, if any:
+\[
+ \begin{bmatrix}
+    2  & 3 &  1 \\
+    0  & -2 &  4 \\
+\end{bmatrix} 
+ \begin{bmatrix}
+    x  & y \\
+    2x & -y  \\
+    -x & 3y  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    14 & 2  \\
+    -16 & 14  \\
+\end{bmatrix}
+\]
+\end{document}  

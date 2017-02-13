@@ -1,0 +1,87 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+\hPage{feyzioglu-066}
+
+\begin{lem}
+Let $(G, \circ)$ be a group and let $e$ be a right identity element of $G$ such that, for all $a$ $\epsilon$ $G$, there exists a suitable $x$ in $G$ with $a \circ x = e$. The existence of $e$ is assured by the group axioms \ref{III} and \ref{IV}.
+\end{lem}
+
+\begin{ax}
+If $g$ $\epsilon$ $G$ is such that $g \circ g = g$, then $g = e$.
+\end{ax}
+
+\begin{ax}
+$e$ is the unique right identity in $G$.
+\end{ax}
+
+\begin{ax}
+\label{III}
+A right inverse of an element in $G$ is also a left inverse of the same element. In other words, if $a \circ x = e$, then $x \circ a = e$.
+\end{ax}
+
+\begin{ax}
+\label{IV}
+$e$ is a left identity in $G$. That is, $e \circ a = a$ for all $a$ $\epsilon$ $G$.
+\end{ax}
+
+\begin{ax}
+$e$ is the unique left identity in $G$.
+\end{ax}
+
+\begin{ax}
+Each element has a unique right inverse in G.
+\end{ax}
+
+\begin{ax}
+Each element has a unique left inverse in G.
+\end{ax}
+
+\begin{ax}
+The unique right inverse of any $a$ $\epsilon$ $G$ is equal to the unique left inverse of $a$.
+\end{ax}
+
+\begin{proof}
+(1) Let $g$ $\epsilon$ $G$ be such that $g \circ g = g$. We choose a right inverse of g with respect to $e$. This is possible by the axiom \ref{IV}. Let us call it $h$. Thus $g \circ h = e$. Then
+\[
+(g \circ g) \circ h = g \circ h
+\]
+\[
+g \circ (g \circ h) = g \circ h \text{ (by associativity),}
+\]
+\[
+g \circ e = e \text{ (since $g \circ h = e$),}
+\]
+\[
+g = e \text{ (since e is a right identity).}
+\]
+
+This proves part(1).
+
+(2) The claim is that $e$ is the unique right identity in $G$. This means: if $f$ $\epsilon$ $G$ is a right identity, that is, if $a \circ f =  a$ for all $a$ $\epsilon$ $G$, then $f = e$. Suppose $f$ is a right identity. Then $a \circ f = a$ for all $a$ $\epsilon$ $G$. Writing $f$ for $a$ in particular, we see $f \circ f = f$. Hence $f = e$ by part (1).
+
+(3) A right inverse $x$ of an arbitrary element $a$ $\epsilon$ $G$ is also a left inverse of $a$. This is what we are to prove. So we assume $a \circ x = e$ and try to derive $x \circ a = e$. We use part(1). If $a \circ x = e$, then
+\[
+(x \circ a)\circ(x \circ a) = [(x \circ a ) \circ x] \circ a \text{ (by associativity)}
+\]
+\[
+= [x \circ (a \circ x)] \circ a \text{ (by associativity)}
+\]
+\[
+= [x \circ e] \circ a
+\]
+\[
+= x \circ a. 
+\]
+So $g := (x \circ a)$ is such that $g \circ g = g$. By part (1), $g = e$. So $x \circ a = e$.
+
+(4) We are to prove that $e$ is a left identity. So we must show $e \circ a = a$ for all $a$ $\epsilon$ $G$. Let $a$ $\epsilon$ $G$ and let $x$ be a right inverse of $a$. Then
+\[
+a \circ x = e.
+\]
+\end{proof}
+
+\end{document}

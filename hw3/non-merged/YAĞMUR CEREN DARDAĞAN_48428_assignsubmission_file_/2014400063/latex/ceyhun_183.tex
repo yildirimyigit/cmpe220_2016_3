@@ -1,0 +1,126 @@
+\documentclass{amsbook}
+\usepackage{../HBSuerDemir}
+\usepackage{../Ceyhun}
+\usepackage{../amsTurkish}
+\usepackage{tikz} %to draw the planar graphs
+\usepackage{tkz-berge}
+\usetikzlibrary{positioning} %to position the graphs
+\title{project3}
+\author{cerendrdgn }
+\date{December 2016}
+
+\begin{document}
+
+\GraphInit[vstyle=Hasse]
+
+\hPage(Ceyhun-183)
+\begin{tikzpicture}[%
+  every node/.style={draw,fill=white!20,circle,minimum size=10pt,font=\footnotesize},
+  node distance=3cm,on grid]
+  % the vertices
+  \node at (0,0) (begin);
+
+  \node at (6,0) (one);
+  \node at (2,-2) (two);
+  \node at (4,-2) (three);
+  \node at (2,-4) (four);
+  \node at (4,-4) (five);
+  \node at (0,-6) (six);
+  \node at (6,-6) (seven);
+
+  % the edges
+  \draw (begin) -- (one) -- (seven) -- (six) -- (begin) -- (two) -- (three) -- (five) -- (four) -- (two);
+  \draw (one) -- (three);
+  \draw (five) -- (seven);
+  \draw (four) -- (six);
+  \draw (3,-8) node [fill=white!30!white,below]{$(c)$};
+    \begin{scope}[xshift=12cm][%
+  every node/.style={draw,fill=white!20,circle,minimum size=10pt,font=\footnotesize},
+  node distance=3cm,on grid]
+  % the vertices
+  \node at (-3,-6) (begin);
+
+  \node at (0,-6) (one);
+  \node at (3,-6) (two);
+  \node at (-1,-5) (three);
+  \node at (0,-5) (four);
+  \node at (1,-5) (five);
+  \node at (-1.5,-2.7) (six);
+  \node at (-0.5,-3.5) (seven);
+  \node at (0.5,-3.5) (eight);
+  \node at (1.5,-2.7) (nine);
+  \node at (0,-2) (ten);
+  \node at (0,0) (eleven);
+
+  % the edges
+  \draw (begin) -- (one) -- (two) -- (nine) -- (eleven) -- (ten) -- (nine) -- (five) -- (eight) -- (ten)--(seven)--(eight)--(four)--(five)--(one)--(three)--(four)--(seven)--(six)--(begin)--(three)--(seven);
+  \draw (three) -- (six)--(eleven);
+  \draw (six) -- (ten);
+  \draw (five) -- (two);
+  \draw (eight)--(nine);
+  \draw (begin) to [bend left=55] (eleven);
+  \draw (eleven) to [bend left=55] (two);
+  \draw (begin) to [bend right=35] (two);
+
+    
+    \end{scope}
+ 
+\draw (12,-8) node [fill=white!30!white,below]{$(ç)$};
+
+\end{tikzpicture}
+\bigbreak
+\bigbreak
+\bigbreak
+\bigbreak
+\bigbreak
+\centering
+
+\begin{tikzpicture}[%
+ every node/.style={draw,fill=white!20,circle,minimum size=7pt,font=\footnotesize},
+  node distance=3cm,on grid]
+  % the vertices
+  \node at (0,0) (begin);
+
+  \node at (0,-1.3) (one);
+  \node at (-5.6,-2.4) (two);
+  \node at (-1.8,-2.2) (three);
+
+  \node at (1.8,-2.2) (five);
+  \node at (5.6,-2.4) (six);
+  \node at (-3.5,-3) (seven);
+  \node at (-1,-2.9) (eight);
+  \node at (1,-2.9) (nine);
+  \node at (3.5,-3) (ten);
+  \node at (-3,-4.7) (eleven);
+  \node at (-1.6,-4) (twelve);
+  \node at (1.6,-4) (thirteen);
+  \node at (3,-4.7) (fourteen);
+  \node at (0,-5) (fifteen);
+  \node at (0,-6) (sixteen);
+  \node at (-2.5,-6) (seventeen);
+  \node at (-4,-7.3) (eighteen);
+  \node at (2.5,-6) (nineteen);
+  \node at (4,-7.3) (twenty);
+
+  % the edges
+  \draw (begin) -- (one) -- (three) -- (seven) -- (two) -- (eighteen) -- (twenty) -- (six) -- (ten) -- (five)--(nine)--(thirteen)--(fourteen)--(nineteen)--(sixteen)--(seventeen)--(eleven)--(twelve)--(fifteen)--(thirteen);
+  \draw (two) -- (begin)--(six);
+  \draw (one) -- (five);
+  \draw (eight) -- (twelve);
+  \draw (three)--(eight)--(nine);
+  \draw (seven)-- (eleven);
+  \draw (seventeen)-- (eighteen);
+  \draw (nineteen) -- (twenty);
+  \draw (fifteen) -- (sixteen);
+  \draw (ten) -- (fourteen);
+  \draw (0,-8) node [fill=white!30!white,below]{$(d)$};
+\end{tikzpicture}
+
+
+\bigbreak
+\bigbreak
+\noindent Şekil 4.1.5 Düzgün çokyüzlüler.
+
+\footnote{I have used latex code to draw the graphs instead of using images}
+
+\end{document}

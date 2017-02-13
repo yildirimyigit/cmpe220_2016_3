@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{../HBSuerDemir}
+\begin{document}
+\hPage{b2p1-128}
+
+Properties: 
+  \begin{itemize}
+\item[1.] A . B = B .  A ( com. law)
+\item[2.] ($\lambda$A). B = A.($\lambda$B) =  $\lambda$(A.B)  
+\item[3.] A. ( B+C) = A.B + A.C (dist. law)
+\end{itemize}
+Proof:
+The first two properties are direct consequences of the definition.
+To prove the distributive law 
+ 
+\begin {tikzpicture}
+\draw[->](0,0) -- (1.33,0);
+\draw[->](1.33,0) -- (2.66,0);
+\draw[->](2.66,0) -- (4,0);
+\draw[->](0,0) -- (2.3,0.6);
+\draw[->](0,0) -- (1,1.3);
+\draw[->](1,1.3) -- (3.5,2);
+\draw[dotted](1,1.3) -- (1.3,0); 
+\draw[dotted](3.5,2) -- (2.66,0);
+\put(-7, -7) {$O$}
+\put(25, 40) {$B$}
+\put(70, -10) {$R'$}
+\put(65, 17) {$C$}
+\put(30, -10) {$B'$}
+\put(100, 55) {$R$}
+\put(110, 2,2) {$A$}
+\end{tikzpicture}
+\begin{equation}
+A. ( B+C) = A.B + A.C
+ \end{equation}
+
+
+consider $\vec{BR} = \vec{OC}$ (see fig.), and projections B', R' of B, R on OA. Then, 
+
+\begin{itemize}
+  \item[] A.(B+C) = A.R
+  \item[] =A.R' ( Geom. interp. 1) 
+  \item[] =A. (B'+C') 
+  \item[] =A.B' + A.C' (collinearity of vectors)
+  \item[] =A.B + A.C (Geom. interp. 1)
+\end{itemize}
+
+Now we derive the analytic expression
+
+\begin{align}
+A.B = a_{1}b{1} + a_{2}b_{2} + a_{3}b_{3} 
+for A = ( a_{1},a_{2},a_{3} ), B=( b_{1}, b_{2}, b_{3} ). 
+\end{align}
+Expanding 
+\begin{align}
+A.B = (a_{1}i + a_{2}j + a_{3}k). (b_{1}i + b_{2}j + b_{3}k) 
+\end{align}
+
+by distributive law, we get nine terms, six of which are zero by properties
+
+\begin {equation}
+i.j = 0,  j.k = 0, k.i = 0
+\end {equation}
+
+for orthogonal vectors i,j,k and the remaining terms are 
+\begin {align}
+a_{1}b_{1}, a_{2}b_{2}, a_{3}b_{3} 
+\end{align}
+by the properties
+i.i = 1,  j.j = 1, k.k = 1 for unit vectors i,j,k
+
+\end{document}
+
+

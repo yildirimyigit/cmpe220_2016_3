@@ -1,0 +1,51 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/333}
+% ++++++++++++++++++++++++++++++++++++++
+
+\[
+    \xi = \rho(\cos\varphi + i\sin\varphi)
+\]
+is an nth root of the complex number
+\[
+    z=r(\cos\theta + i\sin\theta),
+\]
+it satisfies the equation $\xi^n=z$ which, by the use of De Moivre's formula, gives
+\[
+    \rho^2(\cos n\varphi + i\sin n\varphi) = r \cos(\theta+2k\pi)+i\sin(\theta+2k\pi)
+\]
+and then
+\begin{eqnarray*}
+    \rho^2&=&r, \quad n=\varphi\theta+2k\pi\\
+    \rho&=&\sqrt[n]{r},\quad n\varphi=\frac{\theta}{n}+k\frac{2\pi}{n},\quad\quad k\in\mathbb{Z}
+\end{eqnarray*}
+Hence $z$ has n distinct nth roots given by
+\[
+    z_k=\sqrt[n]{r}\Big(\cos(\frac{\theta}{n}+k\frac{2\pi}{n})+i\sin(\frac{\theta}{n}+k\frac{2\pi}{n})\Big),\quad\quad k=1,2,\dotsc,n.
+\]
+
+\par Since $\hAbs{z_k}=\sqrt[n]{r}$, all these roots $z_1, z_2,\dotsc, z_n$ lie on the circle with center at the origin and radius $\sqrt[n]{r}$ as vertices of a regular n-gon.
+\par In particular, the nth roots of 1 (unity) are
+\[
+    \varepsilon_k = \cos k\frac{2\pi}{n} + i \sin k\frac{2\pi}{n}, \quad\quad k=1,2,\dotsc,n.
+\]
+one of which, namely $\varepsilon_n$ is the number 1 (Note that $\varepsilon_n=\varepsilon_0$). 
+
+\par If one of the nth roots of $z$ is $z_1$, then all the nth roots of $z$ are obtained by multiplying $z_1$ by $\varepsilon_1,\dotsc,\varepsilon_n$.
+\par The roots of the polynomial equation $z^2-1=0$ being $\varepsilon_1,\dotsc,\varepsilon_n$, the following properties are the consequence of the relations between the roots and coefficients:
+\begin{eqnarray*}
+    \sigma_1 &=& \sum \varepsilon_k=\varepsilon_1+\dotsb+\varepsilon_n=0,\\
+    \sigma_2 &=& \sum_{k<l} \varepsilon_k \varepsilon_l=\varepsilon_1 \varepsilon_2+\dotsb+\varepsilon_1 \varepsilon_n+\dotsb+ \varepsilon_{n-1} \varepsilon_n=0,\\
+    \sigma_3 &=& \sum_{k<l<m} \varepsilon_k \varepsilon_l \varepsilon_m=0,\\
+    \vdots\\
+    \sigma_{n-1}&=&0,\\
+\end{eqnarray*}
+
+% =======================================================
+\end{document}

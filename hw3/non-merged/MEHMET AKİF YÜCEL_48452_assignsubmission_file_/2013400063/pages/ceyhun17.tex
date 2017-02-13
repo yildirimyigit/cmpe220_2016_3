@@ -1,0 +1,31 @@
+\documentclass[11pt]{amsbook}
+\usepackage[turkish]{babel}
+\usepackage{../amsTurkish}
+\usepackage{../Ceyhun}
+\begin{document}
+\hPage{ceyhun-17}
+Şekil 1.2.1 deki Ç\hPairingParan{9,14} çizgesine göre, 
+	\begin{flalign*}
+	G_{1,5}=\hPairingParan{a_{1},a_{7},a_{11},a_{10},a_{8},a_{6},a_{4},a_{3},a_{5}}
+	\end{flalign*}
+uç düğümleri $d_{1}$ ve $d_{5}$, uzunluğu ise $9$ olan bir gezidir.
+	\begin{definition}
+		Bir düğüme çakışık olan ayrıtların sayısına, \underline{düğümlerin kertesi} denir.
+	\end{definition}
+	$d_{i}$ düğümünün kertesi $k_{i}$ ile gösterelim. Her ayrıt yalnız iki düğüme çakışık olabileceğinden,
+	\begin{flalign*}
+	&2a=\sum_{i=1}^{d}k_{i}&&
+	\end{flalign*}
+	eşitliğini hemen yazabiliriz.
+	\begin{theorem}
+		Bir çizgede, kertesi teksayı olan düğümlerin sayısı çiftsayıdır.
+	\end{theorem}
+	Tanıt: \\
+	Kertesi $i$ olan düğümlerin sayısını $t_{i}$ ile gösterirsek,
+	\begin{flalign*}
+		2a&=\sum_{\hPairingParan{i}}k_{i}&& \\
+		&=1t_{1}+2t_{2}+3t_{3}+\cdots+nt_{n}&& \\
+		&\text{buradan da,}&& \\
+		&2a-2t_{2}-2t_{3}-\cdots=1t_{1}+1t_{3}+\cdots&&
+	\end{flalign*}
+\end{document}

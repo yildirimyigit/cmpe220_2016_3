@@ -1,0 +1,1 @@
+I drew all the graphs using "http://GeoGebra.org", therefore there is no image source.

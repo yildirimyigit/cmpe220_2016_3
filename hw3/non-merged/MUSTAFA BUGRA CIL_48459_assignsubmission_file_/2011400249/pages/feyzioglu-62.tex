@@ -1,0 +1,52 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage[english,turkish]{babel}
+\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{amssymb}
+\usepackage{fancyhdr} % Header/Footer
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\fancyhf{}
+% \fancyhead[L]{\rightmark} %use this for autoshowing section name
+\fancyfoot[L]{\footnotesize 
+	Algebra I by Feyzioğlu  \textbf{DRAFT} \\
+	\LaTeX ~by Haluk Bingol 
+	\href{http://www.cmpe.boun.edu.tr/~bingol}
+	{http://www.cmpe.boun.edu.tr/bingol} 
+	%\large 
+	%\footnotesize 
+	\today}
+\fancyfoot[R]{{\thepage} of \pageref{LastPage}}
+
+\begin{document}
+	
+	% ++++++++++++++++++++++++++++++++++++++
+	\hPage{feyzioglu/62}
+	% ++++++++++++++++++++++++++++++++++++++
+	\bigskip
+	{\centering
+	\Huge{CHAPTER 2}\\
+	\huge{Groups}\bigskip\bigskip\bigskip
+	\Large{\section{Basic Definitions}}\par}
+	\bigskip\noindent
+	Before giving the formal definition of a group, we would rather present
+	some concrete examples.\\\noindent
+	\subsection{Examples}
+	\begin{enumerate}
+		\item[(a)] Consider the addition of integers. From the numerous
+		properties of this binary operation, we single out the following ones.
+		\begin{enumerate} 
+			\item[(i)] + is a binary operation on $Z$, so, for any $a,b \in Z$, we have $a + b \in Z$.	
+			\item[(ii)] For all $a, b, c \in Z$, we have $(a + b) + c = a + (b + c)$.	
+			\item[(iii)] There is an integer, namely $0 \in Z$, which has the property $a + 0 = a$ for all $a \in Z$. 
+			\item[(iv)] For all $a \in Z$, there is an integer, namely $-a$, such that\qquad\quad $a + (-a) = 0$. 
+		\end{enumerate}
+		\item[(b)] Consider the multiplication of positive real numbers. Let $\mathbb{R}^{+}$ be the set of positive real numbers. Here the multiplication enjoys properties apalogous to the ones above.
+		\begin{enumerate} 
+			\item[(i)]  · is a binary operation on $\mathbb{R}^{+}$, so, for any $a, b \in \mathbb{R}^{+}$; we have\quad $a \cdot b \in \mathbb{R}^{+}$. 
+			\item[(ii)] For all $a, b, c \in \mathbb{R}^{+}$, we have $(a \cdot b) \cdot c  = a \cdot (b \cdot c)$. 
+			\item[(iii)] There is a positive real number, namely $1 \in \mathbb{R}^{+}$, which has	the property $a \cdot 1 = a$ for all $a \in \mathbb{R}^{+}$.
+		\end{enumerate}
+	\end{enumerate}	
+	% =======================================================
+\end{document}  

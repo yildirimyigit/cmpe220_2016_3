@@ -1,0 +1,56 @@
+%Correct the file name.
+%X: book number
+%Y: part number
+%ZZZ: page number in three digits. So page 3 would be 003.
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/032}
+% ++++++++++++++++++++++++++++++++++++++
+Observe that every term in one series is contained in the other exactly once: 
+\begin{align*}
+    S' &= \sum\limits_{0} \left( \frac{1}{2n+1}-\frac{1}{4n+2}-\frac{1}{4n+4}\right) 
+    \\ &= \sum\limits_{0}\left(\frac{1}{4n+2}-\frac{1}{4n+4}\right)=\frac{1}{2}\sum\limits_{0} \left( \frac{1}{2n+1}-\frac{1}{2n+2}\right)
+    \\ &= \frac{1}{2}\left(1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\dotsc+\left( -1 \right)^{n+1} \frac{1}{n}+\dotsc \right)=\frac{1}{2} s.
+\end{align*}
+\subsection{EVALUATİON OF SERİES} \ 
+
+Each series can be evaluated by neglecting the remainder $R_{n+1}$ for certain n with some approximation.
+
+Exact evaluation is impossible in general, except for convergent geometric series and some series whose general term $a_n$ is rational function of $n$. There are other possibilities by the use of power series $\left( \S 1.3 \right)$.
+\begin{exmp}
+Evaluate the geometrik series.\\
+a)$\sum\limits_{0}\quad \left( \frac{1}{2}\right)^n $ \qquad \qquad \qquad \qquad
+b)$\sum\limits_{0}\quad \left(-1\right)^n \frac{2^n}{3^n}$
+\end{exmp}
+
+\begin{hSolution} Recalling
+$$a \left(1+r+\dotsc+r^n+\dotsc \right) =\frac{a}{1-r} \qquad \left( \hAbs{r} \right) < 1 $$ \\
+we have
+
+a) $ r= \frac{1}{2} \left ( \hAbs{\frac{1}{2}} < 1 \right )\quad \Longrightarrow \quad  s= \frac{1}{1-\frac{1}{2}} = 2 , $	
+
+b)$ r= - \frac{2}{3} \left ( \hAbs{-\frac{2}{3}} < 1 \right )\quad \Longrightarrow \quad  s= \frac{1}{1+\frac{2}{3}} = 3/5 . $
+\end{hSolution}
+\begin{exmp}
+Given $ t = 2,1\overline{37}  $ ,
+
+a) write it as a geometric series ,
+ \end{exmp}
+
+
+
+
+
+
+
+
+
+
+\end{document}  

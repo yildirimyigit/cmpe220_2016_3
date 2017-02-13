@@ -1,0 +1,60 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\DeclareMathOperator{\arcsinh}{Argsinh}
+\DeclareMathOperator{\arccosh}{Argcosh}
+\DeclareMathOperator{\arctanh}{Argtanh}
+\DeclareMathOperator{\arccoth}{Argcoth}
+\DeclareMathOperator{\arcsech}{Argsech}
+\DeclareMathOperator{\arccsch}{Argcsch} 
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/420}
+% ++++++++++++++++++++++++++++++++++++++
+
+\[\int\frac{dx}{x^2+1} = \arcsinh x + c = \ln(x + \sqrt{x^2+1}) + c\]
+
+\[\int\frac{dx}{x^2-1} = \arccosh x + c = \ln(x + \sqrt{x^2-1}) + c\]
+
+\[\int\frac{dx}{1-x^2} = \left( 
+							\begin{array}{ll} 
+								\arctanh x + c, & \hAbs{x} < 1 \\
+                     			\arccoth x + c, &  \hAbs{x} > 1
+       						\end{array} 
+       					\right)
+       				  = \frac{1}{2} \ln\hAbs{\frac{1+x}{1-x}} + c\]
+
+\[\int\frac{dx}{x\sqrt{1+x^2}} = -\arccsch\hAbs{x} + c = -\arcsinh\frac{1}{\hAbs{x}} + c\]
+
+\[\int\frac{dx}{x\sqrt{1-x^2}} = -\arcsech\hAbs{x} + c = -\arccosh\frac{1}{\hAbs{x}} + c\]\\
+
+\underline{Example}. Find the derivatives of the following functions at $x = \pi /3$
+
+\[\text{a)} \quad f(x) = \arccoth(\sec x) \quad \text{b)} \quad g(x) = \arcsinh(\tan x)\]\
+
+\underline{Solution}.
+
+\[\text{a)} \quad f^\prime(x) = \frac{1}{1-\sec^2x} \ D\sec x = \frac{1}{-\tan^2x}.\sec x \tan x = -\csc x\]
+
+\quad \[f^\prime(\pi / 3) = -\csc \pi / 3 = -2/\sqrt{3}\]
+
+\[\text{b)} \quad g^\prime(x) = \frac{1}{\sqrt{1+\tan^2x}} \ D\tan x = \frac{1}{\sec x}.\sec^2 x = \sec x\]
+
+\quad \[g^\prime(\pi / 3) = \sec \pi / 3 = 2\]\
+
+\underline{Example 2}. Evaulate
+
+\[\text{a)} \quad A = \int\frac{dx}{\sqrt{9+x^2}} \quad\quad\quad \text{b)} \quad B = \int_2^3\frac{dx}{1-x^2}\]
+
+\underline{Solution}.\\
+
+a) Setting $x = 3t, \ dx = 3dt.$
+
+\[A = \int\frac{3dt}{3\sqrt{1+t^2}} = \ln(t + \sqrt{t^2+1}) + c_1\]
+
+\[= \ln(\frac{x}{3} + \sqrt{\frac{x^2}{9}+1}) + c_1 = \ln(x + \sqrt{x^2+9}) + c\]
+
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+
+\begin{document}    	
+
+\chapter{INTEGRATION}
+\section{INDEFINITE INTEGRAL (PRIMITIVE FUNCTION)}
+
+\hPage{b1p2/341}
+
+\subsection{DEFINITIONS}
+$F(X)$ is called a \hDefined{primitive function} or simply a \hDefined{primitive} of the function $f(x)$ is the derivative of $F(x)$
+\par According to the definiton, one can write
+
+\begin{align*}
+	D F(x) = f(x) \Longrightarrow F(x) = \frac{1}{D}f(x)
+\end{align*}
+
+\noindent where $\frac{1}{D} (= D^{-1})$ is the inverse of the derivative otorator D and accordingly $F(x)$ is said to be an \hDefined{antiderivative} of $f(x)$.
+\par In terms of differentials we have
+
+\begin{align*}
+	D F(x) = f(x) \Longrightarrow dF(x) = f(x)dx \Longrightarrow F(x) = \frac{1}{d} (f(x)dx)
+\end{align*}
+
+where $\frac{1}{d}(=d^{-1})$ is the inverse of the differential operator d, denoted byte symbol $\int$ which is called \hDefined{integral sign}. Then
+
+\begin{align*}
+	F(x) = \int f(x)dx \quad \text{(Read: \hDefined{indefinite integral} of $f(x)dx)$}
+\end{align*}
+
+\par The following theorem justifies the term "indefinite":
+
+\begin{thm}
+	Any two primitives of a given function differ by a constant.
+	\begin{proof}
+		Let $F(x)$,  $G(x)$ be any two primitives of the given function f(x).
+		\begin{align*}
+			D &F(x) = D G(x) = f(x) \Longrightarrow D(F(x) - G(x)) = 0 \\
+			\Longrightarrow \quad &F(x) - G(x) = c\quad \text{(c is an arbitrary constant).}
+		\end{align*}
+	\end{proof}
+\end{thm}
+
+\begin{cor}
+	If $F(x)$ is a primitive of $f(x)$, then any primitive is in the form $F(x) + c$ where $c \in R$, namely
+
+	\begin{align*}
+		\int f(x)dx + c
+	\end{align*}
+
+	where c is called the \hDefined{constant of integration}, and f(x) the \footnote{This corollary ends in the next page.}
+\end{cor}
+
+\end{document}

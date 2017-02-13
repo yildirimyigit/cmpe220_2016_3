@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{../HBSuerDemir}
+
+
+%This document covers the page 73 in the first part of the second calculus book of B. Süer & H.Demir.
+
+
+\begin{document}
+\hPage{b2p1/73}
+\hNewLine					% it is because after the \hPage statement one space indent is applied to next statement.\hNewLine prevent this unwanted space character.
+In a matrix and its transpose, $a_{ij} = a_{ji}$ when $i = j$ and these
+matrices have the same diagonal elements. 
+
+\underline{Some special square matrices}:
+
+ln a square matrix $[a_{ij}]_{n}$
+\begin{hEnumerateAlpha}
+
+	\item
+	
+	If $a_{ij} = a_{ji} \text{\space} (\text{for all } i, j)$ $A$ is called a \textcolor{red}{\textit{symmetric}} matrix.
+	 
+	\item
+	
+	If $a_{ij} = -a_{ji} \text{\space} (\text{for all } i, j)$ $A$ is called a \textcolor{red}{\textit{skew symmetric matrix}}, and $A$ is \textcolor{red}{\textit{zero axial}} since $a_{ii} = 0$.
+	
+	\item
+	
+	If $a_{ij} = 0$ when  $i \neq j$, $A$ is a \textcolor{red}{\textit{diagonal matrix}}.
+	
+	\item
+	
+	\footnote{A comma is added to the item in d.}
+	If a diagonal matrix  $A$ have equal diagonal elements, $A$ is a \textcolor{red}{\textit{scalar matrix}}.
+	
+	\item
+	
+	If in a scalar matrix $\lambda = 1$,  $A$ is an \textcolor{red}{\textit{identity matrix}} (unit matrix) $I_{n}[=\delta_{ij}]_{n}$
+	
+	\item
+	
+	If in a scalar matrix $\lambda = 0$,  $A$ is a \textcolor{red}{\textit{zero matrix}} $0_{n}$.
+
+\end{hEnumerateAlpha}
+
+\hNewLine					% to prevent the text collision between last item and next statement. 
+The matrices
+\[
+	\begin{bmatrix}
+	    \lambda_{1} & 0 		   & \cdots   & 0 \\
+	    0 			& \lambda_{2}  & \ddots   & \vdots \\
+	    \vdots 		& \ddots 	   & \ddots   & 0 \\
+	    0 			& \cdots       & 0 		  & \lambda_{n}
+	\end{bmatrix}
+	\begin{bmatrix}
+	    \lambda & 0 		& \cdots  & 0 \\
+	    0 		& \lambda  	& \ddots  & \vdots \\
+	    \vdots  & \ddots 	& \ddots  & 0 \\
+	    0 		& \cdots 	& 0 	  & \lambda
+	\end{bmatrix}
+	I_{n}
+	=
+	\begin{bmatrix}
+	    1 		& 0 	 & \cdots  & 0 \\
+	    0 		& \ddots & \ddots  & \vdots \\
+	    \vdots 	& \ddots & \ddots  & 0 \\
+	    0 		& \cdots & 0 	   & 1
+	\end{bmatrix}
+	0_{n}
+	=
+	\begin{bmatrix}
+	    0	   	& 0 	 & \cdots  & 0 \\
+	    0 		& 0 	 & \cdots  & 0 \\
+	    \vdots  & \vdots & \space  & \vdots \\
+	    0 		& 0  	 & \cdots  & 0
+	\end{bmatrix}
+\]
+\footnote{A comma is added, after n. Also period is added at the end of the sentence.}
+are diagonal, scalar, identity and zero matrices of order n, respectively.
+
+An identity matrix $I$ is the matrix [$\delta_{ij}$] where $\delta_{ij}$ is the (\underline{kronecker $\delta$}) defined by
+\[
+	\delta_{ij}=
+	\begin{cases}
+	    1,  & \text{when } i = j\\
+	    0,  & \text{when } i\neq j\\
+	\end{cases}
+\]
+\end{document}
+
+
+

@@ -1,0 +1,39 @@
+\documentclass[12 pt]{article}
+\usepackage[utf8]{inputenc}  %allows the user to input accented characters directly from the keyboard
+\usepackage[turkish]{babel}
+\usepackage{fancyhdr} %To customize the footer and header in your document import it.
+\pagestyle{fancy}
+\newtheorem{theorem}{Tanım}[section]
+\newtheorem{corollary}{Tanım}[theorem]
+\newtheorem{definition}{Teorem}[theorem]
+\fancyhf{} %clears the header and footer.
+\lhead{4.1 Düzlemsel Çizgeler} %Prints the text set inside the braces on the left side of the header.
+
+\begin{document}
+\textbf{Tanıt}\\
+
+Ç(d,a)' nın dönüşül düzlemsel olabilmesi için, her yüzün üç ayrıttan oluşan bir üçgen olması gerekmektedir. Ç(d,a)'da y yüz varsa, bu yüzleri tanımlayan ayrıtların sayısı 3y olacaktır. Öte yandan, her ayrıt iki ayrı yüzde de bulıunacağı için;\\
+$ 2a = 3y $\\
+dir. Euler eşitliğini, bu koşulu da kullanarak yazarsak,\\
+
+$ \displaystyle d - a + \frac
+							{2}{3} 
+								  a 
+								    = 2 $\\
+
+$ a = 3d - 6 $\\
+buluruz. 
+
+\begin{definition}
+Düzlemsel Ç(d,a) çizgesinde, kertesi 6'dan az olan en az bir düğüm vardır. 
+\end{definition}
+
+\textbf{Tanıt}\\
+
+Ç(d,a) düzlemsel olduğu için, Teorem $ 4.1.2 $'den, \\
+$ a 
+	\leq 
+		3d - 6 $\\
+eşitsizliğini biliyoruz. Genellemden bir şey yitirmeksizin, Ç(d,a)'da kertesi m $( m \leq 5 )$ olan 
+
+\end{document}

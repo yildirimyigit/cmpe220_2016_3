@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{../HBSuerDemir}
+\begin{document} 
+\hPage{b2p2/304}	
+\textbf{Example.}Evaluate
+\begin{align*}
+	&a) \dfrac{d}{dt} \int_{\frac{\pi}{2}}^{\pi}  \dfrac{\cos xt}{x} \, dx & b) \dfrac{d}{dt} \int_{0}^{x^{2}}  \dfrac{\arctan x}{y^{2}} \, dx
+\end{align*}
+\textbf{Solution.}
+\begin{align*}
+	a) \dfrac{d}{dt} &\int_{\frac{\pi}{2}}^{\pi}  \dfrac{\cos xt}{x} \, dx = \int_{\frac{\pi}{2}}^{\pi}  \dfrac{\partial }{\partial x} \, \dfrac{\cos xt}{x} \, dx \\
+	=&\int_{\frac{\pi}{2}}^{\pi}  -\dfrac{x \,\sin xt}{x} \, dx  = \left. \dfrac{\cos xt}{t} \right|_{x=\frac{\pi}{2}}^\pi \\
+	=&\dfrac{\cos \pi t - \cos \frac{\pi}{2} t}{t}	\\
+	b)\frac{d}{d \, y} & \int_{0}^{y^{2}} \arctan \dfrac{x}{y^{2}} \, dx \\
+	=&(\arctan \frac{y^{2}}{y^{2}}  ) \, 2y  - (\arctan 0)0  +\int_{0}^{y^{2}}   \dfrac{\partial }{\partial y} \,  \arctan\frac{x}{y^{2}} \, dx \\
+	=&\frac{\pi}{2} \, y + \int_{0}^{y^{2}} -\dfrac{-2xy}{x^{2}+y^{4}} \, dx  -y \, \ln2 \\
+\end{align*}
+
+\begin{align*}
+\centering
+ EXERCISES(4,2) 
+\end{align*}
+16. Evaluate \\
+\begin{align*}
+	&a)  \left. \dfrac{\partial}{\partial x} \,  \dfrac{x-y+1}{x+y-1}\right|_{(0,0)}  &b) \left.  \dfrac{\partial}{\partial y} \,  \dfrac{x-y+1}{x+y-1}\right|_{(0,0)} 
+	\end{align*}
+17. If
+$ u(x,y,z)=x^{2}y+y^{2}z+z^{2}x
+$
+, verify  that  \\
+\begin{align*}
+\dfrac{\partial u}{\partial x} + \dfrac{\partial u}{\partial y} + \dfrac{\partial u}{\partial z} =(x+y+z)^2 \\
+\end{align*}
+18.Verify the equality 
+$f_{xy}=f_{yx}
+$
+
+for\\
+\begin{align*}
+&a)f(x,y)= \cos x y^{2} & b)f(x,y)=\sin^{2}x \cos y \\
+&c)f(x,y)= {\dfrac{y}{x}} & d)f(x,y)= \sqrt{x^{2}+y^{2}} \\
+\end{align*}	
+	
+\end{document}

@@ -1,0 +1,86 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p2/307}
+% ++++++++++++++++++++++++++++++++++++++
+
+$\theta = \arctan{\frac{y}{x}}$ (a constant) satisfies
+
+\begin{equation*}
+	x^2 \frac{\partial^2 z}{\partial x^2} + 2xy \frac{\partial^2 z}{\partial x \partial y} + y^2 \frac{\partial^2 z}{\partial y^2} = 0
+\end{equation*}
+
+\begin{exmp}
+	If in $H(x,y)$ one makes the substitution
+	\begin{equation*}
+		x^2 = 2(au+bv), \quad y^2 = 2(au-bv),
+	\end{equation*}
+	evaluate $\partial^2 H / \partial x \partial y$ in terms of partial derivatives of $H$ with respect to $u$, $v$.
+\end{exmp}
+
+\begin{exmp}
+	Find $z_{uu}$, if $z = x^2 - 2xy - y^2$ where
+	\begin{equation*}
+		x = u^2 - v^2, \quad y = 2uv
+	\end{equation*}
+	a) by chain rule\\
+	b) by finding $z$ in terms of $u$ and $v$.
+\end{exmp}
+
+\begin{exmp}
+	Which one of the following is homogenous and find its degree:
+	\begin{multicols}{2}
+		\noindent
+		\begin{equation*}
+			\text{a) } f(x, y) = \frac{(x^2 + y^2 - 3xy)^{1/2}}{x^3 + y^3 + 2xy^2}
+		\end{equation*}
+		\columnbreak
+		\begin{equation*}
+			\text{b) } f(x, y) = x \ln y-y \ln x \color{white} \frac{a^2}{b^2} %added an invisible(white) fraction to align columns
+		\end{equation*}
+	\end{multicols}
+\end{exmp}
+
+\begin{exmp}
+	Verify EULER's Theorem for the function $f(x,y) = \ln \frac{y}{x} + \arctan \frac{x}{y}$ %equation is split in half (alternative on next line)
+	%Verify EULER's Theorem for the function \\ $f(x,y) = \ln \frac{y}{x} + \arctan \frac{x}{y}$ %equation is pushed to next line to prevent splitting
+\end{exmp}
+
+\begin{exmp}
+	Same question for: \footnote{possible error in part b, as first and second term directly cancel each other}
+	\begin{align*}
+		\text{a) } u &= \arcsin \sqrt{\frac{x^2 - y^2} {x^2 + y^2}} \\
+		\text{b) } u &= (x + y + z)^3 - (x + y + z)^3 - (x - y + z)^3 - (x + y - z)^3 
+	\end{align*}
+\end{exmp}
+
+\begin{exmp}
+	Show that every line normal to the curve $z^2 = 3x^2 + 3y^2$ intersects $z$-axis.
+\end{exmp}
+
+\begin{exmp}
+	Find the equation of the tangent plane and the equation of the normal line to the given surface at the given point:
+	\begin{equation*}
+		\text{a) } 
+		z = \text{e}^x \sin y, \quad (1, \frac{\pi}{2}, \text{e}) 
+		\qquad 
+		\text{b) } 
+		\sqrt{x} + \sqrt{y} + \sqrt{z} = 6, \quad (4, 1, 9)
+	\end{equation*}
+\end{exmp}
+
+\begin{exmp}
+	Show that the sum of the squares of the intercepts of any plane tangent to the surface
+	\begin{equation*}
+		x^{2/3} + y^{2/3} + z ^{2/3} = c^{2/3}
+	\end{equation*}
+	is constant.
+\end{exmp}
+
+% =======================================================
+\end{document}  

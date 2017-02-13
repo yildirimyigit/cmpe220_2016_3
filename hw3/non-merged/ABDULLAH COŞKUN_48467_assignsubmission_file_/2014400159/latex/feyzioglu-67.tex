@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+ 
+\title{\LaTeX}
+\date{}
+\begin{document}
+\centering
+$a\circ x=x\circ a$ \quad (by part (3))
+$$(a\circ x)\circ a = (x\circ a)\circ a$$
+$$a\circ (x\circ a) = (x\circ a)\circ a$$
+$$a\circ e = e\circ a$$
+$$a= e\circ a$$
+\raggedright
+Therefore, $e$ is a lef identity as well. This proves part (4).\\
+(5) The claim is that $e$ is the unique left identity in $G$. This means: if $f$ is\\
+a left identity in $G$ so that $f\circ a=a$ for all $a\in G$, then $f=e$. We know that\\
+the right identity $e$ is a left identity (part (4)), and that $e$ is the unique \\
+right identity (part (2)). So we conclude that $e$ is the unique left identity.\\
+Is this correct? No, this is wrong. This would be correct if we knew that \\
+any left identity is also a right identity ( and so the unique right identity \\
+by part (2)), which is not part (4) states. For all we proved up to \\
+now, there may very well a unique right identity and many left iden-\\
+tities (among them th right identity). we are to show in part (5) that \\
+this is impossible.\\
+After so much fuss, now correct proof, which is very short. Suppose\\
+$f\circ a=a$ for all $a\in G$. Write in particular $f$ for $a$. Then $f\circ f=f$ and part (1)\\
+yields $f = e $.\\
+
+-(6) The claim is that each element $a \in G$ has a unique right inverse in $G$.\\
+We know that $a$ has at least one right inverse, say $x$. We have $x \circ a=e$.\\
+We are to show: if $a\circ x=e$ and $a\circ y=e$. We obtain\\
+\centering
+$x\circ a=e$\quad (by part (3))\\
+$$(x\circ a)\circ y=e\circ y$$
+$$ x\circ(a\circ y)= e\circ y$$
+$$x\circ e = e\circ y$$
+$$x=e\circ y$$
+$x=y$\quad (by part (4))\\
+
+\raggedright 
+This proves part (6).\\
+(7) and (8) Let $a \in G$ and let $x$ be the unique right inverse of $a$. From \\
+part (3), we know that $x$ is a left inverse of $a$, so that $x\circ a=e$. We must \\
+prove: if $x \circ a=e$, then $y = x$. Suppose then $x\circ a=e$ and \\
+$y \circ a=e$. Then \\
+\centering
+$a\circ x=e$
+
+
+
+
+\end{document}

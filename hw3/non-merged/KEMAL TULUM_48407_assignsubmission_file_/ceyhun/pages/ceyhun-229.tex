@@ -1,0 +1,37 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	
+\usepackage{../amsTurkish}
+\usepackage{tikz}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{229}
+% ++++++++++++++++++++++++++++++++++++++
+yüzyılda 4 renk sanıtı tanıtlanmaya uğraşılırken, Kempe tanıtı yaptığını sandı ancak Heawood, Kempe'nin izlediği yolun yalnız 5-boyanırlığı 
+tanıtlayabileceğini gösterdi. İlginçliklerinden dolayı Heawood'un 5-boyanırlık teoremini sonra da Kempe'nin yanlış teoremini vereceğiz.
+\begin{theorem}
+	Bütün düzlemsel çizgeler en çok 5-boyanırdır.
+\end{theorem}
+\begin{tanit}
+	Düzlemsel bir $Ç(d, a)$ çizgesini düşünelim. d = 1, 2, 3, 4, ve 5 için Teoremin doğruluğu hemen görülebilir. Öyleyse Teoremin $d - 1$ 
+	düğümlü bütün düzlemsel çizgeler için de doğru olduğunu varsayalım. \footnote{This theorem mentioned is on the page 178, That's why ref does not work properly} 
+	Teorem 4.1.3\ref{thm:Teorem4.1.3} den, düzlemsel bir çizgede kertesi en çok 5 olan en az bir düğüm bulunduğunu biliyoruz.
+	$Ç(d, a)$ da $d_0$, kertesi 5 olan bir  düğümü göstersin. 
+	Yukarda yaptığımız varsayıma göre,
+	\[ 
+		Ç_1 = Ç(d,a) - (d_0)
+	\]
+	5-boyanır bir çizgedir. Kullanacağımız bu 5 ayrı rengi \circled{1}, \circled{2}, \circled{3}, \circled{4} ve \circled{5} diye simgeleyelim.
+	Eğer $d_0$ a bitişik 5 düğümde, 5 ayrı renge boyanmamışsa, $d_0$ düğümü kullanılmayan renge boyayarak sorunu çözebiliriz. 
+	Öyleyse, $d_0$ ın bitişik olduğu düğümler $d_0$, $d_1$, $d_2$, $d_3$, $d_4$, $d_5$, diye
+	\footnote{This proof continues within the following page}
+\end{tanit}
+\end{document}

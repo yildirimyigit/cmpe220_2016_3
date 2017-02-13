@@ -1,0 +1,48 @@
+\documentclass{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+\hPage{b1p1/031}
+
+The proof of a theorem \\ \\
+\begin{equation*}
+	\text{\textquotedblleft} p(n), \ for \ all \ n \in \mathbb{Z}_m = \{ m, \ m + 1, \ m + 2, \  \dotso \  \} ";  \ m \in \mathbb{Z}
+\end{equation*} \\ \\
+by induction is done in four steps: \\
+\begin{enumerate}
+	\item [1.] Verifying the truth of $p(m)$, or verifying $p(n)$ for the first integer $m$ in $\mathbb{Z}_m$,
+	
+	\item [2.] Assuming the truth of $p(k)$ for a number $k \in \mathbb{Z}_m$,
+	
+	\item [3.] Proving $p(k + 1)$ using (2), 
+
+	\item [4.] Arguing as follows: \\
+	$p(m)$ is true by (1). Since $p(m)$ is true, then $p(m + 1)$ must be true by (3). Since $p(m + 1)$ is true, then 
+	$p(m + 2)$ must be true again by (3). Continuing this way $p(n)$ must be true for all $n \in \mathbb{Z}_m$. \\
+\end{enumerate}
+
+\begin{exmp}
+	Prove by induction:
+\end{exmp}
+\begin{equation*}
+	p(n) : \sum_{i = 1} ^ {n} i ^ 2 = \frac{n(n + 1)(2n + 1)}{6} \ , \ for \ n \in \mathbb{Z}_1 \\
+\end{equation*} \\
+\begin{proof}
+	Here $\mathbb{Z}_m$ is $\mathbb{Z}_1$ since 1 is the least value taken by $n$. \\
+	\begin{enumerate}
+		\item [1)]
+			\begin{equation*}
+				p(1) : \sum_{i = 1} ^ {1} i ^ 2 = \frac{1(1 + 1)(2 + 1)}{6} \iff 1 = 1 \ \text{(true)}
+			\end{equation*} \\
+			(In case $p(m)$ is false the statement is disproved and hence there is no need to go further.) \\
+		\item [2)]
+			Suppose $p(k)$ is true for some $k \in \mathbb{Z}_1$, that is, suppose \\
+			\begin{equation*}
+				\sum_{i = 1} ^ {k} i ^ 2 = \frac{k(k + 1)(2k + 1)}{6}
+			\end{equation*}
+	\end{enumerate}
+\end{proof}
+
+\end{document} 

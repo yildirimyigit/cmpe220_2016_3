@@ -1,0 +1,43 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{184}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{theorem}
+    Yalnız 5 değişik düzgün çokyüzlü vardır.
+\end{theorem}
+\begin{proof}
+    Teoremi, olabilecek bütün seçenek durumları inceleyerek tanıtlayacağız. Euler eşitliğinden düzgün çokyüzlünün tanımladığı $ Ç(d, a) $ için,
+    \begin{align*} 
+         2 &= d - a + y \\ 
+        -8 &= 4a - 4d - 4y \\
+           &= 2a + 2a - 4d - 4y \\
+           &= \sum_{n \geq 3} n y_{n} + \sum_{n \geq 3} n d_{n} - 4 \quad \quad \sum_{n \geq 3} d_{n} - 4 \quad \sum_{n \geq 3} y_{n} \\
+           &= \sum_{n \geq 3} (n-4) (y_{n} + d_{n})
+    \end{align*}
+    yazabiliriz. $ Ç(d,a)$ düzgün olduğu için,
+    \[
+        y = y_{i} \quad \text{ ve } \quad d = d_{j}
+    \]
+    ya da
+    \[
+        -8 = (i-4)y_{i} + (j-4)d_{j}
+    \]
+    dir. Ayrıca teorem 4.1.4 den,
+    \[
+        3 \leq i \leq 5 \quad \text{ ve } \quad  3 \leq j \leq 5
+    \]
+    koşullarının da sağlandığını biliyoruz. Demek ki, $i$ ve $j$ nin alabileceği değerlere göre incelenecek
+\end{proof}
+
+
+\end{document}

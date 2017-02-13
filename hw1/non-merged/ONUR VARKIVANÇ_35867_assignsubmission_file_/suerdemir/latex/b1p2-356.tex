@@ -1,0 +1,68 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p2/356}
+% ++++++++++++++++++++++++++++++++++++++
+
+
+% =======================================
+\begin{proof}
+	Let $F(x) = \int_{a}^{x} \! f(t) \, \hDif t$. Then
+	
+	\begin{align*}
+		F(x+h) - F(x) &= \int_{a}^{x+h} \! f(t) \, \hDif{t} - \int_{a}^{x} \! f(t) \, \hDif{t} \\
+		&= \int_{a}^{x+h} \! f(t) \, \hDif{t} + \int_{x}^{a} \! f(t) \, \hDif{t}\\
+		&= \int_{x}^{x+h} \! f(t) \, \hDif{t} \\
+		&= \Big((x+h)-x\Big) f(c), \quad\quad x < c < x+h
+	\end{align*}
+	
+	\noindent by the MVT for integral. Hence
+	
+	\begin{align*}
+		\frac{F(x+h) - F(x)}{h} &= f(c) = f(x+ \theta h), \quad\quad 0< \theta < 1 \\
+		\lim_{h \to 0} \frac{F(x+h) - F(x)}{h} &= \lim_{h \to 0} f(x + \theta h) = f(x).
+	\end{align*}
+\end{proof}
+
+\begin{thm}[F.T. of integral calculus]
+	If $f(x) \epsilon C(a,b)$ and $F(x)$ is a primitive of $f(x)$, then
+
+	\begin{equation*}
+		\int_{a}^{b} \! f(x) \, \hDif{x} = F(b) - F(a)
+	\end{equation*}
+\end{thm}
+
+\begin{proof}
+	Since $D \int_{a}^{x} \! f(t) \, \hDif{t} = f(x)$ by previous theorem and $DF(x)~=~f(x)$,  % "~" placed to keep equation from getting splitted in half
+	then $\int_{a}^{x} \! f(t) \, \hDif{t}$ differs from $F(x)$ by a constant:
+
+	\begin{equation*}
+		\int_{a}^{x} \! f(t) \, \hDif{t} = F(x) + c
+	\end{equation*}
+
+	\noindent Now
+
+	\begin{align*}
+		x &= a \quad\Longrightarrow\quad 0 = F(a) + c \quad\Longrightarrow\quad c = -F(a),\\
+		x &= b \quad\Longrightarrow\quad \int_{a}^{b} \! f(t) \, \hDif{t} = F(b) + c = F(b) - F(a).
+	\end{align*}
+\end{proof}
+
+\begin{notation}
+		 $\int_{a}^{b} \! f(t) \, \hDif{t} = F(b) - F(a) = F(x)$
+		$\begin{vmatrix}
+			x = b\\
+			& = F(x)\\
+			x = a 
+		\end{vmatrix}_{a}^{b}$
+\end{notation}
+
+In view of this theorem, evaluation of a definite integral reduces to that of an indefinite integral. 
+It is to be noted that if the evaluation is done by substitution, the new limits
+
+% =======================================================
+\end{document}  

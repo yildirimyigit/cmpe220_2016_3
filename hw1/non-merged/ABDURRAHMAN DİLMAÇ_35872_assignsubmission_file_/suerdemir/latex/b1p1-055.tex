@@ -1,0 +1,49 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p1/055}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{exmp}
+	\footnote{example enumeration continues from the previous page.}
+	\begin{enumerate}
+		\item condition is jointly written with the rule.
+		\item \begin{align*}
+			(\frac{f}{g})(x) = \frac{f(x)}{g(x)} = \frac{\hAbs{x}}{x^{2}\sqrt{1-x}}
+		\end{align*}
+		As to the composition $g \circ f$ and $f \circ g$ we have.
+		\item \footnote{g(f(x) written for the first equation here in the original book, so I corrected them.}
+		\begin{align*}
+			(g \circ f)(x) = g(f(x)) &= g(\frac{\hAbs{x}}{x}) = \frac{\hAbs{x}}{x}\sqrt{1-\frac{\hAbs{x}}{x}} \\
+			(f \circ g)(x) = f(g(x)) &= f(x\sqrt{1-x}) = \frac{\hAbs{x\sqrt{1-x}}}{x\sqrt{1-x}} = \frac{\hAbs{x}\sqrt{1-x}}{x\sqrt{1-x}} \\
+			&= \frac{\hAbs{x}}{x} \quad (x \neq 1)
+		\end{align*}
+		and \begin{align*}
+			D_{g \circ f} = (-\infty, 1] - \hPairingCurly{0}, \: D_{f \circ g} &= (-\infty, 1] - \hPairingCurly{0,1} \\
+			&= (-\infty, 1) - \hPairingCurly{0} = (-\infty, 1)
+		\end{align*}
+	\end{enumerate}
+\end{exmp}
+
+\begin{exmp}
+	Given the functions
+	\begin{align*}
+		\hFunction{f}{\hSoR}{\hSoR}, \quad f(x) = \frac{x}{x-2}; \quad \hFunction{g}{\hSoR}{\hSoR}, \quad g(x) = x^{2}-x
+	\end{align*}
+	find the rules for the composite functions $g \circ f$ and $f \circ g$, and then determine their domains.
+	\begin{hSolution}
+		\begin{align*}
+			1.\: (g \circ f)(x) &= g(f(x)) = f^{2}(x)-f(x) = \frac{x^{2}}{(x-2)^{2}} - \frac{x}{x-2} \\
+			&= \frac{x^{2}-x(x-2)}{(x-2)^{2}} = \frac{2x}{(x-2)^{2}} \\
+		\end{align*}
+		\begin{align*}
+			2.\: (f \circ g)(x) = f(g(x)) = \frac{g(x)}{g(x)-2} = \frac{x(x-1)}{(x+1)(x-2)}
+		\end{align*}
+		\begin{align*}
+			D_{g \circ f} = \hSoR - \hPairingCurly{2}, \qquad D_{f \circ g} = \hSoR - \hPairingCurly{-1, 2}
+		\end{align*}
+	\end{hSolution}
+\end{exmp}
+\end{document}

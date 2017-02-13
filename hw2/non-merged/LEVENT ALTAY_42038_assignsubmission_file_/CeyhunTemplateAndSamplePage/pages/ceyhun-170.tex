@@ -1,0 +1,89 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+\usepackage{tikz}
+\usepackage{caption}
+%\usepackage{kbordermatrix}
+\newtheorem*{Define}{Tanım}
+
+
+\makeatletter
+\def\bbordermatrix#1{\begingroup \m@th
+  \@tempdima 4.75\p@
+  \setbox\z@\vbox{%
+    \def\cr{\crcr\noalign{\kern2\p@\global\let\cr\endline}}%
+    \ialign{$##$\hfil\kern2\p@\kern\@tempdima&\thinspace\hfil$##$\hfil
+      &&\quad\hfil$##$\hfil\crcr
+      \omit\strut\hfil\crcr\noalign{\kern-\baselineskip}%
+      #1\crcr\omit\strut\cr}}%
+  \setbox\tw@\vbox{\unvcopy\z@\global\setbox\@ne\lastbox}%
+  \setbox\tw@\hbox{\unhbox\@ne\unskip\global\setbox\@ne\lastbox}%
+  \setbox\tw@\hbox{$\kern\wd\@ne\kern-\@tempdima\left[\kern-\wd\@ne
+    \global\setbox\@ne\vbox{\box\@ne\kern2\p@}%
+    \vcenter{\kern-\ht\@ne\unvbox\z@\kern-\baselineskip}\,\right]$}%
+  \null\;\vbox{\kern\ht\@ne\box\tw@}\endgroup}
+\makeatother
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{170}
+% ++++++++++++++++++++++++++++++++++++++
+\huge
+3.4 t-Kesitleme matrisinin gerçekleştirimi
+
+\noindent\rule[0.5ex]{\linewidth}{1pt}
+
+\begin{Define}
+3.4.3 Geçiş matrisi $G=\begin{bmatrix}
+ g_{ij}
+\end{bmatrix}$ nin öğeleri:
+
+\setlength{\parindent}{15ex}
+eğer $i$ ninci dizeğe ilişkin bağımsız 
+
+\setlength{\parindent}{15ex}
+temel M-matrisi, $Q_t$ matrisinin 
+
+\setlength{\parindent}{15ex}
+$j$ ninci dizeğini içeriyorsa $g_{ij} = 1$ 
+
+\setlength{\parindent}{15ex}
+bu koşul sağlanmıyorsa $g_{ij} =$0
+
+\setlength{\parindent}{15ex}
+olarak tanımlanır.
+\end{Define}
+Yukarda incelediğimiz örneğe ilişkin geçiş matrisi,
+
+\begin{center}
+
+
+G=
+$\bbordermatrix{%
+ & 1 & 2 & 3 & 4 & 5 & 6 \cr
+M_1 ~& 0 & 1 & 0 & 0 & 0 & 0\cr
+M_2 & 1 & 0 & 0 & 1 & 0 & 0\cr
+M_3 & 0 & 1 & 0 & 1 & 0 & 0\cr
+M_4 & 0 & 0 & 1 & 0 & 0 & 0\cr
+M_5 & 1 & 0 & 1 & 0 & 1 & 0\cr
+M_6 & 0 & 0 & 0 & 0 & 1 & 1
+}$
+\end{center}
+olarak bulunabilir. Burada $M_7$ bağımsız olmadığı
+için
+\newline
+gözönüne alınmamıştır. İlişkin çizgenin
+\newline
+çakışım matrisi,
+
+$P=G~Q_t$
+
+ilişkisinden,
+
+\end{document}

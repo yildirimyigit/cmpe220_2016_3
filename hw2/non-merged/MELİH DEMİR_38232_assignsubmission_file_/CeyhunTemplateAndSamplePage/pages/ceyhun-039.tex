@@ -1,0 +1,74 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{039}
+% ++++++++++++++++++++++++++++++++++++++
+
+% =======================================
+\setcounter{page}{39}
+\setcounter{section}{1}
+\setcounter{subsection}{6}
+
+Ayrıca
+\begin{equation*}
+	R(1,n) = R(m,1) = 1 
+\end{equation*}
+\begin{equation*}
+	R(2,n) = n 
+\end{equation*}
+\begin{equation*}
+	R(m,2) = m 
+\end{equation*}
+olduğunu da gösterebiliriz. Ancak, m ve n 'nin değerleri büyüdükçe,
+Ramsey sayılarının bulunması da oransız olarak zorlaşmaktadır.
+Ramsey sayıları için bir üstkısıti aşağıdaki gibi verilebilir.
+
+\begin{theorem}
+	Ramsey sayıları,
+	\begin{equation*}
+		R(m,n) \leq 
+		\begin{pmatrix}
+			m + n - 2 \\
+			m-1
+		\end{pmatrix}
+	\end{equation*}
+	eşitsizliğini sağlar.
+\end{theorem}
+\begin{proof}
+	Teoremi tümevarımla tanıtlayacağız.
+	\begin{equation*} 
+		\begin{pmatrix}
+			a \\
+			b
+		\end{pmatrix}
+		\triangleq
+		\frac{a!}{b!(a-b)!}
+	\end{equation*}
+	olduğunu biliyoruz.
+	\begin{equation*} 
+		t = m + n
+	\end{equation*}
+	diyelim. Teoremin $m = 1,2$ ve gelişi güzel bir n için ya da
+	$n=1,2$ ve gelişi güzel bir m için doğru olduğunu kolayca 
+	görebiliriz. Öyleyse Teorem $t\leq4$ için de doğrudur. Teoremin,
+	
+	
+	...
+	% ++++++++++++++++++++++++++++++++++++++
+	\hPage{043}
+	% ++++++++++++++++++++++++++++++++++++++
+\end{proof}
+
+
+
+
+\end{document}

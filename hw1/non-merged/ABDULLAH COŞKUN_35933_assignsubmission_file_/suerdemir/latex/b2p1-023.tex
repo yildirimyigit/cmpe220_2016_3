@@ -1,0 +1,43 @@
+\documentclass[11pt]{amsbook}
+%usepackage{../HBSuerDemir}
+
+\usepackage{amsmath}
+
+
+\begin{document}
+%\hPage{b2p1/023}
+ \underline{Example 2}. Test the series $\sum_2\frac{1}{n\ln^pn} $ for convergence.\\
+\linebreak{}
+\indent \underline{Solution}. The series is of positive terms. The function \\
+ $f(x)=\frac{1}{x\ln^px} $ fulfills the conditions of integral test\\
+on [ 2, $\infty $ ):
+$${ \int_{2}^{\infty} \frac{dx}{x\ln^px}}={\int_{2}^{\infty}\frac{d\quad\ln x}{\ln^p_n x}}=\frac{1}{1-p}\ln^{\frac{1}{x}-p}\lvert  ^\infty_2$$
+converging when $p>1$, diverging when $p\leq1$. Hence the given series \\
+is convergent only when $p>1$.\\
+\linebreak{}
+\indent2. \underline{Comparison with other series}\newline
+\setlength{\parindent}{1cm}\par
+Below we give two tests by comparison of a given series of \\
+positive terms with other such series.\\
+\linebreak{}
+\indent \underline{Theorem 1}. (Test by inequality)\\
+\setlength{\parindent}{1cm}\par
+\quad Let $\sum a_n$ be a given series of positive terms, and let\\
+$\sum c_n$ , $\sum d_n$ be two such series which are convergent and divergent\\
+respectively. Then $\sum a_n$ is convergent or divergent according as\\
+$$a_n\leq c_n\quad or\quad a_n\geq d_n $$
+for all $n>N$ for some N.\\
+\linebreak{}
+\quad \underline{Proof}. $a_n\leq c_n\Rightarrow \sum_N^n a_n \leq \sum_N^n c_n$ . By hypothesis $\sum c_n$ having\\
+a limit as $n \rightarrow \infty $, the sequence $(\sum_N^n a_n)$ is bounded above by\\
+this limit. Since it is increasing, has a limit, and $\sum a_n$ is\\
+convergent.\\
+\setlength{\parindent}{1cm}\par
+Divergence case can be proved similiarly.\\
+\indent A \underline{generalization} of the above Theorem 1:\\
+\setlength{\parindent}{1cm}\par
+The Theorem holds true when the inequalities are replaced by\\
+$$a_n\leq p\quad c_n or a_n\geq q\quad d_n$$
+where p and q are positive numbers.
+
+\end{document}

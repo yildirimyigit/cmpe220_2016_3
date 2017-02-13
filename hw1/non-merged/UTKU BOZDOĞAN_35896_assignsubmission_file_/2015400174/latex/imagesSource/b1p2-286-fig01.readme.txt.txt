@@ -1,0 +1,2 @@
+	Image is prepared using inkspace for windows 64-bit, using version 0.91.
+	Image leaves too much white space above and below when the original file or a cropped version of the image is used. So the original file is used and the image is cropped within the code. 

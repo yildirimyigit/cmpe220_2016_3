@@ -1,0 +1,65 @@
+% Mustafa Alparslan
+%X: book 1
+%Y: part 1
+%Z: Page 022
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b1p1/022}
+% ++++++++++++++++++++++++++++++++++++++
+
+
+
+
+% =======================================
+The intersection \(A \cap B\) (which is also denoted by $AB$ or $A.B$) is the set of all elements common to $A$ and $B$, the \underline{union}  \(A \cup B\) (which is also denoted by $A + B$) is the set of all elements belonging to $A$ or $B$, or both $A$ and $B$, and the \underline{difference} $A \setminus B$ (which is also denoted by $A - B$) is the set of all e;ements of $A$ that are not contained in $B$.
+
+When \( A \cap B = \emptyset \), then the sets $A$, $B$ are said to be \underline{disjoint}.
+
+\begin{exmp}
+
+
+\begin{enumerate}[label={\arabic*.}]
+
+  \item \{1, 2, 3\} $\cap$ \{2, 3, 4, 5\} = \{2, 3\}
+  \item  \{1, 2, 3\} $\cap$ \{4, 5\} = $\emptyset$ \quad (\{1, 2, 3\}, \{4, 5\} are disjoint sets)
+  \item  \{1, 2, 3\} $\cap$ \{1, 2, 3\} = \{1, 2, 3\}
+  \item  \{1, 2, 3\} $\cup$ \{2, 3, 4, 5\} = \{1, 2, 3, 4, 5\}
+  \item  \{1, 2, 3\} $\cup$ \{1, 2, 3\} = \{1, 2, 3\}
+  \item  \{1, 2, 3\} $\setminus$ \{1, 2, 3\} = $\emptyset$
+  \item  \{1, 2, 3\} $\setminus$ \{4, 5\} = \{1, 2, 3\}
+  \item  \{1, 2, 3\} $\setminus$ \{3, 4, 5\} = \{1, 2\}
+  
+\end{enumerate}
+\end{exmp}
+\begin{exmp} 
+\begin{enumerate}[label={\arabic*.}] 
+\item \(\mathbb{R} \setminus \mathbb{Q}  = \mathbb{Q}' \)  
+\item \(\mathbb{R} \setminus \mathbb{Q}' = \mathbb{Q}  \) 
+\item \( \mathbb{Q} \cap \mathbb{Q}' = \emptyset  \) 
+\end{enumerate}
+\end{exmp}
+
+\begin{cor} 
+\begin{align*}
+&1.	A \cap B = B \cap A   &  &1'.	A \cup B = B \cup A \\
+&2. (A \cap B) \cap C = A \cap (B \cap C)    &   &2'.	(A \cup B) \cup C = A \cup (B \cup C) \\
+\end{align*}
+\end{cor}
+
+\begin{cor}
+\begin{align*}
+&1.	A \cap A = A   &  &1'.	A \cup A = A\\
+&2. A \cap \emptyset  = \emptyset  &   &2'.	A \cup \emptyset  = \emptyset \\
+&3. A \cap U  = U  &   &3'.	A \cup U  = U \\
+\end{align*}
+\end{cor}
+% =======================================================
+\end{document}  
+

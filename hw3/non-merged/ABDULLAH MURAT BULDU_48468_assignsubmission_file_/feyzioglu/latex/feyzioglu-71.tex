@@ -1,0 +1,55 @@
+\documentclass{amsbook}
+\usepackage{../HBSuerDemir}
+\author{Murat Buldu}
+
+\begin{document}
+\hPage{71}
+\[  a \circ 2 = a2 - a - 2 + 2 = 2a - a = a \]
+for\footnote{ Correction: 'far' in the original and corrected with 'for'. } all \( a \in \mathbb{Q} \setminus \{1\} \). Since \(2 \in \mathbb{Q} \setminus \{1\} \), 2 is indeed a right identity in \( \mathbb{Q} \setminus \{1\} \).
+\begin{hEnumerateAlpha}
+    \item[(iv)]
+        For all \( a \in \mathbb{Q} \setminus \{1\} \), we must find an \( x \in \mathbb{Q} \setminus \{1\} \) such that \( a \circ x = 2 \). Well, this gives 
+        \begin{align*}
+            ax - a - x + 2 &= 2 \\
+            ax - a - x + 1 &= 1 \\
+            (a - 1)(x - 1) &= 1 \\
+            x - 1 &= 1/(a - 1) \\
+            x &= a/(a - 1),
+        \end{align*}
+        which is meaningful since \( a \neq 1 \). We have not proved yet that \( a/(a-1) \) is a right inverse of a. We showed only that a right inverse of \( a \in \mathbb{Q} \setminus \{1\} \), if it exists at all, has to be \( a/(a-1) \). We must now show that \( a \circ a/(a-1) = 2 \) for all \( a \in \mathbb{Q} \setminus \{1\} \) and also that \( a/(a - 1) \in \mathbb{Q} \setminus \{1\} \). Good. We have 
+        \begin{align*}
+            a \circ a/(a-1) &= a(a/(a-1)) - a - (a/(a-1)) + 2 \\
+            &= (a - 1)(a/(a-1)) - a + 2 \\
+            &= 2, 
+        \end{align*}
+        and also \( a/(a - 1) \neq 1 \) for \( a/(a - 1) \in \mathbb{Q} \) and \( a/(a - 1) = 1 \) would imply that \( a = a - 1 \), hence \( 0 = 1 \), which is absurd. \\
+        Since all the group axioms hold, \( \mathbb{Q} \setminus \{1\} \) is a group under \( \circ  \).\\
+\end{hEnumerateAlpha}
+\begin{hEnumerateAlpha}
+    \item[(b)]
+        Let us define an operation * on \( \mathbb{Z} \) by putting \( a * b = a + b + 2 \) for all \( a,b \in \mathbb{Z} \). Does \( \mathbb{Z} \) form a group under *?
+        \begin{hEnumerateAlpha}
+            \item[(i)]
+                For any \( a,b \in \mathbb{Z} \), \( a * b = a + b + 2 \) is an integer. So \( \mathbb{Z} \) is closed under *.
+            \item[(ii)]
+                For all \( a,b,c \in \mathbb{Z} \), we ask if \( (a * b) * c = a * (b * c) \). We have
+                \begin{align*}
+                    (a * b) * c &= (a + b + 2) * c \\
+                    &= (a + b + 2) + c + 2 \\
+                    &= a + (b + 2 + c) + 2 \\
+                    &= a + (b + c + 2) + 2 \\
+                    &= a + (b * c) + 2 \\
+                    &= a * (b * c).
+                \end{align*}
+                So * is associative.
+            \item[(iii)]
+                Is there an integer \( e \in \mathbb{Z} \) such that \( a * e = a \) for all \( a \in \mathbb{Z} \)? Well, this gives \( a + e + 2 = a \) and \( e = -2 \). Let us check whether \( -2 \) is really a right identity element. We observe that \( a * -2 = a + (-2) + 2 = a \) for all \( a \in \mathbb{Z} \). So \( -2 \) is a right identity element.
+            \item[(iv)]
+                Does each integer \( a \) have a right inverse in \( \mathbb{Z} \)? The condition \( a * x = -2 \) yields
+                \begin{align*}
+                    a + x + 2 &= -2 
+                \end{align*}
+        \end{hEnumerateAlpha}
+\end{hEnumerateAlpha}
+
+\end{document}

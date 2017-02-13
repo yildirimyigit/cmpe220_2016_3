@@ -1,0 +1,100 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}
+\usepackage{blindtext}
+\usepackage{tasks}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+ 
+\newtheorem{theorem}{Theorem}[section]  % to make lemma and proof
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}  
+
+\usepackage{amsfonts}  % make Z and N
+\newcommand{\Z}{\mathbb{Z}} 
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+
+% ++++++++++++++++++++++++++++++++++++++
+
+
+\begin{theorem}
+
+abcd ? ? iç 
+\end{theorem}
+
+
+\begin{proof}We. multiply this relation by $b^{-n}$  on the left and on the right. This gives
+$b^{-n}a=ab^{-n}$ for n $\in$ $\mathbb{N}$. So $ab^{n}=b^{n}a$ is true also when n$\leq$-1. So $ab^{n}=b^{n}a$ for all  n $\in$ $\mathbb{Z}$.
+
+
+\begin{enumerate}
+
+	\item We have $b^{n}a=ab^{n}$ by (1). We use this as a hypothesis and apply (1)
+with a,b,n replaced by $b^{n}, a, m$ respectively. Then we obtain $a^{m}b^{n}=b^{n}a^{m}$
+for all m,n $\in$ $\mathbb{Z}$.
+
+
+If G is not a group but merely a nonempty set with an associative
+multiplication on it, the proof remains valid for the case m,n $\in$ $\mathbb{N}$; and
+also for the case m = 0 or n = 0, provided there is a unique identity e in
+G and we agree to write $a^{0} = e $ for all a $\in$ G:
+
+\end{enumerate}
+
+\end{proof}
+
+\begin{lemma}
+Let G be a nonempty set with an associative multiplication
+on it. Let a,b $\in$ G.
+
+\begin{enumerate}
+
+	\item 
+	If $ab = ba$, then $a^{m}b^{n}=b^{n}a^{m}$ for all m,n $\in$ $\mathbb{N}$. 
+
+	\item 
+	If, in addition, there is a unique e $\in$ G such that ce = ec for all c $\in$ G,
+and if we put $c^{0}$ = e for all c $\in$ G, then $a^{m}b^{n}=b^{n}a^{m}$ also when m=0 or
+n=0.
+\end{enumerate}
+
+\end{lemma}
+
+\begin{lemma}
+Let G be a nonempty set with an associative multiplication
+on it. For any m $\in$ $\mathbb{N}$ and for any  for any $a_{1}, a_{2},\dotsb,a_{m}, b$ $\in$ G such that
+
+\[
+	a_{i}b=ba_{i}
+	\text{ for all }
+	i = 1,2, \dotsb ,m
+\]
+
+there holds $(a_{1}a_{2}\dots a_{m})b = b(a_{1}a_{2}\dots a_{m})$.
+\end{lemma}
+
+\begin{proof}
+By induction on m. The case m = 1 is included in the hypothesis.
+Suppose now m $\geq$ 2 and the claim is true for $m-1$. Then
+
+\begin{align*}
+	a_{1}a_{2}\dotsb a_{m-1}a_{m})b
+	&=((a_{1}a_{2}\dotsb a_{m-1})a_{m})b\\
+	&= ((a_{1}a_{2}\dotsb a_{m-1})(a_{m}b)\\
+	&= ((a_{1}a_{2}\dotsb a_{m-1})(ba_{m})\\
+	&= ((a_{1}a_{2}\dotsb a_{m-1})b)a_{m}\\
+	&= (b(a_{1}a_{2}\dotsb a_{m-1}))a_{m}
+\end{align*}
+
+\end{proof}
+
+\end{document}

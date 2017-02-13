@@ -1,0 +1,34 @@
+%Correct the file name.
+%X: book number
+%Y: part number
+%ZZZ: page number in three digits. So page 3 would be 003.
+
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu-058}
+% ++++++++++++++++++++++++++++++++++++++
+
+\noindent
+\textbf{6.2 Examples : (a)} Let $L$ be the set of all straight lines in the Euclidean plane, on which we have a cartesian coordinate system. We consider "function" $s:L \rightarrow R \cup \{ \infty \}$, which assigns the slope of the line $l$ to $l$. How do we find $s(l)$? As follows: 1) choose a point, say $(x_1, y_1)$, on $l$; 2) choose another point, say $(x_2, y_2)$, on $l$; 3) evaluate $x_2 - x_1$ and $y_2 - y_1$; 4) put $s(l) = (y_2 - y_1) / (x_2 - x_1)$ if $x_1 \neq x_2$ and $s(l) = \infty$ if $x_1 = x_2$. Clearly we can choose the points in many ways. For example, we might choose $(x'_1, y'_1) \neq (x_1, y_1)$ as the first point, $(x'_2, y'_2) \neq (x_2, y_2)$ as the second point. Then we have, in general, $x'_2 - x'_1 \neq x_2 - x_1$ and $y'_2 - y'_1 \neq y_2 - y_1$, so we might suspect that $(y'_2 - y'_1) / (x'_2 - x'_1) \neq (y_2 - y_1) / (x_2 - x_1)$. It is known from analytic geometry that these two quotients are equal, hence $s(l)$ depends only on $l$, and not on the points we choose. Thus $s$ is a well defined function. Ultimately, this is due to the fact that there passes one and only one straight line through two distinct points. The next example shows that well definition breaks down if we modify the domain a little. \\ \par
+
+\noindent
+\textbf{(b)} Let $C$ be the set of all curves in the Euclidean plane. We consider the "function" $s:C \rightarrow R \cup \{ \infty \}$, which assigns the "slope" of the curve $c$ to $c$. How do we find $s(c)$? As follows: 1) choose a point, say $(x_1, y_1)$, on $l$; 2) choose another point, say $(x_2, y_2)$, on $l$; 3) evaluate $x_2 - x_1$ and $y_2 - y_1$; 4) put $s(l) = (y_2 - y_1) / (x_2 - x_1)$ if $x_1 \neq x_2$ and $s(l) = \infty$ if $x_1 = x_2$. This is the same rule as the rule in Example 6.2(a). Let us find the "slope" of the curve $y = x^2$. 1) Choose a point on this curve, for example $(0,0)$. If you example $(1,1)$. If you prefer, you might choose $(3,9)$ of course. 3) Evaluate the differences of coordinates. We find  $1 - 0$ and $1 - 0$. You find $3 - (-1)$ and $9 - 1$. Hence 4) the slope is $1/1$. You find it to be $8/4$. So $s(c) = 1$ and $s(c) = 2$. This is nonsense. We see that different choices of the points on the curve (different choices of the auxilary objects) give rise to different results. So the above rule is not a function. We do not say "$s$ is not a well defined function". $s$ is simply not a function at all. $s$ is not defined.   \\ \par
+
+\noindent
+\textbf{(c)} Let $F$ be the set of all continous functions on a closed interval $[a, b]$. We want to "define" an integral "function" $I: F \rightarrow R$, which assignes the real number $\int_a^b f(x) dx$ to $f \in F$. So $I(f) = \int_a^b f(x)dx$. I is a "function" whose "domain" is a set of functions. How we do find $I(f)$? As follows. 1) Choose an indefinite integral of $f$, that is, choose a function $F$ on $[a, b]$ such that $F'(x) = f(x)$ for all $x \in [a, b]$ (we take one-sided derivatives at $a$ 
+
+
+
+
+
+
+
+
+% =======================================================
+\end{document}  

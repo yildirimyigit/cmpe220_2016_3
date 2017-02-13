@@ -1,0 +1,71 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+%\usepackage{../HBSuerDemir}	% ------------------------
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{../amsTurkish}
+\usepackage{ mathrsfs }
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{ceyhun/118}
+% ++++++++++++++++++++++++++++++++++++++
+
+\[
+	1 \leq i_1 < i_2 < \cdots < i_{2r} \leq n
+\]
+düğümden oluşan bütün z-çizgeleri yığınını \{$\mathscr{Z}$\} ile gösterelim. Burada \{$\mathscr{Z}$\}nin, yığınlardan oluşan bir üstyığın (yığınların yığını) olduğu gözden kaçmamalıdır. Bu üstyığına, \{$\mathscr{C}$\} yığınını da eklersek, 
+
+\[
+    \mathscr{S} = 
+        \{ 
+            \{\mathscr{Z}\} , 
+                \{ \mathscr{C} \} 
+                    \}
+\]
+üstyığınını elde ederiz. $\mathscr{U}_1$ , $\mathscr{U}_2$ ve $\mathscr{U}_3$ $\mathscr{S}$ içindeki üç yığın ise :\\
+
+\begin{hEnumerateAlpha}
+	\item
+	$\mathscr{U}_1 
+	    \oplus 
+	        \mathscr{U}_2 = 
+	            \mathscr{U}_2 
+	                \oplus 
+	                    \mathscr{U}_1 
+	                        \in \mathscr{S}$
+	\item 
+	$\mathscr{U}_1 
+	    \oplus 
+	        \mathscr{C} = 
+	            \mathscr{U}_1$
+	\item 
+	$\mathscr{U}_1 
+	    \oplus 
+	        \mathscr{U}_1 = 
+	            \{\mathscr{C}\}$
+	\item
+	$(\mathscr{U}_1 
+	    \oplus 
+	        \mathscr{U}_2 
+	            \oplus 
+	                \mathscr{U}_3 = 
+	                    \mathscr{U}_1 
+	                        \oplus 
+	                            \mathscr{U}_2 
+	                                \oplus 
+	                                    \mathscr{U})$\\
+\end{hEnumerateAlpha}
+olacağı gösterilebilir (gösteriniz). Bu gözlemden de aşağıdaki sonuca varırız. 
+\begin{theorem}
+    $\oplus$ altında, $\mathscr{S}$ bir Abel topluluğu tanımlar. 
+\end{theorem}
+\begin{theorem}
+    Çıkarıldıklarında, çizgenin parça sayısını bir arttıran ve bu özelliğin herhangi bir altkümesinde bulunmadığı ayrıt kümesine (K) \underline{kesitleme} denir.
+\end{theorem}
+Bağlı çizgelerdeki kesitlernelerden birinin
+
+\end{document}

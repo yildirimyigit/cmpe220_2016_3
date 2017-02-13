@@ -1,0 +1,4 @@
+Drawn with GIMP 2.8 taking the screenshot from the original book as the reference. 
+Final image is 1800x1200
+Parts are 800x600
+A file with all parts as seperate layers provided in xcf (GIMP native) and psd (Photoshop) formats. The final image provided in xcf, psd, pdf and png formats. (Sorry for the big size of the zip)

@@ -1,0 +1,85 @@
+\documentclass[fleqn]{book}
+%\documentclass[11pt]{amsbook}
+
+%\usepackage[turkish]{babel}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+%\usepackage{../Ceyhun}	% ------------------------
+%\usepackage{../amsTurkish}
+
+
+\begin{document}
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p2-335}
+% ++++++++++++++++++++++++++++++++++++++
+
+
+from the parabola, $y=x^2$
+
+\begin{hSolution}
+If $P(x,y)$ is a point on $y=x^2$ then the function to be minimized is  \sqrt{x^2+(y-5)^2} or its square $f(x,y) = x^2 + (y-5)^2 $ where x,y satisfy $g(x,y) = x^2 - y = 0 $ as the side condition.
+\end{hSolution}
+
+Forming
+\begin{equation*}
+    F(x,y,\lambda) = x^2 + (y-5)^2 + \lambda(x^2-y),
+\end{equation*}
+
+we have
+
+\begin{align*}
+
+ F_{1} &= 2x + 2\lambda x = 0 \implies(1+\lambda)x = 0 \implies x\neq 0 or \lambda=-1
+ 
+ F_{2}  &= 2(y-5)-\lambda = 0 \implies \lambda = 2y - 10
+ 
+ F_{3}  &= x^2 - y = 0(side cond.)
+ 
+\end{align*}
+
+  x = 0 \implies  y = 0  \implies (0,0) \\
+  \lambda  = -1 \implies -1 = 2y-10 \implies y = 9/2 \implies x^2 = \frac{9}{2} \implies x = \pm 3/\sqrt{2}
+ 
+
+
+Then we have three critical points $0(0,0)$ , $B(3/\sqrt{2},9/2)$ , $C(-3/\sqrt{2},9/2)$
+ 
+ \begin{align*}
+ d(A,B)&= d(A,C) = \sqrt{\frac{9}{2} + (\frac{9}{2} - 5)^2} = \sqrt{\frac{9}{2} + \frac{1}{4}} = \sqrt{19}/2  (min)\\
+    d(A,0)  &= 5(max)
+\end{align*}
+
+
+\begin{exmp}
+
+Find the shortest distance of the origin from the line of intersection of the planes $ x+2y-z=3$ , $ 2x+y+z=1$.
+
+\end{exmp}
+
+
+\begin{hSolution}
+The function to minimized being \sqrt{x^2 + y^2 + z^2} or its square $f(x,y,z) = x^2 + y^2 + z^2 $ with side conditions $ x+2y-z-3=0$ ,  $ 2x+y+z-1=0$ we consider the function 
+
+
+\begin{align*}
+
+F(x,y,z,\lambda,\mu)  &= x^2 + y^2 + z^2 + \lambda(x+2y-z-1) + \mu(2x+y+z-3)
+
+    F_{1} &= 2x + \lambda + 2\mu = 0
+    
+    F_{2} &= 2y + 2\lambda + \mu = 0
+    
+    F_{3} &= 2z - \lambda + \mu = 0
+    
+    F_{\lambda} &= x + 2y - z - 1 = 0\} side conditions
+    
+    F_{\mu} &= 2x + y + z - 1 = 0 \}
+     
+\end{align*}
+
+\end{hSolution}
+
+
+
+\end{document}

@@ -1,0 +1,26 @@
+\documentclass{amsbook}
+\usepackage{../Ceyhun}
+\usepackage{../amsTurkish}
+
+
+\begin{document}
+    \hPage{ceyhun/66}
+    \subsection{\underline{Çizgeler arasında işlemler \hspace{3.4 in}}\\}\\
+    
+    $Ç^{n}$ nin indirgenmiş düğüm matrisini $D(n)$ olarak gösterelim. Boole aritmetiği kullanarak (1 + 1 = 1) , \\
+    \begin{align*}
+        D(n) &= ( D + I )^{n} - I \\
+        &= D^{n} + D^{n-1} + \dots + D 
+    \end{align*}
+    
+    olduğunu gösterebiliriz. $Ç^{n}$ çizgesine, Ç nin n ninci kuvveti denilmesinin nedeni de budur. Eşanlamlı olarak, Ç çizgesine $Ç^{n}$ nin n ninci \textit{kökü} de diyebiliriz (Benzer tanımların A matrisi üzerinde de yapılıp yapılamayacağını inceleyiniz).\\
+    
+    Bir çizgenin köklerinin olup olmadığını anlamak ve eğer varsa bulmak pek de kolay olmayan bir sorundur. Ancak ikinci kökün varlığına ilişkin bir yeter ve gerek koşul verilebilir. Biz bu konu üzerinde durmayacağız. \\
+    
+    \begin{definition} \label{first}
+        $Ç_1$ ve $Ç_2$ rastgele\footnote{it was written "rasgele"} iki çizge olsun. $Ç_1$ $\cup$ $Ç_2$ çizgesinde, $Ç_1$ in her bir düğümünü $Ç_2$ nin bütün düğümlerine bitiştirerek elde edilen $Ç_1$ + $Ç_2$ çizgesine \underline{toplam çizge} denir.
+    \end{definition}
+    
+    \reffig{first}
+    de $Ç_1$ ve $Ç_2$ çizgeleri ile ilişkin toplam çizge gösterilmiştir.    
+\end{document}

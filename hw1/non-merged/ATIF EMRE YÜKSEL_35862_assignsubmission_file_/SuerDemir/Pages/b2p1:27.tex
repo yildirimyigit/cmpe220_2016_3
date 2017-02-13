@@ -1,0 +1,41 @@
+\documentclass[11pt]{amsbook}
+\usepackage{../HBSuerDemir}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{remark}{Remark}
+\newtheorem{example}{Example}
+
+\begin{document}
+\hPage{b2p1/27}
+\begin{theorem} [Lim root, lim ratio tests of CAUCHY] 
+A series  $\sum {a_n} $  of positive series is convergent if 
+\begin{equation}
+a)\hspace{3mm}  lim \sqrt[n]{a_n} <  1  \hspace{3mm} or  \hspace{3mm}   b)\hspace{3mm} lim \frac{a_n}{a_n+1} < 1 
+\end{equation}
+and divergent if
+\begin{equation}
+a')\hspace{3mm} lim \sqrt[n]{a_n} >  1   \hspace{3mm}  or \hspace{3mm}  b)\hspace{3mm}  lim \frac{a_n}{a_n+1} > 1 
+\end{equation}
+Test fails if limits are equal to 1.
+\end{theorem}
+
+\begin{proof} 
+a) Let $lim \sqrt[n]{a_n} = r$. \\
+If $r < 1$ there is k such that $r <  k  < 1$ . Since r is the limit, $\sqrt[n]{a_n} a \leq k$ holds for all $n  > N$ for some N. Then by root test, $\sum {a_n} $ is conv. \\
+a') If $r > 1$, then $\sqrt[n]{a_n} > 1$ holds for all $n > N$ and ${a_n} \nsucc  0$. (div.) \\
+The proofs of b, b'  are similar.
+\end{proof}
+
+\begin{remark}
+If one of the lim root, lim ratio test fails, the others also too. \\
+In the failure case, one way apply the following:
+\end{remark}
+\textbf{\underline{RAABE - DUHAMEL's Test}}: \\
+A series $\sum {a_n} $ of positive terms is convergent or divergent according as \\
+\begin{equation}
+lim \hspace{4mm} n(\frac{a_n}{a_n+1}-1) 
+\end{equation}
+is greater or less than 1. Test fails if limit is equal to 1. 
+\begin{example}
+Test the following series of positive terms for convergence:
+\end{example}
+\end{document}

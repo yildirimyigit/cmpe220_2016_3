@@ -1,0 +1,55 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+\begin{document}
+    \hPage{b2p2/305}
+    \begin{hEnumerateArabic}
+
+        \setcounter{enumi}{18}
+        \item{Prove}
+            \begin{hEnumerateAlpha}
+                \item $f(x,y) = \ln{(x^2 + y^2)} + \arctan {\frac{y}{x}} \Rightarrow f_{xx} + f_{yy} = 0$
+                \item $f(x,y,z) = \frac{1}{\sqrt{x^2 + y^2 + z^2}} \Rightarrow f_{xx} + f_{yy} + f_{zz} = 0$
+            \end{hEnumerateAlpha}
+
+        \item{Suppose $y = xf(z) + g(z)$ defines $z = z(x, y)$. Show that }
+        $$
+            z_{x}^2 z_{yy} - 2 z_{x} z_{y} z_{xy} + z_{y}^2 z_{xy} = 0
+        $$
+        \item{Show that}
+        $$
+            u(x, y, z) = \arctan{\frac{y}{z}} +\arctan{\frac{z}{x}} +\arctan{\frac{x}{y}}
+        $$
+        verifies
+        $$
+            u_{xx} + u_{yy} + u_{zz} = 0
+        $$
+        \item{If $f(x, y) = x e^x \cos{y}$, then evaluate}
+        $$
+            \frac{\partial^4 f}{\partial x^4} + 2\frac{\partial^4 f}{\partial x^2 \partial y^2} +\frac{\partial^4 f}{\partial y^4}
+        $$
+        \item{Find an approximate value of}
+        $$
+            \sqrt{(9.02)^2 + (11.99)^2}
+        $$
+        \item{Find approximate increments of the following functions from
+the point p to $P':$}
+            \begin{hEnumerateAlpha}
+                \item $f(x, y) = x^2 + 3xy - y^2, P (1, 2), P'(1.02; 1.99)$
+                \item $f(x, y) = x^{2}y + \frac{y}{x}, P (2, 0), P'(1.98; 0.30)$
+            \end{hEnumerateAlpha}
+            
+        \item{Same question for:}
+            \begin{hEnumerateAlpha}
+                \item $f(x, y, z) = x \ln{y} + y \ln{z} + z \ln{x} P(1,1,1), P'(0,9; 0,8; 1,2)$
+                \item $f(x, y, z) = \arctan{xyz}, P(1,\frac{1}{2},1), P'(1,2; 0,6; 1,7)$
+            \end{hEnumerateAlpha}
+        \begin{minipage}{0.75\textwidth}
+            \item        
+                {Find the approximate error in calculating the area of a triangular piece of land, if the error in measurement the sides is 0,2 m and that of the angle is $1^{\circ}$}
+        \end{minipage}
+        \begin{minipage}{0.25\textwidth}
+            \includegraphics{images/hw2.pdf}
+        \end{minipage}        
+    \end{hEnumerateArabic}
+\end{document}

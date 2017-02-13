@@ -1,0 +1,59 @@
+\documentclass[18pt]{amsbook}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{../HBSuerDemir}
+
+\newcommand\textbox[272]{%
+  \parbox{.333\textwidth}{#272}%
+}
+
+\begin{document}
+\hPage{b1p2/507}
+
+\begin{multicols}{2}
+\noindent R_{x}_{y} &= $\Big($ a, b;  y_{1}(x), y_{2}(x)$\Big)$,\\
+\hAbs{R_{x}_{y}} &= \int_{a}^{b}$\Big($y_{2}(x) - y_{1}(x)$\Big)$\hDif x,\\
+R_{\theta}_{r} &= $\Big($ \alpha, \beta;  r_{1}(\theta), r_{2}(\theta)$\Big)$,\\
+R_{\theta}_{r} &=\frac{1}{2} \int$\Big($r_{2}^{2}(\theta) - r_{1}^{2}(\theta)$\Big)$\hDif \theta ,\\
+s &= \int_{a}^{b}\sqrt{1 + (\frac{\hDif y}{\hDif x})^{2}}\hDif x,\\
+R_{y}_{x} &= $\Big($ c, a; x_{1}(y), x_{2}(y)$\Big)$\\
+\hAbs{R_{y}_{x}} &= \int_{c}^{d}$\Big($x_{2}(y) - x_{1}(y)$\Big)$\hDif y,\\
+R_{r}_{\theta} &= $\Big($ a, b;  \theta_{1}(r), \theta_{2}(r)$\Big)$, \\
+\hAbs{R_{r}_{\theta}} &= \int_{a}^{b}$\Big($\theta_{2}(r) - \theta_{1}(r)$\Big)$r\hDif r\\
+s &= \int_{c}^{d}\sqrt{1 + (\frac{\hDif x}{\hDif y})^{2}}\hDif y,\\
+\end{multicols}
+
+
+s &= \int_{t_{1}}^{t_{2}}\sqrt{x^{2}(t) + y^{2}(t)}\hDif t,\\
+
+s &= \int_{\theta_{1}}^{\theta_{2}}\sqrt{r^{2} + (\frac{\hDif r}{\hDif \theta})^{2}}\hDif \theta, \quad\quad\quad\quad\quad\quad s &= \int_{r_{1}}^{r_{2}}\sqrt{1 + r^{2}(\frac{\hDif \theta}{\hDif r})^{2}}\hDif r,
+
+$\upsilon &= \tan{\psi} = \frac{r}{r^{r}}$ (polar slope)\\
+
+
+$S_{o}_{x} &= 2\pi\int_{h}^{k}y &= 
+\begin{cases}
+    2\pi\int_{a}^{b}y(x) \sqrt{1 + (\frac{\hDif y}{\hDif x})^{2}} \hDif x \\
+    2\pi\int_{c}^{d}y\sqrt{1 + (\frac{\hDif x}{\hDif y})^{2}} \hDif y $
+\end{cases}\\
+
+$S_{o}_{y} &= 2\pi\int_{h}^{k} x &= 
+\begin{cases}
+    2\pi\int_{a}^{b} x\sqrt{1 + (\frac{\hDif y}{\hDif x})^{2}} \hDif x \\
+    2\pi\int_{c}^{d}x(y)\sqrt{1 + (\frac{\hDif x}{\hDif y})^{2}} \hDif y $
+\end{cases}\\
+
+\begin{multicols} {2}
+V_{o}_{x} &= \pi \int_{a}^{b}$\Big($y_{2}^{2}(x) - y_{1}^{2}(x)$\Big)$\hDif x,  
+
+V_{o}_{y} &= \pi \int_{c}^{d}$\Big($x_{2}^{2}(y) - x_{1}^{2}(y)$\Big)$\hDif y, 
+\end{multicols}
+\begin{flushright}
+(disc method)
+\end{flushright}
+
+
+
+
+\end{document}

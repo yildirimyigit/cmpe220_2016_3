@@ -1,0 +1,71 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage[english,turkish]{babel}
+\usepackage{../HBSuerDemir}	% ------------------------
+
+\newtheorem{theorem}{Teorem}[section]
+\newenvironment{yeterkosul}[1][Yeter Koşul :]{%
+	\begin{proof}[#1]$ $\par\nobreak\ignorespaces
+	}{%
+	\end{proof}
+}
+\usepackage{fancyhdr} % Header/Footer
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\fancyhf{}
+% \fancyhead[L]{\rightmark} %use this for autoshowing section name
+\lhead{3. BÖLÜM}
+\fancyfoot[L]{\footnotesize 
+	Çizge Kuramı by Ceyhun  \textbf{DRAFT} \\
+	\LaTeX ~by Haluk Bingol 
+	\href{http://www.cmpe.boun.edu.tr/~bingol}
+	{http://www.cmpe.boun.edu.tr/bingol} 
+	%\large 
+	%\footnotesize 
+	\today}
+\fancyfoot[R]{{\thepage} of \pageref{LastPage}}
+
+\begin{document}
+	
+	% ++++++++++++++++++++++++++++++++++++++
+	\hPage{ceyhun/131}
+	% ++++++++++++++++++++++++++++++++++++++
+	\bigskip
+	\begin{proof}
+		$ $\newline\\
+		\indent\indent\indent
+		$\Large \c{C}_i = \c{C} - K_i$
+		$ $\newline\\
+		olsun. $A_i$, hiçbir dalı $K_i$ içinde bulunmayan,
+		$\Large\c{C}$ nin bir ağacını göstersin. Öyleyse,
+		$ $\newline\\
+		\indent\indent\indent
+		$A_i \subset \Large\c{C}_i \subset \c{C}$
+		$ $\newline\\
+		ilişkisini yazabiliriz. Ancak, kesitlemenin tanımından
+		$\Large\c{C}_i$ bağlı değildir. Demek ki $A_i$ de bağlı değildir.
+		Ama tanımdan ağaç bağlıdır. Bu çelişki ancak,
+		$ $\newline\\
+		\indent\indent\indent
+		$A_i \cap K_i \neq \phi$
+		$ $\newline\\
+		koşulu ile kalkabilir.
+		$ $\newline
+	\end{proof}
+	\begin{theorem}
+		$K$ nin kesitleme olabilmesi için gerek ve yeter koşul, $K$ nin
+		çizgedeki her ağaca ilişkin en az bir dalı içeren en az sayıdaki
+		ayrıttan oluşan bir küme olmasıdır.
+		$ $\newline
+	\end{theorem}
+	\begin{proof}
+		$ $\newline
+	\end{proof}
+	\begin{yeterkosul}
+		$ $\newline
+		$K$, her ağacın en az bir dalını içeren ve en az sayıda
+		ayrıttan oluşan bir kümeyi göstersin. $K$ ye göre tümler altçizge
+		$K^T$ içinde herhangi bir ağaç
+	\end{yeterkosul}
+	% =======================================================
+\end{document}  

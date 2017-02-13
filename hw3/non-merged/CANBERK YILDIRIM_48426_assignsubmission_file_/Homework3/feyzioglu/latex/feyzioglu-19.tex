@@ -1,0 +1,42 @@
+%\documentclass[fleqn]{book}
+\documentclass[11pt]{amsbook}
+
+\usepackage[turkish]{babel}
+
+\usepackage{../HBSuerDemir}	% ------------------------
+
+
+
+\begin{document}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{feyzioglu/19}
+% ++++++++++++++++++++++++++++++++++++++
+
+    In the definition of a mapping $ f: A \to B $, we required that every element of $A$  be the first component of at least one ordered pair in $f$ and also that every element of $A$ be the first component of at most one ordered pair in $f$. There was no analogous requirement for the elements of $B$.  If we impose similar conditions on the elements of $B$, we get special types of functions, which we now introduce. 
+    
+    \begin{defn}
+        Let $ f: A \to B $ be a mappipg. If every element of $B$ is the second component of at least one ordered pair in $f$, then $f$ is called a mapping from $A \ onto \ B$. 
+    \end{defn}
+    
+    The reader must be careful about the usage of the prepositions "into" and "onto", for they are used with different meanings. That $f$ is a function from $A$ onto $B$ means that every element of $B$ is the image of some element of $A$. For an arbitrary mapping $f: A \to B$, an element of $B$ has perhaps no preimage at all, but if $f$ is a mapping from $A$ onto $B$, then each element of $B$ has at least one preimage in $A$. 
+    
+    \paragraph{
+        The range should be ·specified whenever the term "onto" is used. A function is not "onto" by itself, it is only onto a specific set we shall frequently treat the word "onto" as an adjective, but it will be always clear from the context which range set is meant. 
+    }
+    
+    \begin{exmp}
+        \begin{enumerate}[label=(\alph*)]
+            \item The mapping $ f: R \to R$, given by $f(x) = x^2$ for all $ x \in R$, is not onto, since $-1 \in R$, for instance has no preimage under $f$.
+            \item Let $R^+$ denote the set of all positive real numbers. Then the mapping $ f: R^+ \to R^+$, given by $f(x) = x^2$ for all $ x \in R$, is onto.
+            \item The mapping $ g: (1,2,3,4,5) \to (a,b,c)$, given by 
+                \begin{align*}
+                    lg = a, 2g = a, 3g = a, 4g = b, 5g = c 
+                \end{align*}
+            is onto.
+            \item Let $A$ be any nonempty set. Then $ i: A \to A$ is onto, for any $a \in A$ has a preimage $a$ in $A$ under $i_A$ since $ai_A = a$.
+        \end{enumerate}
+        
+    \end{exmp}
+
+\end{document}
+    

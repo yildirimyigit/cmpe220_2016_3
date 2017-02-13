@@ -1,0 +1,50 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../Ceyhun}	% ------------------------
+\usepackage{lipsum}
+
+\usepackage{enumitem}
+
+
+
+\begin{document}
+	
+	% ++++++++++++++++++++++++++++++++++++++
+	 \hPage{feyzioglu-064}
+	
+	% ++++++++++++++++++++++++++++++++++++++
+	% =======================================
+	
+	
+	group is an ordered pair whose components are the set and the operation in question.
+	
+	\textbf{Definition:} An ordered pair $\left ( G, \circ \right )$, where \textit{G} is a nonempty set and $\circ$ is a binary operation on \textit{G}, is called a \textit{group} provided the following hold.
+	
+	\begin{enumerate}[label=(\roman* )]
+		\item $\circ$ is a (well defined) binary operation on \textit{G}. Thus, for any $a, b \in G, a \circ b$ is a uniquely determined element of \textit{G}.
+		\item For all $a, b, c\in G$, we have $(a\circ b)\circ c = a\circ (b\circ c)$.
+		\item There is an element \textit{e} in \textit{G} such that 
+		\begin{center}
+			$a \circ e = a$ for all $a \in G$
+		\end{center}
+		and which is furthermore such that
+		\item for all $a \in G$, there is an \textit{x}	with 
+		\begin{center}
+			$a \circ x = e$.
+		\end{center}
+	\end{enumerate}
+	
+	When $\left ( G, \circ \right )$ is a group, we also say that \textit{G} is (or builds, or forms) a group with respect to $\circ$ (or under $\circ$). Since a group is an ordered pair, two groups $\left ( G, \circ \right )$ and $\left ( H, \ast \right )$ are equal if and only if \textit{G = H} and the binary operation $\circ$ on \textit{G} is equal to the binary operation $\ast$ on \textit{G} (i.e., $\circ$ and $\ast$ are identical mappings from \textit{G$\times$G} into \textit{G}). On one and the same set \textit{G}, there may be distinct binary operations $\circ$ and $\ast$ under which \textit{G} is a group. In this case, the groups $\left ( G, \circ \right )$ and $\left ( G, \ast \right )$ are distinct.
+	\\
+	
+	The four conditions (i)-(iv) of Definition 7.2 are known as the \textit{group axioms.} The first axiom (i) is called the \textit{closure axiom.} When (i) is true, we say \textit{G} is \textit{closed under $\circ$}.
+	\\
+	
+	A binary operation $\circ$ on a nonempty set \textit{G} is said to be \textit{associative} when (ii) holds. The associativity of $\circ$ enables us to write $a\circ b\circ c$ without ambiquity. Indeed, $a\circ b \circ c$ has first no meaning at all. We must write either $(a\circ b)\circ c$ or $a\circ (b\circ c)$ to denote a meaningful element in \textit{G}. By associativity, we may and do make the convention that $a\circ b \circ c$ will mean $(a\circ b)\circ c = a\circ (b\circ c)$ , for whether we read it as $(a\circ b)\circ c$ or $a\circ (b\circ c)$ does not make any difference. This would be wrong if $\circ$ were not associative. For instance, $:$ (division) is not an associative operation on $\mathbb{Q}\setminus\left \{ 0 \right \}$ and $(a:b):c \neq a:(b:c)$ unless $c=1$ (here $\left ( a, b, c \in  \mathbb{Q}\setminus\left \{ 0 \right \}\right )$). Thus $a:b:c$ is ambiguous.
+	\\
+	
+	An element \textit{e} of a set \textit{G}, on which there is a binary operation $\circ$, is called a \textit{right identity element} or simply a \textit{right identity} if $a\circ e = a$ for all \textit{a} in 
+	
+	% =======================================================
+\end{document}  
+

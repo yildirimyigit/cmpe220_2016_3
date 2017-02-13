@@ -1,0 +1,90 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+
+\begin{document}
+
+  \hPage{b2p1/123}
+  \begin{itemize}
+  \item[]{2.Multiplication by scalars}
+  \end{itemize}
+
+  Denoting the sums $\vec{a} + \vec{a},$  $\vec{a} + \vec{a} + \vec{a}$,
+  \ldots by $2\vec{a},$  $3\vec{a}, \ldots$ and defining $1\vec{a},$  $0\vec{a}$
+  as $\vec{a}$ and $0$, the vector $n\vec{a}$  $(n\in \mathbb{N})$ will
+  denote a vector having the same direction and sense as $\vec{a}$
+  and length $n$ times that for $\vec{a}$:
+
+  \setlength{\unitlength}{1cm}
+  \thicklines
+  \begin{picture}(20,2)
+    \put(2.5,1.5){$\vec{a}$}
+    \put(2,1.25){\vector(1,0){1}}
+    \put(3.5,1.5){$\vec{a}$}
+    \put(3,1.25){\vector(1,0){1}}
+    \put(3,0.75){$2\vec{a}$}
+    \put(2,0.5){\vector(1,0){2}}
+
+    \put(6.5,1.5){$\vec{a}$}
+    \put(6,1.25){\vector(1,0){1}}
+    \put(7.5,1.5){$\vec{a}$}
+    \put(7,1.25){\vector(1,0){1}}
+    \put(8.5,1.5){$\vec{a}$}
+    \put(8,1.25){\vector(1,0){1}}
+    \put(7,0.75){$3\vec{a}$}
+    \put(6,0.5){\vector(1,0){3}}
+  \end{picture}
+  For any $\lambda\in \mathbb{R}$, we define $\lambda\vec{a}$ as a vector of
+  length $\mid{\lambda}\mid\mid{\vec{a}}\mid $ parallel\footnotemark[1] to $\vec{a}$ and
+  agreeing or disagreeing in sense with $\vec{a}$ according as $\lambda>0$
+  or $\lambda<0$:
+
+  \setlength{\unitlength}{1cm}
+  \thicklines
+  \begin{picture}(20,2)
+    \put(2.5,1.5){$\vec{a}$}
+    \put(2,1.25){\vector(1,0){1}}
+    \put(3,0.75){$\lambda \vec{a}$}
+    \put(2,0.5){\vector(1,0){2}}
+    \put(3,0){$\lambda>0$}
+
+    \put(8.5,1.5){$\vec{a}$}
+    \put(8,1.25){\vector(1,0){1}}
+    \put(7,0.75){$\lambda \vec{a}$}
+    \put(8,0.5){\vector(-1,0){2}}
+    \put(7,0){$\lambda<0$}
+  \end{picture}
+
+  In particular for $\lambda = -1 $, we have the vector $(-1)\vec{a} =
+  -\vec{a}$ which is opposite to $\vec{a}$, called the \underline{additive inverse}
+  of $\vec{a}$, since $\vec{a} + (-\vec{a}) = 0$.
+ 
+  $\lambda \vec{a} $ and $\vec{a}$ have parallel supports, and are 
+  called \underline{collinear vectors}.
+
+  The difference $\vec{a}-\vec{b}$ is by definition the sum 
+  $\vec{a} + (-\vec{b})$:
+
+  \setlength{\unitlength}{1cm}
+  \thicklines
+  \begin{picture}(20,5)
+    \put(0.5,4){$\vec{a}$}
+    \put(0,3.5){\vector(2,1){2.23}}
+
+    \put(4.5,4){$\vec{b}$}
+    \put(5,3.5){\vector(-2,1){2.23}}
+
+    \put(5.5, 4){$\Rightarrow$}
+
+    \put(6.4,4){$\vec{a}$}
+    \put(6,3.5){\vector(2,1){2.23}}
+    \put(10,4){$-\vec{b}$}
+    \put(8.2,4.6){\vector(2,-1){2.23}}
+    \put(8,3){$\vec{a}-\vec{b}$}
+    \put(6,3.5){\vector(1,0){4.46}}
+  \end{picture}
+
+  \footnotetext[1]{Two coplanar lines ( lying on the same plane) having no common
+  point are called \underline{parallel}. But in this book parallelism of lines is
+  defined to include also the coincidence of lines.}
+\end{document}

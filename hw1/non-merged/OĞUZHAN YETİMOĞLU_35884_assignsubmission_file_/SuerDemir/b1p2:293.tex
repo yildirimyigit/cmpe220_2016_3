@@ -1,0 +1,62 @@
+
+\documentclass[12pt]{article}
+\usepackage{../HBSuerDemir}
+\begin{document}
+    \hPage{b1p2/293} %page number
+    \noindent To prove $T=T'$, multiplying the first row by -h and the second by -k and adding to the last row, we have
+        
+    \hspace{2.5cm}
+    $
+    T' = $
+    $
+    \left |
+    \begin{array}{lll}
+    2A & B & 2Ah + Bk + D\\
+    B  & 2C & Bh + 2Ch + E \\
+    D  & E & 2f(h, k)-D h-E'k \\
+    \end{array}
+    \right |
+    $\\
+    Now multiplying the first column by -h and the second by -k and adding the last column, we get
+        
+    \hspace{2.5cm}
+    $T' = $
+    $ 
+    \left |
+    \begin{array}{lll}
+    2A & B & D\\
+    B  & 2C & E \\
+    D  & E & 2f(h, k)-D'h-E'k-Dh-Ek \\
+    \end{array}
+    \right |
+    $ \\
+    where the element $a_{33}$ is simplified to 2F. Hence $T' = T$. 
+    
+    Recalling that the coefficients of the transformed equation under a rotation are
+    \begin{center}
+        \begin{tabular}{ l l}
+            $A' = Ac^2 + Bcs + Cs^2$,& $D' = Dc + Es$, \\
+            $B' = B(c^2-s^2)-2(A-C)cs$, & $E' = -Ds + Ec$, \\
+            $C' = As^2 - Bcs + Cc^2$, & $F' = F$, \\
+        \end{tabular}
+    \end{center}
+    where c, s stand for $\cos\theta$, $\sin\theta$, we have
+    \begin{center}
+        $H' = A' + C' = A(c^2+s^2) + C(s^2+c^2) = A + C = H$
+    \end{center}
+    
+    To prove the invariance of $\Delta$, we write A', B', C' in terms of $\cos2\theta$,  $\sin2\theta$ by the use of $2\cos^2\theta=1+\cos2\theta$, $2\sin^2\theta=1-\cos2\theta$:
+    \begin{align*}
+        2A' &= B\sin2\theta + (A-C)\cos2\theta + A + C\\
+        B' &= B\cos2\theta + (A-C)\sin2\theta\\
+        2C' &= B\sin2\theta + (A-C)\cos2\theta + A + C,
+    \end{align*}
+    we have 
+    \begin{align*}
+        \Delta'&=B'^2-4A'C'\\
+        &=[B\cos2\theta-(A-C)\sin2\theta]^2-[(A+C)^2-(B\sin2\theta+(A-C)\cos2\theta)^2]\\
+        &=B^2 + (A-C)^2-(A+C)^2 = B^2-4AC^2 = \Delta
+    \end{align*}
+    
+    The invariance of T is proved as follows:
+\end{document}
