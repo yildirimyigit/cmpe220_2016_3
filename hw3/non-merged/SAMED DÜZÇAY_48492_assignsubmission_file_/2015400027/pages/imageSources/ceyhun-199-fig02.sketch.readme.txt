@@ -1,5 +1,0 @@
-The figure is drawn using "Sketch". It is a digital design app for Mac.
-You can find detailed information about the app from its website: https://www.sketchapp.com/
-
-Every part of the figure is drawn separately.
-Therefore one can easily change anything, or construct any other shape using its parts.

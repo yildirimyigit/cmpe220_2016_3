@@ -1,6 +1,0 @@
--Ödevi ShareLAtex'de yazdým.
-Sorunsuz bir þekilde çalýþtý. Yani kodum derlendi.
-Umarým bir sorun çýkmaz.
-
--BigCup sembolü ile kitaptaki birebir örtüþmüyor yani indisi direk sembolün altýna almýyor, cheatSheeet'dekine 
-göre yaptým o kýsmý.
