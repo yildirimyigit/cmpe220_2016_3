@@ -1,0 +1,1 @@
+I originally used "Geogebra" to draw this figure. The ggb file is the file for this program. I also exported it as a svg file using Geogebra.

@@ -1,0 +1,1155 @@
+\documentclass[11pt]{amsbook}
+
+\usepackage{../HBSuerDemir}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mdwlist}
+\usepackage{amssymb}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{remark}{Remark}
+\newtheorem{example}{Example}
+
+\newcommand\tab[1][2cm]{\hspace*{#1}}
+
+\newcommand\tad[1][1cm]{\hspace*{#1}}
+
+\newcommand\tal[1][0.5cm]{\hspace*{#1}}
+\usepackage{enumitem}
+
+\usepackage[parfill]{parskip}
+\usepackage{fancyhdr}
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyhead[C]{\thepage}
+}
+\pagestyle{fancy}
+\begin{document}
+
+%%%%%%%%%%%%%%
+\hPage{b2p1/002}
+%%%%%%%%%%%%%55
+
+
+\begin{align*}
+    {(n!)_{0}} &:
+    \begin{aligned}[t]
+        1, 1, 2, ... , n!, ...
+    \end{aligned}\\
+    ((-1)^{n-1})_{-2} &: 
+    \begin{aligned}[t]
+        -1, 1, -1, ... , (-1)^{n-1}, ...
+    \end{aligned}
+\end{align*}
+
+\indent The notation $(a_n)^q_p$ is used to denote a \underline{finite sequence} admitting
+also last term:
+\begin{equation*}
+    (\sqrt{n})^9_4 : \ 2,\ \sqrt{5},\ \sqrt{6},\ \sqrt{7},\ 2\sqrt{2},\ 3
+\end{equation*}
+
+\indent In this Section, we discuss briefly infinite sequences only.\\
+\indent A sequence is uniquely determined when the first and general term are given. Thus
+\ $a_3\ =\ 4$,\ $a_n\ =\ 2^{n-1}$ define sequence
+\begin{equation*}
+    (2^{n-1})_3\ :\ 4,\ 8,\ ...,\ 2^{n-1},\ ...
+\end{equation*}
+
+\noindent while some numbers written in succession followed by three dots, such as
+\begin{equation*}
+    5,\ 7,\ 9,\ ...
+\end{equation*}
+
+\noindent do not define uniquely a sequence, since the general term is not given, and as the 
+$4^{th}$ term any number can be assigned arbitrarily other than 11 (that one would expect).
+Indeed, the sequence $(a_n)_1$ with general term:
+\begin{equation*}
+    a_n\ =\ (n-1)(n-2)(n-3)\ +\ 2n\ + 3
+\end{equation*}
+
+\noindent gives 5, 7, 9 as the first three terms and 17 as the $4^{th}$ term.
+%+++++++++++++++++++
+\hPage{b2p1/003}
+%++++++++++
+\par
+\underline{\textbf{Determination of Sequences By Recurrence Relations:}}\\
+
+\par
+A sequence $(a_{n})_{p}$ can be defined more generally by a recurrence relation\\
+
+\begin{align*}
+	f(a_{n},\, \dotso , a_{n+k}) = 0\\
+\end{align*}
+
+\noindent and k consecutive terms $a_{p} , \dotso  , a_{p+k-1}$.\\
+
+\par
+The following are two examples for $k = 1$ and $k = 2$\\
+
+
+\begin{exmp} 
+	Given the sequence defined by\\
+	\begin{align*}
+		a_{1} = 3, \quad and\quad a_{n} = a_{n-1} + 2\\
+	\end{align*}
+	\begin{hEnumerateAlpha}
+		\item obtain the first four terms,\\
+		\item find the general term.\\
+	\end{hEnumerateAlpha}
+	\begin{hSolution}
+		\begin{hEnumerateAlpha}
+			\item $a_1 = 3$, $a_2 = a_1+2 = 5$, $a_3 = a_2 + 2 =7$, $a_4 = 7 + 2 = 9$ \\
+			\item Writing the relation for n = 2, 3, \dotso up to n; and adding these member to member, the intermediate terms $a_2$, \dotso , $a_{n-1}$ are canceled, and $a_n$  is obtained:\\
+		\end{hEnumerateAlpha}
+		\begin{align*}
+			\bcancel{ a_{2}} &= a_1 + 2\\
+			\bcancel{ a_{3}} &= \bcancel{ a_{2}} + 2\\
+			\vdots &\qquad \quad \vdots \\
+			a_{n} &= \bcancel{ a_{n-1}} + 2\\
+			\cline{1-2}
+			a_n &= a_1 + (n-1)\cdot 2\\
+			&= 3 + 2n - 2 = 2n+1
+		\end{align*}
+	
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/004}
+% ++++++++++++++++++++++++++++++++++++++
+
+Another definition of a sequence is obtained by giving the first two terms and a relation between $a_n$ and $a_{n-2}$ whose indices differ by 2:
+\end{hSolution}
+\end{exmp}
+
+
+  \begin{exmp}
+  Given the sequence defined by 
+    \begin{center}
+    $a_1 = 3, \ a_2 = 2, \ a_n = \frac{n-1}{n+1}a_{n-2},$
+    \end{center}
+  a) obtain the first four terms,
+  
+  \noindent b) find the general term.
+  \end{exmp}
+  
+  \begin{hSolution}
+  a) $a_1 = 3, \ a_2 = 2, \ a_3 = \frac{3-1}{3+1}a_1 = \frac{3}{2}, \ a_4 = \frac{3}{5}a_2 = \frac{6}{5}$
+
+  \noindent b) Since indices differ by 2, one evaluates $a_{2n}$ and $a_{2n+1}$ separately. 
+  Replacing $n$ by $2n$ in the given relation, one gets  %Book says seperately but dictionary says separately.
+    \begin{center}
+    $a_{2n} = \frac{2n-1}{2n+1}a_{2n-2}$
+    \end{center}
+  which, when written for $n  = l, 2, ...$ up to $n$, gives 
+    \begin{center}
+    $a_4 = \frac{3}{5}a_2$
+
+    $a_6 = \frac{5}{7}a_4$
+
+    $\vdots$ \qquad $\vdots$
+
+    $a_{2n} = \frac{2n-1}{2n+1}a_{2n-2}$
+    \end{center}
+  which in turn, when multiplied member to member yield 
+  \end{hSolution} %Solution continues in next page.
+%%%%%%%%%%%%%%%%%%%%5
+\hPage{b2p1/025}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	b) If $\lambda = 0$, the convergence of $\Sigma b_n$ implies that of $\Sigma a_n$ \\(or divergence of $\Sigma a_n$ implies that of $\Sigma b_n$)
+
+	c) If $\lambda = \infty$, the convergence of $\Sigma a_n$ implies that of $\Sigma b_n$ \\(or divergence of $\Sigma b_n$ implies that of $\Sigma a_n$)
+	
+	\begin{proof}
+	a) If $\lambda \neq 0$, given $\epsilon>0$ and less than $\lambda$, there is $N>0$ such that
+	
+		$$\lambda - \epsilon < \frac{a_n}{b_n} < \lambda + \epsilon$$ for all $n>N$.
+	Then by above Corollary the two series have the same nature.
+	
+	b) Let $\lambda = 0$. Then for $n>N$ for some $N$,
+	
+		$$ \frac{a_n}{b_n}<\epsilon \quad \text{or} \quad a_n < \epsilon b_n$$
+	holds. By Theorem 1 the assertion is true.
+	
+	c) Let $\lambda = \infty$. Then there is $a>>0$ such that
+		
+		$$ \frac{a_n}{b_n} > a \quad \text{or}\quad a_n > a b_n$$
+	for all $n>N$. Again by Corollary the assertion is true.	
+	\end{proof}
+	
+		\underline{Example}. Test the convergence by limit ratio test:
+		
+		\begin{align*}
+		a) \sum_1 n e^{-n} &&  b) \sum_1^\infty \tan{\frac{1}{n}}
+		\end{align*}
+		
+		\underline{Solution}.
+		
+		a) Comparing $a_n = \frac{n}{e^n}$ with $b_n = \frac{1}{n^2}$ we have
+		
+		$$\lambda = \lim{\frac{a_n}{b_n}} = \lim{\frac{n^3}{e^n}} = 0 \implies \text{conv. of}\ \sum_1 n e^{-n}$$
+		
+		b) Comparing $a_n = \tan{\frac{1}{n}}$ with $b_n = \frac{1}{n}$ we have
+		$$\lambda = \lim{\frac{a_n}{b_n}} = \lim{\frac{\tan{\frac{1}{n}}}{\frac{1}{n}}}  = 1 \implies \text{div. of} \ \sum \tan{\frac{1}{n}}$$  
+%%%%%%%%%%%%%%%%%%%%%%%		
+		\hPage{b2p1/27}
+		%%%%%%%%%%%%
+\begin{theorem} [Lim root, lim ratio tests of CAUCHY] 
+A series  $\sum {a_n} $  of positive series is convergent if 
+\begin{equation}
+a)\hspace{3mm}  lim \sqrt[n]{a_n} <  1  \hspace{3mm} or  \hspace{3mm}   b)\hspace{3mm} lim \frac{a_n}{a_n+1} < 1 
+\end{equation}
+and divergent if
+\begin{equation}
+a')\hspace{3mm} lim \sqrt[n]{a_n} >  1   \hspace{3mm}  or \hspace{3mm}  b)\hspace{3mm}  lim \frac{a_n}{a_n+1} > 1 
+\end{equation}
+Test fails if limits are equal to 1.
+\end{theorem}
+
+\begin{proof} 
+a) Let $lim \sqrt[n]{a_n} = r$. \\
+If $r < 1$ there is k such that $r <  k  < 1$ . Since r is the limit, $\sqrt[n]{a_n} a \leq k$ holds for all $n  > N$ for some N. Then by root test, $\sum {a_n} $ is conv. \\
+a') If $r > 1$, then $\sqrt[n]{a_n} > 1$ holds for all $n > N$ and ${a_n} \nsucc  0$. (div.) \\
+The proofs of b, b'  are similar.
+\end{proof}
+
+\begin{remark}
+If one of the lim root, lim ratio test fails, the others also too. \\
+In the failure case, one way apply the following:
+\end{remark}
+\textbf{\underline{RAABE - DUHAMEL's Test}}: \\
+A series $\sum {a_n} $ of positive terms is convergent or divergent according as \\
+\begin{equation}
+lim \hspace{4mm} n(\frac{a_n}{a_n+1}-1) 
+\end{equation}
+is greater or less than 1. Test fails if limit is equal to 1. 
+\begin{example}
+Test the following series of positive terms for convergence:
+
+%%%%%%%%%%%%%%%%%%%%%%%%5	
+\hPage{b2p1/028}
+%%%%%%%%%%%%%%%%%%%%%%%%5
+	\[
+    	a) \sum_{1}^{}(\frac{n+1}{n})^{n} b) \sum_{0}^{}\frac{2^n}{n!} c) \sum_{2}^{}\frac{n!}{n^n} d) \sum_{-1}^{}\frac{n}{n+2}
+	\]
+\end{example}
+\begin{hSolution}
+a) Since $a_n \rightarrow e \neq 0$, the series diverges\footnote{\label{1}It should have been "diverges" or "is divergent" rather than "is diverges", which is grammatically wrong. I've corrected that mistake.}. \\
+b) $\frac{a_{n+1}}{a_n} = \frac{2^{n+1}}{(n+1)!} . \frac{n!}{2^n} = \frac{2}{n+1} \rightarrow 0 < 1$ (it converges) \\
+c)$\sqrt[n]{a_n} = \frac{\sqrt[n]{n!}}{n} \rightarrow \frac{1}{e} < 1$ (it converges) \\
+d) $a_n \rightarrow 1 \neq$ 0 (it diverges)  
+\end{hSolution}
+
+\subsection{ALTERNATING SERIES}
+A series
+
+	\[
+		\sum_{0}^{\infty} (-1)^n a_n = a_0 - a_1 + a_2 - ... + (-1)^n a_n + ... (a_n > 0)
+	\]
+in which the terms alternate in sign is called an \underline{alternating series}.
+\par The series
+	
+	\[
+		1 - \frac{1}{2} + \frac{1}{3} - ... + (-1)^{n+1} \frac{1}{n} + ...
+	\]
+
+is an alternating one, known as the \underline{alternating harmonic series}.
+\par Since an alternating series is not a series of positive terms, the previous tests cannot be applied. However there is a test special to alternating series which is the following:
+\begin{thm}{(LEIBNIZ)}
+The alternating series
+		\[
+			a_0 - a_1 + a_2 - ... + (-1)^n a_n  + ... (a_n > 0)
+		\]
+is convergent if \\
+a) $a_0 \geq a_1 \geq a_2 \geq ... \geq a_n \geq ...$ \\
+b) $a_n \rightarrow 0$.
+\end{thm}
+\hPage{b2p1/029}
+\tad	\textbf{\underline{Proof}.} It will suffice to prove that $s_{2n}$ and $s_{2n+1}$ have the same limit
+\[
+s_{2n} = (a_{0}-a_{1})+ ... +(a_{2n}-a_{2n})\geq 0 \tag{from 1}\label{myeq}
+\] 
+\[
+s_{2n} = a_{0}-(a_{1}-a_{2})-...-(a_{2n-2}-a_{2n-1})-a_{2n} \leq a_{0} \tag{from 1}\label{mye1q}
+\]
+\tab \tal $\Longrightarrow 0 \leq s_{2n} \leq a_{0}$
+
+Hence ($s_{2n}$) is bounded, and being monotone increasing it converges to a limit s. Now,
+
+\[
+s_{2n+1} = s_{2n}+a_{2n+1} + s + 0= s.\blacksquare
+\]
+
+\tad	\textbf{\underline{Corollary}. In} a convergent alternating series
+
+\[
+s = a_{0}-a_{1}+a_{2}-...+(-1) a_{n}+R_{n+1}
+\]
+
+with given hypotesis, the ineuality
+
+\[
+\hAbs{R_{n+1}} < a_{n+1}
+\]
+
+holds, that is the \underline{error} made in taking $s_{n}$ for s is less than $a_{n+1}$
+
+\tad	\textbf{\underline{Proof}.}
+
+\[
+R_{n+1} = (-1)^{n+1}(a_{n+1}-a_{n+2}+...)
+\]
+
+\tab  $\Longrightarrow \hAbs{R_{n+1}} \text{}=\hAbs{a_{n+1}-a_{n+2}+ ....} $
+
+\tab \tab   \text{   } = $a_{n+1}-(a_{n+2}-a_{n+3})-... < a_{n+1}$
+
+\tad	\textbf{\underline{Example}. } Given the alternating harmonic series
+
+\[
+1-\frac{1}{2} + \frac{1}{3} - ....... (-1)^{n+1}\frac{1}{n} + .....
+\]
+
+\tad a) show its convergence
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/031}
+% ++++++++++++++++++++++++++++++++++++++
+
+A series $\sum a_{n}$ such that $\sum|a_{n}|$ is convergent is called an
+\\\underline{absolutely convergent series}, and the above theorem states \\that an absolutely convergent series is convergent.
+
+As the alternating harmonic series shows, a series may be
+\\convergent without being absolutely convergent. Such series are
+\\called \underline{simply convergent}\footnote{In many textbooks \underline{conditional convergent} or \underline{semi-convergent} termi-
+\\nologies are used instead of simply convergent.} series:
+\begin{align*}
+    \sum|a_{n}| \text{ (conv.)} 
+        &\Longrightarrow \sum a_{n} \text{ (conv)} \dots \text{ abs. conv. of  } \sum a_{n}\\
+    \sum|a_{n}| \text{ (div.)} 
+        &\Longrightarrow \left\{
+            \begin{array}{ll}
+             \sum a_{n} \text{ (conv)} \dots \text{ simply. conv. of  } \sum a_{n}\\
+             \text{or}\\
+             \sum a_{n} \text{ (div)} 
+    \end{array}
+    \right.    
+\end{align*}
+There is an essential difference between the absolutely
+\\convergent series and simply convergent ones. The absolutely conver-
+\\gent series have the following two properties among others:
+
+\begin{enumerate}
+    \item The terms can be rearranged in any order (rearrangement does not alter the sum).
+    \item Finitely or infinitely many terms may be replaced by their sum.
+\end{enumerate}
+
+These properties may not be shared by simply convergent 
+\\series, that is, a rearrengement of terms in a simply convergent
+\\series may give a different sum as illustrated by the following
+\\example:
+
+Consider the simply alternating harmonic series
+\[
+    S\:=\: 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots + (-1)^{n+1} \frac{1}{n} + \dots
+\]
+
+Let us rearrange the terms to have the series 
+
+\[
+    S'\:=\:(1-\frac{1}{2} - \frac{1}{4})+(\frac{1}{3} - \frac{1}{6} - \frac{1}{8}) +(\frac{1}{5} - \frac{1}{10} - \frac{1}{12})
+\]
+\[
+    + \:\dots\:+\:(\frac{1}{2n+1} - \frac{1}{4n+2} -\frac{1}{4n+4} ) \:+\:\dots 
+\]
+
+% =======================================================
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/032}
+% ++++++++++++++++++++++++++++++++++++++
+Observe that every term in one series is contained in the other exactly once: 
+\begin{align*}
+    S' &= \sum\limits_{0} \left( \frac{1}{2n+1}-\frac{1}{4n+2}-\frac{1}{4n+4}\right) 
+    \\ &= \sum\limits_{0}\left(\frac{1}{4n+2}-\frac{1}{4n+4}\right)=\frac{1}{2}\sum\limits_{0} \left( \frac{1}{2n+1}-\frac{1}{2n+2}\right)
+    \\ &= \frac{1}{2}\left(1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\dotsc+\left( -1 \right)^{n+1} \frac{1}{n}+\dotsc \right)=\frac{1}{2} s.
+\end{align*}
+\subsection{EVALUATION OF SERİES} \ 
+
+Each series can be evaluated by neglecting the remainder $R_{n+1}$ for certain n with some approximation.
+
+Exact evaluation is impossible in general, except for convergent geometric series and some series whose general term $a_n$ is rational function of $n$. There are other possibilities by the use of power series $\left( \S 1.3 \right)$.
+\begin{exmp}
+Evaluate the geometric series.\\
+a)$\sum\limits_{0}\quad \left( \frac{1}{2}\right)^n $ \qquad \qquad \qquad \qquad
+b)$\sum\limits_{0}\quad \left(-1\right)^n \frac{2^n}{3^n}$
+\end{exmp}
+
+\begin{hSolution} Recalling
+$$a \left(1+r+\dotsc+r^n+\dotsc \right) =\frac{a}{1-r} \qquad \left( \hAbs{r} \right) < 1 $$ \\
+we have
+
+a) $ r= \frac{1}{2} \left ( \hAbs{\frac{1}{2}} < 1 \right )\quad \Longrightarrow \quad  s= \frac{1}{1-\frac{1}{2}} = 2 , $	
+
+b)$ r= - \frac{2}{3} \left ( \hAbs{-\frac{2}{3}} < 1 \right )\quad \Longrightarrow \quad  s= \frac{1}{1+\frac{2}{3}} = 3/5 . $
+\end{hSolution}
+\begin{exmp}
+Given $ t = 2,1\overline{37}  $ ,
+
+a) write it as a geometric series ,
+ 
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/033}
+% ++++++++++++++++++++++++++++++++++++++
+
+\begin{enumerate}[label=(\alph*)]
+	\setcounter{enumi}{1}
+
+	\item discuss the convergence and find t as a ratio of two\\
+	integers.
+
+\end{enumerate}
+
+\underline{Solution}.
+
+\begin{enumerate}[label=(\alph*)]
+
+	\item $t = 2+\frac{1}{10}+\frac{37}{1000}+\frac{37}{100000}+\ ...\ +\frac{37}{1000.100^{n-1}}+\ ...$\\
+	=$\frac{21}{10}+\frac{37}{1000}(1+\frac{1}{100}+\ ...\ +\frac{1}{100^{n-1}}+\ ...)$
+
+	\item The series within the paranthesis is a geometric series\\
+	with r = 1/100 which is absolutely less than 1. Then\\
+	it is convergent:\\
+	$t=\frac{21}{10}+\frac{37}{1000}\frac{1}{1-\frac{1}{100}}=\frac{21}{10}+\frac{37}{990}=\frac{2116}{990} \in \mathbb{Q}$
+
+\end{enumerate}
+\end{exmp}
+\begin{exmp} Find the sums:\\
+\begin{enumerate}[label=(\alph*)]
+
+	\item $\frac{1}{1.2}+\frac{1}{2.3}+\ ...\ +\frac{1}{n(n+1)}+\ ...$
+	
+	\item $\frac{1}{2^{2}-1}+\frac{1}{4^{2}-1}+\ ...\ +\frac{1}{(2n)^{2}-1}+\ ...$
+
+\end{enumerate}
+\end{exmp}
+
+\underline{Solution}.
+
+\begin{enumerate}[label=(\alph*)]
+	
+	\item $a_{n}=\frac{1}{n(n+1)}=\frac{A}{n}+\frac{B}{n+1}\Longrightarrow\ A\ =\ 1,\ B\ =\ -1$\par
+	$\Longrightarrow a_{n}=\frac{1}{n}-\frac{1}{n+1}$\par
+	$\Longrightarrow s_{n}=(1-\frac{1}{2})+(\frac{1}{2}-\frac{1}{3})+\ ...\ +(\frac{1}{n}-\frac{1}{n+1})$\par
+	$=1-\frac{1}{n+1}\Longrightarrow S\ =\ 1$
+	
+	\item $a_{n}=\frac{1}{(2n)^{2}-1}=\frac{A}{2n-1}+\frac{B}{2n+1}\Longrightarrow A=\frac{1}{2},\ B = -\frac{1}{2}$\par
+	$\Longrightarrow a_{n}=\frac{1}{2}(\frac{1}{2n-1}-\frac{1}{2n+1})$
+
+\end{enumerate}
+
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/74}
+% ++++++++++++++++++++++++++++++++++++++
+
+Accordingly  [$\lambda_{i}$, $\delta_{ij}$], [$\lambda\delta_{ij}$] are diagonal and scalar matrices respectively.
+
+For a square matrix A = [$a_{ij}$], the symbols $\hAbs{A}$, det A, det[$a_{ij}$] are used to denote the determinant of A:
+\begin{center}
+$\hAbs{A}$=$\hAbs a_{ij}$ = det A = det[$a_{ij}$]
+\end{center}
+We note that if A is a non  square matrix, $\hAbs{A}$ is not defined.
+
+\section{Operations with real matrices}
+
+\subsection{Equality} The matrices [$a_{ij}$], [$b_{ij}$] are \underline{equal} if they are of the same size and corresponding elements are equal:
+\begin{center}
+ $[a_{ij}]_{mxn}$ = $[b_{ij}]_{mxn}$ $\iff$ $a_{ij}$ = $b_{ij}$ for all i, j.
+\end{center}
+
+\subsection{Addition} The \underline{sum} of two matrices $[a_{ij}]$, $[b_{ij}]$ of the same size is a matrix of the same size whose elements are the sums of their corresponding elements:
+\begin{center}
+ $[a_{ij}]_{mxn}$ + $[b_{ij}]_{mxn}$ = [$a_{ij}$ + $b_{ij}$]$_{mxn}$
+\end{center}
+
+\subsection{Multiplication by a scalar} The \underline{product} of a matrix with a scalar is a matrix of the same size obtained by multiplying every element of the matrix by that scalar:
+\begin{center}
+ $c[a_{ij}]$ = [c $a_{ij}]$ = [$a_{ij}$]c
+\end{center}
+
+\subsection{Subtraction} The difference A-B of two matrices A and B of the same size is the matrix A+ (- B):
+\begin{center}
+ $[a_{ij}]_{mxn}$ - $[b_{ij}]_{mxn}$ = [$a_{ij}$ - $b_{ij}$]$_{mxn}$
+\end{center}
+
+\subsection{Multiplication} The product AB is defined only when the number of columns in A is equal to the number of rows in B.
+
+%++++++++++++++++++++++++++++++
+\hPage{b2p1-078}
+%+++++++++++++++++++++++++++
+\begin{align*}
+&&  2A & = 
+	\begin{bmatrix}
+		0  &&   2    &&  2\\
+		2  &&   0    &&   2\\
+		2  &&   2    &&  0\\
+	\end{bmatrix} 
+&&\\
+ \\ 
+&&  -3I_3 & =
+	\begin{bmatrix}
+		-3  &   0    &   0\\
+		0  &   -3    &   0\\
+		0  &   0    &   -3\\
+	\end{bmatrix} 
+&&
+\\
+\\
+&\implies   &  A^2-2A-3I_3 & = \begin{bmatrix}
+-1  &   3    &   3\\
+3  &   -1    &   3\\
+3 &   3    &   -1\\
+\end{bmatrix} 
+ \end{align*}
+ 
+
+\setlength{\parindent}{7ex}
+\underline{Remark}. Note that multiplication of a matrix by a scalar 
+and that of a determinant by a scalar are defined differently: a
+matrix is multiplied by a scalar by multiplying every element by 
+multiplying only one row(column) by that scalar.\par 
+Thus
+\begin{align*}
+\qquad \qquad \qquad c  \quad       
+	\begin{bmatrix}
+		8  &&   1    &&  6\\
+		3  &&   5    &&   7\\
+		4  &&   9    &&  2\\
+	\end{bmatrix} 
+&= 
+	\begin{bmatrix}
+		8c  &&   c    &&  6c\\
+		3c  &&   5c    &&   7c\\
+		4c  &&   9c    &&  2c\\
+	\end{bmatrix} ,
+\\
+\qquad \qquad \qquad c  \quad       
+	\begin{bmatrix}
+		8  &&   1    &&  6\\
+		3  &&   5    &&   7\\
+		4  &&   9    &&  2\\
+	\end{bmatrix} 
+&= 
+	\begin{bmatrix}
+		8c  &&   c    &&  6c\\
+		3  &&   5    &&   7\\
+		4  &&   9    &&  2\\
+	\end{bmatrix}
+= 
+	\begin{bmatrix}
+		8  &&   c    &&  6\\
+		3  &&   5c    &&   7\\
+		4  &&   9c    &&  2\\
+	\end{bmatrix}
+\end{align*}\\
+As a result we have for a matrix A of order n,
+   
+  
+\begin{align*}
+ 	det \ c[a_ij] = det \ [ca_ij] = c^n \ det[a_ij]
+\end{align*}   
+
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/87}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{center}
+Adj A = $\begin{bmatrix} 
+-3 &\ -1 &\ 1 \\
+-3 &\  3 &\ 3 \\
+3 &\ -1 &\ -5
+\end{bmatrix}$ = [$A_{ji}$]
+\end{center}
+
+b) Adj B =  $\begin{bmatrix} 
+9 &\ -3 \\
+-6 &\  2 \\
+\end{bmatrix}$
+
+\begin{thm} $A^{-1} $= $\frac{1}{\hAbs{A}}$  Adj A = $\frac{[A_{ji}]}{\hAbs{A}}$ if $\hAbs{A}$ $\neq$ 0, i. e., if $[A_{ij}]$ is invertible.
+\end{thm}
+\begin{proof} We need to show that
+
+\begin{center}
+A $\frac{Adj A}{\hAbs{A}}$ = I or A Adj A = \hAbs{A} I 
+\end{center}
+Indeed,
+\begin{center}
+A Adj A = $\begin{bmatrix} 
+\cdots &\cdots &\cdots \\
+a_{il} &\cdots &\ a_{in} \\
+\cdots &\cdots &\cdots
+\end{bmatrix}$
+$\begin{bmatrix} 
+\vdots & A_{lj} &\vdots \\
+\vdots &\vdots &\vdots \\
+\vdots & A_{nj} &\vdots
+\end{bmatrix}$ /$\hAbs{A}$
+\end{center}
+\begin{center}
+\[=[\sum_{\substack{k}} a_{ik} A_{kj}] /\hAbs{A} = [\delta_{ij}\hAbs{A}]/\hAbs{A}= [\delta_{ij}] = I \]
+\end{center}
+by Theorem 6 on determinant. (Book I)
+\end{proof}
+\begin{exmp}. Find the inverses of the matrices A and B in Example 1, if any.
+\end{exmp}
+\begin{hSolution}
+
+a) The classical adjoint of A was obtained as the matrix
+\begin{center}
+$\begin{bmatrix} 
+-3 &\ -3 &\ 3 \\
+-1 &\  3 &\  -1 \\
+ 1 &\  3 &\ -5
+\end{bmatrix}$
+\end{center}
+and the inverse is obtained by dividing this matrix by $\hAbs{A}$= -6
+
+%%%%%%%%%%%%555   
+\hPage{b2p1-088}
+%%%%%%%%%%%%%%
+\begin{align*}
+	\qquad &&&&& |A| \ = \
+	\begin{vmatrix}
+		2  &&   1    &&  1\\
+		1  &&   -2    &&   -1\\
+		1  &&   1    &&  2
+	\end{vmatrix} \ = \
+	\begin{vmatrix}
+		2  &&   0    &&  1\\
+		1  &&   -1    &&   -1\\
+		1  &&   -1    &&  2\\
+	\end{vmatrix}=
+	2(-2-1) -1.0 =-6
+\end{align*}
+\begin{flushleft}
+	Hence,
+\end{flushleft}
+
+\begin{center}
+$ A^{-1} = 
+$$
+\begin{bmatrix}
+
+	1/2  && 1/6       &&   -1/6\\
+	1/2  &&   -1/2    &&   -1/2\\
+	-1/2  &&   1/6    &&   5/6\\
+
+\end{bmatrix}
+ $$
+ $
+\end{center}
+
+\setlength{\parindent}{3ex}
+ 
+ b) \ Since \ det \  B \ = \ 0, \  B \ is \ not \ invertible. 
+\vspace{0.1cm}
+\end{hSolution}
+\underline{Example \ 3}.  \ Find \ the \ inverse \ of \\
+\begin{align*}   
+     &&&&&&&   A=
+         \begin{bmatrix}
+    		 a  &&   b      \\
+         	\\
+         	c  &&   d      \\
+         \end{bmatrix} 
+\ \ \ if \ |A| \ = \ ad-bc \ \neq \ 0
+\end{align*}
+
+
+
+
+\underline{Solution}. \ Since
+\begin{center}
+$ [A_{ij}] = 
+$$
+	\begin{bmatrix}
+
+		d  &&   -c      \\
+		\\
+		-b  &&   a      \\ 
+
+	\end{bmatrix}
+ $$ 
+ $
+ \end{center}
+ 
+ 
+we \ \  have \ $
+A^{-1} \ =
+	\begin{bmatrix}
+		d  &&   -b      \\
+		-c  &&   a      \\
+	\end{bmatrix} \ 
+/[A]  = \frac{
+	\begin{bmatrix}
+	d  &&   -b      \\
+	-c  &&   a      
+	\end{bmatrix}}
+	{ ad-bc }
+\\
+$
+
+\tal 3.  \underline{Elementary row operations}\\
+\setlength{\parindent}{7ex} 
+\tal Let A be rectangular matrix of shape mxn.Let the row matrices be  $  R_1, \ldots, R_m
+$ the following on rows are called  the \underline{elementary row operations}:  \\
+\tal $ R_i \Leftrightarrow R_j  $ : Interchanging of ith and jth rows,\\
+\tal $ R_i + R_j  $ \ : Adding the jth row to the ith row,\\
+\tal $ c \ R_i $ \qquad : Multiplying a row by a non zero scalar.\\
+%+++++++++++++++++++++++
+\hPage{b2p1/094}
+%+++++++++++++++++
+\hNewLine
+\null Multiplying both sides of this equation by $A^{-1}$ (if exists), we have
+\hNewLine
+	\begin{center}
+	$c_nA^{n-1}+c_{n-1}A^{n-2}+...+c_1I_n+c_0A^{-1}=0,$
+	\end{center}
+\hNewLine
+since $A^kA^{-1}=(A^{k-1}A)A^{-1}=A^{k-1}(AA^{-1})=A^{k-1}.$
+\hNewLine
+\par This latter equality is solvable for $A^{-1}$ when $c_0=\left|A\right|\neq0$ which is the same condition in Method 2.
+\hNewLine
+\par If $\left|A\right|=c_0=0,$ then $A$ is not invertible and such matrix is called a \underline{singular square matrix}. An invertible matrix is non singular.
+\hNewLine
+
+	\begin{exmp} Find the inverse of
+		\begin{center}
+			 a) $A=\begin{bmatrix}2 & 1 & 1\\1 & -2 & -1\\1 & 1 & 2\end{bmatrix}$ \quad\quad b)  $B=\begin{bmatrix}2 & 3\\6 & 9\end{bmatrix}$
+		%\begin{itemize}
+			%\item[a)] $A=\begin{bmatrix}2 & 1 & 1\\1 & -2 & -1\\1 & 1 & 2\end{bmatrix}$
+			%\item[b)] $B=\begin{bmatrix}2 & 3\\6 & 9\end{bmatrix}$
+		%\end{itemize} Itemizing would keep me from putting the items of the set in the same line therefore I am just going to type a) & b)
+		\end{center}
+	\end{exmp}
+	\hNewLine
+	\begin{hSolution}
+		\begin{center}
+		\begin{itemize}
+			\item[a)] The characteristic equation is
+			\hNewLine
+			$P(\lambda)=\left| \begin{array}{ccc} 2-\lambda & 1 & 1\\1 & -2-\lambda & -1\\1 & 1 & 2-\lambda \end{array}\right|=0$
+		\end{itemize}
+		\end{center}
+	\end{hSolution}
+
+\hNewLine
+Expansion gives
+\hNewLine
+	\begin{center}
+		$P(\lambda)=-\lambda^3+2\lambda^2+5\lambda-6=0$
+	\end{center}
+\hNewLine
+and by CAYLEY-HAMILTON Theorem we have
+\hNewLine
+\begin{align*}
+	&-A^3+2A^2-5A+6I_3=0\\
+	\Rightarrow &-A^2+2A+5I-6A^{-1}=0\\
+	\Rightarrow  &-6A^{-1}=A^2-2A-5I\\
+\end{align*}
+\hPage{b2p1/106}
+
+After discarding zero rows, if the remaining is consistent, the given system is consistent. In the consistency case starting from the bottom and going upward considering the equation corresponding to each row one can find the unknowns successively $(x_{n},  x_{n-1}, ... )$, some of which are taken as parameter when possible.\par
+When the echelon form of the system is, for instance
+\[
+ \begin{bmatrix}
+    2 & 0 & -3 &  4 & \vdots & 1 \\
+    0 & 0 & 0 &  0 & \vdots & 6 \\
+    0 & 0 & 0 &  0 & \vdots & 0 \\
+\end{bmatrix}
+\]
+the system is inconsistent (no solution). \par
+If the echelon XX, for instance,
+\[
+ \begin{bmatrix}
+    XX  & XX & -3 &  4 & \vdots & 1 \\
+    0 & 0 & 0 & 2 & \vdots & 6 \\
+\end{bmatrix}
+\]
+we have consistency. Then
+\begin{align*}
+&2x_{4} = 6 \Rightarrow x_{4} = 3 \\
+&2x_{1} + x_{2} - 3x_{3} + 4.3 = 1 \\
+&\Rightarrow \, 2x_{1} + x_{2} - 3x_{3} = -11 \\
+&\qquad x_{1} = s, x_{3} = t \Rightarrow  x_{2} = -11 -2s + 3t \\
+&\qquad S = [s, -11 - 2s + 3t, t, 3]
+\end{align*}
+When the echelon form is
+\[
+ \begin{bmatrix}
+ 1 & -3 & \vdots & 4 \\
+ 0 & 2 & \vdots & 3 \\
+ 0 & 0 & \vdots & -1 \\
+ 0 & 0 & \vdots & 0 \\
+ 0 & 0 & \vdots & 0 \\
+\end{bmatrix}
+\]
+%+++++++++++++++++++++++++++++
+\hPage{b2p1/110}
+%+++++++++++++++++++++++++++
+\noindent36. Discuss the solution of the system:
+\[
+    y + z = 1,  2x -2y -z = 0,  4x + 3y +5z = 7
+\]
+37. Discuss the solution by the use of augmented matrix:
+\[
+ \begin{bmatrix}
+    2  & -3 &  1 \\
+    3  & 0 &  2 \\
+    1  & 3 &  1 \\
+\end{bmatrix} 
+ \begin{bmatrix}
+    x  \\
+    y  \\
+    z  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    2  \\
+    5  \\
+    4  \\
+\end{bmatrix}
+\]
+38. Find right inverses, if any, of the following matrices:
+\[
+a) 
+ \begin{bmatrix}
+    2  & 0 \\
+    -1  & 3  \\
+    1  & 1  \\
+\end{bmatrix}
+\qquad b) 
+ \begin{bmatrix}
+    3, 7 \\
+\end{bmatrix}
+\]
+39. Find left inverses, if any, of the matrices given in Exercise 38. \newline
+40. Find the inverse of $
+ \begin{bmatrix}
+    a  & b &  b \\
+    0  & d &  e \\
+    0  & 0 &  f \\
+\end{bmatrix}
+\qquad (adf \neq 0)
+$ \newline
+41. Solve:
+\[
+ \begin{bmatrix}
+    1  & 1 &  1 \\
+    a  & b &  c \\
+    a^2-1  & b^2-1 &  c^2-1 \\
+\end{bmatrix} 
+ \begin{bmatrix}
+    x  \\
+    y  \\
+    z  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    1  \\
+    p  \\
+    p^2-1  \\
+\end{bmatrix}
+\]
+and evaluate
+\[
+(a^2-a)x+(b^2-b)y+(c^2-c)z-(p^2-p)
+\]
+42. Find the inverse of:
+\[
+a) 
+ \begin{bmatrix}
+    2  & 1 &  -1 \\
+    0  & 2 &  1  \\
+    5  & 2 &  -3 \\
+\end{bmatrix}
+\qquad b) 
+ \begin{bmatrix}
+   1  & 0 &  2 \\
+    2  & -1 &  3 \\
+    0  & 1 &  8 \\
+\end{bmatrix}
+\]
+43. Find $x, y\in \mathbb{R}$, if any:
+\[
+ \begin{bmatrix}
+    2  & 3 &  1 \\
+    0  & -2 &  4 \\
+\end{bmatrix} 
+ \begin{bmatrix}
+    x  & y \\
+    2x & -y  \\
+    -x & 3y  \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    14 & 2  \\
+    -16 & 14  \\
+\end{bmatrix}
+\]
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/111}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{enumerate*}
+
+    \item[44.] 
+    If $ A_{2*2} 
+    \begin{bmatrix}
+        x \\
+        y
+    \end{bmatrix}$
+=
+    $
+    \begin{bmatrix}
+        x' \\
+        y'
+    \end{bmatrix}$,
+    we say that the matrix A \underline{maps} the
+    point $(x,y)$ to the point $(x',y')$. Find A which maps $(2,3)$
+    to $(1,0)$, and $(-1,1)$ to $(2,-5)$.
+    
+    \medskip
+    \item[45.] Find $x, y\in \mathbb{R}$, if any:
+    $$
+    \begin{bmatrix}
+        3 & -1 \\
+        0 & 2 \\
+        -2 & 1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        x & -y & y-x \\
+        2y & 3x & x-y
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        -6 & -9 & 12 \\
+        12 & 0 & -6 \\
+        6 & 6 & -9
+    \end{bmatrix}
+    $$
+ 
+\end{enumerate*}
+\bigskip
+\begin{center}
+\textbf{ANSWERS TO EVEN NUMBERED EXERCISES}
+\end{center}
+
+\begin{enumerate}
+    \item[32.] 
+        a) $[\pm2,0,\pm1]$ \hspace{5pt} (four solutions),\hspace{10pt} b) $[2,1,-3]$
+        
+    \item[34.]
+        $[-2, 2, 1]$
+        
+    \item[36.]
+        $[1-k, 1-2k, 2k]$
+    
+    \bigskip
+    \item[38.]
+        a) 
+        $
+        \begin{bmatrix}
+        t & \frac{1}{2}t - \frac{1}{4} & -\frac{3}{2}t + \frac{3}{4} \\
+        s & \frac{1}{2}s + \frac{1}{4} & -\frac{3}{2}s + \frac{1}{4}
+        \end{bmatrix}
+        ,
+        $
+        \hspace{9pt}
+        b) 
+        $
+        \frac{1}{7} 
+        \begin{bmatrix} 75 \\ 1-3s \end{bmatrix}
+        $
+    
+    \bigskip
+    \item[40.]
+        $
+        \begin{bmatrix}
+        \frac{1}{a} & -\frac{b}{ad} & \frac{be-cd}{adf} \\
+        0 & \frac{1}{d} & -\frac{e}{df}\\
+        0 & 0 & \frac{1}{f}
+        \end{bmatrix}
+         $
+    \bigskip
+    \item[42.]
+        a)
+        $
+        \begin{bmatrix}
+        8 & -1 & -1 \\
+        -5 & 1 & 2 \\
+        10 & -1 & -4
+        \end{bmatrix}
+        ,
+        $
+        \hspace{9pt}
+        b)
+        $
+        \frac{-1}{7}
+        \begin{bmatrix}
+        -11 & 2 & -2 \\
+        -16 & 8 & 1 \\
+        2 & -1 & -1
+        \end{bmatrix}
+        $
+    \bigskip   
+    \item[44.] 
+        $
+        \begin{bmatrix}
+        -1 & 1 \\
+        3 & -2
+        \end{bmatrix}
+        $
+\end{enumerate}
+% ++++++++++++++++++++++++++++++++++++++
+\hPage{b2p1/114}
+% ++++++++++++++++++++++++++++++++++++++
+\begin{enumerate}
+	\item[53.]
+	If $A_1, ... , A_n$ are invertible matrices of the same order,
+	\begin{hEnumerateAlpha}
+		\item
+		prove $(A_1 ... A_n)^{-1} = A_n^{-1} ... A_1^{-1}$
+
+		\item
+		prove $(A^n)^{-1}=(A^{-1})^n$
+	\end{hEnumerateAlpha}
+	\item[54.]
+	Find the inverses of:
+	
+	\begin{tabular}{ll}
+		a) 
+		$
+		\begin{bmatrix}
+		{\begin{array}{ccc}
+   		2 & 1 & 0\\
+		1 & 1 & 0\\
+		0 & 0 & 1     \end{array} }
+		\end{bmatrix}
+		$
+		&b)
+		$
+		\begin{bmatrix}
+		{\begin{array}{ccc}
+   		1 & 1 & 1\\
+		0 & 1 & 1\\
+		0 & 0 & 1     \end{array} }
+		\end{bmatrix}
+		$
+	\end{tabular}
+	\item[55.]
+	Show that the product of two upper (lower) square triangular matrices is an upper (lower) triangular matrix.
+	\item[56.]
+	Prove that the inverse of a non singular diagonal matrix is a non singular diagonal matrix.
+	\item[57.]
+	Evaluate
+	\begin{center}
+		$
+		\begin{bmatrix}
+		{\begin{array}{cc}
+	   	\frac{a \pm \sqrt{ad-bc}}{\sqrt{D}}& \frac{b}{\sqrt{D}} \\
+		\frac{C}{\sqrt{D}} & \frac{a \pm \sqrt{ad-bc}}{\sqrt{D}}     \end{array}}
+		\end{bmatrix}^2
+		$
+	\end{center}
+	where $D = a + d + 2\sqrt{ad-bc}>0$
+	\item[58.]
+	If $(A^{-1})^n$ is denoted by $A^{-n}$, then evaluate $U^{-2}$ , $V^{-2}$ where
+	
+	$
+	U=
+	\begin{bmatrix}
+	{\begin{array}{rrr}
+   	2 & 1 & 1\\
+	1 & -2 & -1\\
+	1 & 1& 2     \end{array} }
+	\end{bmatrix}, 
+	$
+	$
+	V=
+	\begin{bmatrix}
+	{\begin{array}{rrrr}
+   	1 & 1 & 0 & 0\\
+	1 & 2 & 0 & 0\\
+	5 & 2 & 3 & -1\\
+	-1 & 1 & -5 & 2 \end{array} }
+	\end{bmatrix}
+	$
+	\item[59.]
+	Prove $[\Delta(\Theta)]^n = \Delta(n\Theta)$, where
+	
+	$
+	\Delta(\Theta)=
+	\begin{bmatrix}
+	{\begin{array}{ccc}
+   	cos^2\Theta & -sin 2\Theta & sin^2\Theta\\
+	cos\Theta sin\Theta & cos 2\Theta & -sin\Theta cos\Theta\\
+	sin^2\Theta & sin 2\Theta & cos^2\Theta    \end{array} }
+	\end{bmatrix}
+	$
+\end{enumerate}
+\hPage{b2p1/217}
+	\begin{flushleft}
+		$\quad\quad (9x^2+18x)-4y^2+(z^2-4z)+13=0$
+		$\Rightarrow \quad 9(x^2+2x)-4y^2+(z-2)^2+13=0$
+		$\Rightarrow \quad 9(x+1)^2-9-4y^2+(z-2)^2+9=0$
+		$\Rightarrow \quad 9(x+1)^2-4y^2+(z-2)^2=0$ (cone, vertex at $(-1,0,2)$)
+	\end{flushleft}
+	\hNewLine
+\quad Since
+	
+		$T=
+		\left|
+		\begin{array}{cccc}
+		18 & 0 & 0 & 18 \\
+		0 & -8 & 0 & 0 \\
+		0 & 0 & 2 & -4 \\
+		18 & 0 & -4 & 26
+		
+		
+		\end{array}
+		\right|=0$
+	\hNewLine
+	\hNewLine
+the cone is degenerate,	
+
+\begin{itemize}
+
+\item[b)] Since there is only one cross term, namely $-2xz,$ the standard equation is obtained by rotating $0xz$ about $0$ by a proper angle $\theta$:
+\end{itemize}	
+\hNewLine
+	\begin{center}
+	$(x^2-2xz+z^2)-y^2+2x-4y-2z-3=0 \quad\quad\quad\quad(1)$
+	\hNewLine
+	\hNewLine
+	$tan2\theta=\frac{-2}{1-1}=\infty \quad \Rightarrow \quad \theta=\pi/4 \quad \Rightarrow \quad cos\theta=sin\theta=\frac{\sqrt{2}}{2}$
+	\hNewLine
+	\hNewLine
+	$x=\frac{\sqrt{2}}{2}(x\prime-z\prime), \quad z=\frac{\sqrt{2}}{2}(x\prime+z\prime), \quad y=y\prime.$
+	\end{center}
+\hNewLine
+Setting these values in $(1)$, we have
+\hNewLine
+	\begin{center}
+	$\frac{1}{2}(x\prime-z\prime)^2-2\cdot\frac{2}{4}(x\prime^2-z\prime^2)+\frac{1}{2}(x\prime+z\prime)^2-y\prime^2$
+	\hNewLine
+	\hNewLine
+	$+\sqrt{2}(x\prime-z\prime)-4y\prime-s\sqrt{2}(x\prime+z\prime)+-3=0$
+	\hNewLine
+	\hNewLine
+	$4z\prime^2-2y\prime^2-8y\prime-4\sqrt{2}z\prime-6=0$
+	\hNewLine
+	\hNewLine
+	$2(z\prime-\frac{\sqrt{2}}{2})^2-(y\prime+2)^2=0$ (two intersecting planes)
+	\end{center}
+
+
+\end{document}
